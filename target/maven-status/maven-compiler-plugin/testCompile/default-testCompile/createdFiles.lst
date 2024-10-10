@@ -1,0 +1,10 @@
+stepDefinitions/RegisterPageStepDefinitions.class
+testRunners/runner.class
+util/Constants.class
+stepDefinitions/LoginPageStepDefinitions.class
+util/Hooks.class
+Pages/LoginPage.class
+util/ElementHelper.class
+Pages/RegisterPage.class
+util/DriverFactory.class
+Pages/CookiePage.class
