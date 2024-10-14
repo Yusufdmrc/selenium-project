@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import util.Constants;
+import util.DataProcess;
 import util.ElementHelper;
 
 import java.time.Duration;
@@ -60,39 +62,39 @@ public class RegisterPage {
         wait.until(ExpectedConditions.elementToBeClickable(signUpButton));
         signUpButton.click();
     }
-    public void enterField(String value, String fieldName) {
-        switch (fieldName) {
-            case "Ad Name":
-                firstNameField.sendKeys(value);
-                break;
-            case "Soyadı":
-                lastNameField.sendKeys(value);
-                break;
-            case "Doğum Tarihi":
-                birthDateField.sendKeys(value);
-                break;
-            case "E-posta":
-                emailField.sendKeys(value);
-                break;
-            case "Cep telefonu":
-                phoneField.sendKeys(value);
-                break;
-            case "TC Numarası":
-                tcNumberField.sendKeys(value);
-                break;
-            case "Şifre":
-                passwordField.sendKeys(value);
-                break;
-            case "OTP":
-                otpNumberField.sendKeys(value);
-                break;
-            default:
-                throw new IllegalArgumentException("Unknown field: " + fieldName);
-        }
+    public void fillRegistrationForm() {
+        String firstName = DataProcess.generateFirstName();
+        String lastName = DataProcess.generateLastName();
+        String birthDate = DataProcess.generateRandomBirthDate();
+        String email = DataProcess.generateEmail(firstName, lastName);
+        String phone = DataProcess.generatePhoneNumber();
+        String tcNo = DataProcess.generateTurkishIdentityNumber();
+        String password = DataProcess.generatePassword(firstName, lastName, birthDate);
+
+        firstNameField.sendKeys(firstName);
+        lastNameField.sendKeys(lastName);
+        birthDateField.sendKeys(birthDate);
+        emailField.sendKeys(email);
+        phoneField.sendKeys(phone);
+        tcNumberField.sendKeys(tcNo);
+        passwordField.sendKeys(password);
     }
+
     public void clickSubmitButton() {
         wait.until(ExpectedConditions.elementToBeClickable(submitButton));
         submitButton.click();
+    }
+
+    private String getOtpNumber(String otpNumber){
+        if(otpNumber.equals("correctOtpNumber")){
+            return Constants.OTP_NUMBER;
+        }else{
+           throw new IllegalArgumentException(otpNumber);
+        }
+    }
+
+    public void enterOtpNumber(String otpNumber) {
+        otpNumberField.sendKeys(getOtpNumber(otpNumber));
     }
     public void clickOtpConfirmButton() {
         wait.until(ExpectedConditions.elementToBeClickable(submitButton));
@@ -101,4 +103,5 @@ public class RegisterPage {
     public void checkSuccessful() {
         elementHelper.checkVisible(playNowButton);
     }
+
 }

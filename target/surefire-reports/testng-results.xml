@@ -1,75 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-10T15:31:40 TRT" name="Cucumber Project" finished-at="2024-10-10T15:32:17 TRT" duration-ms="36556">
+  <suite started-at="2024-10-14T16:55:35 TRT" name="Cucumber Project" finished-at="2024-10-14T16:56:03 TRT" duration-ms="28080">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@72d1ad2e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@7e07db1f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-10-10T15:31:40 TRT" name="Cucumber" finished-at="2024-10-10T15:32:17 TRT" duration-ms="36556">
+    <test started-at="2024-10-14T16:55:35 TRT" name="Cucumber" finished-at="2024-10-14T16:56:03 TRT" duration-ms="28080">
       <class name="testRunners.runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.runner@72d1ad2e]" started-at="2024-10-10T15:31:40 TRT" name="setUpClass" finished-at="2024-10-10T15:31:41 TRT" duration-ms="206" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.runner@7e07db1f]" started-at="2024-10-14T16:55:35 TRT" name="setUpClass" finished-at="2024-10-14T16:55:35 TRT" duration-ms="212" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@18e4674d]]>
+                <![CDATA[org.testng.TestRunner@2bf2d6eb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@72d1ad2e]" started-at="2024-10-10T15:31:41 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-10T15:31:54 TRT" duration-ms="13053" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@7e07db1f]" started-at="2024-10-14T16:55:35 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-14T16:56:02 TRT" duration-ms="26863" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Correct "correctTcID" Username &  Correct "correctPassword" Password for login"]]>
+                <![CDATA["Successful User Registration with different data"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Milli Piyango Withdrawal Check Test Cases"]]>
+                <![CDATA["Milli Piyango Register Check Test Cases"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@72d1ad2e]" started-at="2024-10-10T15:31:54 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-10T15:32:04 TRT" duration-ms="10532" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Correct "correctAccountNo" Username &  Correct "correctPassword" Password for login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Milli Piyango Withdrawal Check Test Cases"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@72d1ad2e]" started-at="2024-10-10T15:32:04 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-10T15:32:16 TRT" duration-ms="11641" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Correct "correctEmail" Username &  Correct "correctPassword" Password for login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Milli Piyango Withdrawal Check Test Cases"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.runner@72d1ad2e]" started-at="2024-10-10T15:32:16 TRT" name="tearDownClass" finished-at="2024-10-10T15:32:17 TRT" duration-ms="1112" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.runner@7e07db1f]" started-at="2024-10-14T16:56:02 TRT" name="tearDownClass" finished-at="2024-10-14T16:56:03 TRT" duration-ms="989" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

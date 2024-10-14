@@ -17,19 +17,15 @@ public class RegisterPageStepDefinitions {
     public void userIsOnTheRegistrationPage() {
         registerPage.clickRegisterButton();
     }
-
-    @And("User enters {string} in the {string} field")
-    public void userEntersInTheField(String value, String fieldName) {
-       registerPage.enterField(value,fieldName);
-    }
-
-    @And("User clicks the ONAYLA button")
-    public void userClicksTheButton() {
+    @And("User completes the registration form with random data")
+    public void userCompletesTheRegistrationFormWith() {
+        registerPage.fillRegistrationForm();
         registerPage.clickSubmitButton();
     }
 
-    @And("User clicks the otpConfirm button")
-    public void userClicksTheOtpConfirmButton() {
+    @And("User completes the OTP form with {string}")
+    public void userCompletesTheOTPFormWith(String otpNumber) {
+        registerPage.enterOtpNumber(otpNumber);
         registerPage.clickOtpConfirmButton();
     }
 

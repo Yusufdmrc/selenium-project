@@ -31,7 +31,7 @@ public class WithdrawalStepDefinitions {
         withdrawalPage.enterField(value,fieldName);
     }
 
-    @And("User clicks the {string} button")
+    @And("User clicks the button")
     public void userClickTheDOGRULAButton() {
     }
 

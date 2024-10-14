@@ -1,4 +1,7 @@
 stepDefinitions/RegisterPageStepDefinitions.class
+util/DataProcess.class
+stepDefinitions/WithdrawalStepDefinitions.class
+Pages/WithdrawalPage.class
 testRunners/runner.class
 util/Constants.class
 stepDefinitions/LoginPageStepDefinitions.class
