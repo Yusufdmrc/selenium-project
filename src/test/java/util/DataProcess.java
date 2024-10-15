@@ -6,17 +6,17 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Random;
+import java.util.regex.Pattern;
 
 public class DataProcess {
-    private static final String[] EMAIL_DOMAINS = {"gmail.com", "yahoo.com", "hotmail.com"};
+    private static final String[] EMAIL_DOMAINS = {"gmail.com", "yahoo.com", "hotmail.com","icloud.com"};
     private static final String ALLOWED_SPECIAL_CHARS = "!@#$/&*()-+[]:;?=<>%_";
+    private static final String INVALID_CHARACTERS = "!'^+%&/()=?><£#$½§{[]}\\|";
     private static final Random random = new Random();
     private static final Faker faker = new Faker(new Locale("tr"));
-
     public static String generateFirstName() {
         return faker.name().firstName();
     }
-
     public static String generateLastName() {
         return faker.name().lastName();
     }
@@ -54,6 +54,7 @@ public class DataProcess {
     public static String generateEmail(String firstName, String lastName) {
         String email = firstName.toLowerCase() + "." + lastName.toLowerCase();
         email += random.nextInt(1000);
+        email = email.replaceAll("[" + Pattern.quote(INVALID_CHARACTERS) + "]", "");
         String domain = EMAIL_DOMAINS[random.nextInt(EMAIL_DOMAINS.length)];
         return email + "@" + domain;
     }

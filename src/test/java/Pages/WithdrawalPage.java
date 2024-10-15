@@ -1,27 +1,89 @@
 package Pages;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import util.ElementHelper;
+import util.LoginHelper;
 
 import java.time.Duration;
-
 import static util.Constants.EXPLICIT_WAIT;
 
-public class WithdrawalPage {
+public class WithdrawalPage extends LoginPage{
     WebDriver driver;
     util.ElementHelper elementHelper;
     WebDriverWait wait;
 
+    @FindBy(xpath = "//button[@class='btn-default btn-bg-primary loginboxcta']")
+    WebElement memberLoginButton;
+    @FindBy(id = "loginBtna")
+    WebElement loginButton;
+    @FindBy(id = "username")
+    WebElement usernameBox;
+    @FindBy(id = "password")
+    WebElement passwordBox;
+    @FindBy(xpath = "//a[@class=\"privateAreaButtons\"]")
+    WebElement accountButton;
+    @FindBy(xpath = "//span[normalize-space()='Para Çekme']")
+    WebElement withdrawalButton;
+    @FindBy(xpath = "//button[contains(text(),'+ Yeni̇ Ekle')]")
+    WebElement newAddButton;
+    @FindBy(id = "iban")
+    WebElement ibanField;
+    @FindBy(id = "alias")
+    WebElement shortNameField;
+    @FindBy(xpath = "//button[contains(text(),'Doğrula')]")
+    WebElement verifyButton;
+    @FindBy(xpath = "//button[normalize-space()='Kaydet']")
+    WebElement saveButton;
+    @FindBy(xpath = "//button[@data-testid='drawMoney.main.bank_0_draw.button']")
+    WebElement drawMoneyButton;
+    @FindBy(id = "amount")
+    WebElement amountField;
+    @FindBy(xpath = " //button[@data-testid='drawMoney.makeWithdrawal.confirm.button']")
+    WebElement confirmButton;
+    @FindBy(xpath = "//p[@data-testid='general.modal.desc']")
+    WebElement verifyText;
+
     public WithdrawalPage(WebDriver driver) {
+        super(driver);
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
         this.elementHelper = new ElementHelper(driver);
         PageFactory.initElements(driver, this);
     }
 
-    public void enterField(String value, String fieldName) {
+    public void login(String username, String password) {
+        wait.until(ExpectedConditions.elementToBeClickable(memberLoginButton));
+        memberLoginButton.click();
+        usernameBox.sendKeys(LoginHelper.getUserName(username));
+        passwordBox.sendKeys(LoginHelper.getPassword(password));
+        loginButton.click();
+    }
 
+    public void navigateToWithDrawalPage() {
+        wait.until(ExpectedConditions.elementToBeClickable(accountButton)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(withdrawalButton)).click();
+    }
+
+    public void addNewIban(String ibanNo, String shortName) {
+        wait.until(ExpectedConditions.elementToBeClickable(newAddButton)).click();
+        ibanField.sendKeys(ibanNo);
+        verifyButton.click();
+        shortNameField.sendKeys(shortName);
+        saveButton.click();
+    }
+
+    public void withdrawAmount(String price) {
+        wait.until(ExpectedConditions.elementToBeClickable(drawMoneyButton)).click();
+        amountField.click();
+        confirmButton.click();
+    }
+
+    public void verifySuccessfulWithdrawal() {
+        elementHelper.checkVisible(verifyText);
     }
 }

@@ -1,8 +1,7 @@
 package stepDefinitions;
 
-import Pages.RegisterPage;
 import Pages.WithdrawalPage;
-import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
@@ -13,29 +12,28 @@ public class WithdrawalStepDefinitions {
     WebDriver driver = DriverFactory.getDriver();
     WithdrawalPage withdrawalPage = new WithdrawalPage(driver);
 
-
-    @When("User clicks the {string} button")
-    public void userClicksTheHesabımButton() {
+    @Given("User is logged in with {string} and {string}")
+    public void userIsLoggedIn(String username, String password) {
+        withdrawalPage.login(username, password);
     }
 
-    @And("User clicks the {string} from the left side menu")
-    public void userClicksTheParaÇekmeFromTheLeftSideMenu() {
+    @When("User navigates to the 'Para Çekme' page")
+    public void userNavigatesToParaCekmePage() {
+        withdrawalPage.navigateToWithDrawalPage();
     }
 
-    @And("User clicks {string} button")
-    public void userClicksYeniEkleButton() {
+    @When("User adds a new IBAN with {string} and {string}")
+    public void userAddsNewIban(String ibanNo, String shortName) {
+        withdrawalPage.addNewIban(ibanNo, shortName);
     }
 
-    @And("User enters {string} into the {string} field")
-    public void userEntersIntoTheField(String value, String fieldName) {
-        withdrawalPage.enterField(value,fieldName);
-    }
-
-    @And("User clicks the button")
-    public void userClickTheDOGRULAButton() {
+    @When("User withdraws {string}")
+    public void userWithdraws(String price) {
+        withdrawalPage.withdrawAmount(price);
     }
 
     @Then("Check Successful withdrawal")
     public void checkSuccessfulWithdrawal() {
+        withdrawalPage.verifySuccessfulWithdrawal();
     }
 }

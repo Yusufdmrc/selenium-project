@@ -9,6 +9,8 @@ import util.ElementHelper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import util.LoginHelper;
+
 
 import java.time.Duration;
 
@@ -62,38 +64,12 @@ public class LoginPage {
         loginButton.click();
     }
 
-    private String getUserName(String username) {
-        switch (username) {
-            case "correctTcID":
-                return Constants.CORRECT_TC_ID;
-            case "correctAccountNo":
-                return Constants.CORRECT_ACCOUNT_NO;
-            case "correctEmail":
-                return Constants.CORRECT_EMAIL;
-            case "empty":
-                return " ";
-            default:
-                return username;
-        }
-    }
-
-    private String getPassword(String password) {
-        switch (password) {
-            case "correctPassword":
-                return Constants.CORRECT_PASSWORD;
-            case "empty":
-                return "";
-            default:
-                return password;
-        }
-    }
-
     public void writeUsernameForUsernameField(String username) {
-        usernameBox.sendKeys(getUserName(username));
+        usernameBox.sendKeys(LoginHelper.getUserName(username));
     }
 
     public void writePasswordForPasswordField(String password) {
-        passwordBox.sendKeys(getPassword(password));
+        passwordBox.sendKeys(LoginHelper.getPassword(password));
     }
 
     public void dontCredentialValidErrorMessage(String message) {

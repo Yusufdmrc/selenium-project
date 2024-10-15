@@ -17,7 +17,7 @@ Feature: Milli Piyango Login Check Test Cases
         |abcdefg        |empty      |
         |empty          |123456     |
 
-      @FalseLogin
+      @UnsuccessfulLogin
       Scenario Outline: Check Correct "<username>" username & False "<password>" Password for login
         And write "<username>" for username field
         And write "<password>" for password field
@@ -29,7 +29,7 @@ Feature: Milli Piyango Login Check Test Cases
           |asdfg                 |Kimlik bilgileri geçerli değil    |correctPassword |
 
 
-       @CorrectLogin
+       @SuccessfulLogin
        Scenario Outline: Correct "<username>" Username &  Correct "<password>" Password for login
          And write "<username>" for username field
          And write "<password>" for password field

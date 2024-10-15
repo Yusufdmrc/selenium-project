@@ -22,14 +22,6 @@
             return wait.until(ExpectedConditions.visibilityOf(element));
         }
 
-        public void click(WebElement element){
-            findElement(element).click();
-        }
-        public void sendKey(WebElement element, String text){
-
-            findElement(element).sendKeys(text);
-        }
-
         public void checkVisible(WebElement element){
             wait.until(ExpectedConditions.visibilityOf(findElement(element)));
         }
