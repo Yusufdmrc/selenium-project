@@ -6,11 +6,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import util.Constants;
 import util.ElementHelper;
 import util.LoginHelper;
 
 import java.time.Duration;
 import static util.Constants.EXPLICIT_WAIT;
+import static util.Constants.PRICE1;
 
 public class WithdrawalPage extends LoginPage{
     WebDriver driver;
@@ -71,19 +73,50 @@ public class WithdrawalPage extends LoginPage{
 
     public void addNewIban(String ibanNo, String shortName) {
         wait.until(ExpectedConditions.elementToBeClickable(newAddButton)).click();
-        ibanField.sendKeys(ibanNo);
+        ibanField.sendKeys(getIbanNo(ibanNo));
         verifyButton.click();
-        shortNameField.sendKeys(shortName);
+        shortNameField.sendKeys(getShortName(shortName));
         saveButton.click();
     }
-
     public void withdrawAmount(String price) {
         wait.until(ExpectedConditions.elementToBeClickable(drawMoneyButton)).click();
-        amountField.click();
+        amountField.sendKeys(getPrice(price));
         confirmButton.click();
     }
 
     public void verifySuccessfulWithdrawal() {
         elementHelper.checkVisible(verifyText);
+    }
+
+    public static String getShortName(String shortName) {
+        switch (shortName) {
+            case "shortName1":
+                return Constants.SHORT_NAME1;
+            case "empty":
+                return " ";
+            default:
+                return shortName;
+        }
+    }
+    public static String getPrice(String price) {
+        switch (price) {
+            case "price1":
+                return Constants.PRICE1;
+            case "empty":
+                return " ";
+            default:
+                return price;
+        }
+    }
+
+    public static String getIbanNo(String ibanNo) {
+        switch (ibanNo) {
+            case "ibanNo":
+                return Constants.IBAN_NO;
+            case "empty":
+                return " ";
+            default:
+                return ibanNo;
+        }
     }
 }

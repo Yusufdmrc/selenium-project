@@ -11,6 +11,6 @@ Feature: Milli Piyango Withdrawal Check Test Cases
 
     Examples:
       | username        | password        | ibanNo   | shortName  | price   |
-      | correctTcID     | correctPassword | TR12**** | shortName1 | 500     |
-      | correctAccountNo| correctPassword | TR34**** | shortName2 | 1000    |
-      | correctEmail    | correctPassword | TR56**** | shortName3 | 750     |
+      | correctTcID     | correctPassword | ibanNo   | shortName1 | price   |
+      | correctAccountNo| correctPassword | ibanNo   | shortName2 | price   |
+      | correctEmail    | correctPassword | ibanNo   | shortName3 | price   |

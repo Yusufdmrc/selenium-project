@@ -78,7 +78,6 @@ public class RegisterPage {
         phoneField.sendKeys(phone);
         tcNumberField.sendKeys(tcNo);
         passwordField.sendKeys(password);
-
     }
 
     public void clickSubmitButton() {
