@@ -55,13 +55,11 @@ public class LoginPage {
     }
 
     public void clickMemberLoginButton() {
-        wait.until(ExpectedConditions.elementToBeClickable(memberLoginButton));
-        memberLoginButton.click();
+        elementHelper.click(memberLoginButton);
     }
 
     public void clickLogin() {
-        wait.until(ExpectedConditions.elementToBeClickable(loginButton));
-        loginButton.click();
+        elementHelper.click(loginButton);
     }
 
     public void writeUsernameForUsernameField(String username) {

@@ -59,13 +59,12 @@ public class RegisterPage {
         PageFactory.initElements(driver, this);
     }
     public void clickRegisterButton() {
-        wait.until(ExpectedConditions.elementToBeClickable(signUpButton));
-        signUpButton.click();
+        elementHelper.click(signUpButton);
     }
     public void fillRegistrationForm() {
         String firstName = DataProcess.generateFirstName();
         String lastName = DataProcess.generateLastName();
-        String birthDate = DataProcess.generateRandomBirthDate();
+        String birthDate = DataProcess.generateRandomBirthDate(18,100);
         String email = DataProcess.generateEmail(firstName, lastName);
         String phone = DataProcess.generatePhoneNumber();
         String tcNo = DataProcess.generateTurkishIdentityNumber();
@@ -81,8 +80,7 @@ public class RegisterPage {
     }
 
     public void clickSubmitButton() {
-        wait.until(ExpectedConditions.elementToBeClickable(submitButton));
-        submitButton.click();
+        elementHelper.click(submitButton);
     }
 
     private String getOtpNumber(String otpNumber){
@@ -97,8 +95,7 @@ public class RegisterPage {
         otpNumberField.sendKeys(getOtpNumber(otpNumber));
     }
     public void clickOtpConfirmButton() {
-        wait.until(ExpectedConditions.elementToBeClickable(submitButton));
-        otpNumber.click();
+        elementHelper.click(otpNumber);
     }
     public void checkSuccessful() {
         elementHelper.checkVisible(playNowButton);

@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import Pages.RegisterPage;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
@@ -13,11 +14,11 @@ public class RegisterPageStepDefinitions {
     WebDriver driver = DriverFactory.getDriver();
     RegisterPage registerPage = new RegisterPage(driver);
 
-    @When("User goes to the registration page")
+    @Given("User goes to the registration page")
     public void userIsOnTheRegistrationPage() {
         registerPage.clickRegisterButton();
     }
-    @And("User completes the registration form with random data")
+    @When("User completes the registration form with random data")
     public void userCompletesTheRegistrationFormWith() {
         registerPage.fillRegistrationForm();
         registerPage.clickSubmitButton();

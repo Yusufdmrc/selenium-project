@@ -28,8 +28,7 @@ public class CookiePage {
     }
 
     public void closeCookiePopup() {
-            elementHelper.checkClickable(cookiePopup);
-            cookiePopup.click();
+            elementHelper.click(cookiePopup);
     }
 
 }

@@ -12,20 +12,23 @@ public class DataProcess {
     private static final String[] EMAIL_DOMAINS = {"gmail.com", "yahoo.com", "hotmail.com","icloud.com"};
     private static final String ALLOWED_SPECIAL_CHARS = "!@#$/&*()-+[]:;?=<>%_";
     private static final String INVALID_CHARACTERS = "!'^+%&/()=?><£#$½§{[]}\\|";
+    private static final String[] FIRST_NAMES = {"Test","Ahmet", "Mehmet", "Ömer", "Ayşe", "Fatma", "Zeynep", "Hüseyin", "Ali", "Hakan", "Buse", "Emine", "Merve", "Kerem", "Yusuf", "Bahar", "Çağlar", "İrem", "Deniz", "Kadir"};
+    private static final String[] LAST_NAMES = {"Test","Yılmaz", "Demir", "Kaya", "Çelik", "Şahin", "Arslan", "Yıldırım", "Kılıç", "Aydın", "Polat", "Doğan", "Koç", "Erdoğan", "Bulut", "Aksoy", "Aslan"};
     private static final Random random = new Random();
-    private static final Faker faker = new Faker(new Locale("tr"));
     public static String generateFirstName() {
-        return faker.name().firstName();
+        int index = random.nextInt(FIRST_NAMES.length);
+        return FIRST_NAMES[index];
     }
     public static String generateLastName() {
-        return faker.name().lastName();
+        int index = random.nextInt(LAST_NAMES.length);
+        return LAST_NAMES[index];
     }
 
-    public static String generateRandomBirthDate() {
+    public static String generateRandomBirthDate(int minAge,int maxAge) {
         LocalDate currentDate = LocalDate.now();
         int currentYear = currentDate.getYear();
 
-        int age = random.nextInt(83) + 18;
+        int age = random.nextInt(maxAge - minAge + 1) + minAge;
         int birthYear = currentYear - age;
 
         int month = random.nextInt(12) + 1;
@@ -140,4 +143,5 @@ public class DataProcess {
 
         return password.toString();
     }
+
 }

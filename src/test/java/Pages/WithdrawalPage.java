@@ -59,31 +59,29 @@ public class WithdrawalPage extends LoginPage{
     }
 
     public void login(String username, String password) {
-        wait.until(ExpectedConditions.elementToBeClickable(memberLoginButton));
-        memberLoginButton.click();
+        elementHelper.click(memberLoginButton);
         usernameBox.sendKeys(LoginHelper.getUserName(username));
         passwordBox.sendKeys(LoginHelper.getPassword(password));
-        loginButton.click();
+        elementHelper.click(loginButton);
     }
 
     public void navigateToWithDrawalPage() {
-        wait.until(ExpectedConditions.elementToBeClickable(accountButton)).click();
-        wait.until(ExpectedConditions.elementToBeClickable(withdrawalButton)).click();
+        elementHelper.click(accountButton);
+        elementHelper.click(withdrawalButton);
     }
 
     public void addNewIban(String ibanNo, String shortName) {
-        wait.until(ExpectedConditions.elementToBeClickable(newAddButton)).click();
+        elementHelper.click(newAddButton);
         ibanField.sendKeys(getIbanNo(ibanNo));
-        verifyButton.click();
+        elementHelper.click(verifyButton);
         shortNameField.sendKeys(getShortName(shortName));
-        saveButton.click();
+        elementHelper.click(saveButton);
     }
     public void withdrawAmount(String price) {
-        wait.until(ExpectedConditions.elementToBeClickable(drawMoneyButton)).click();
+        elementHelper.click(drawMoneyButton);
         amountField.sendKeys(getPrice(price));
-        confirmButton.click();
+        elementHelper.click(confirmButton);
     }
-
     public void verifySuccessfulWithdrawal() {
         elementHelper.checkVisible(verifyText);
     }

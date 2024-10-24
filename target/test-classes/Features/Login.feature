@@ -17,23 +17,23 @@ Feature: Milli Piyango Login Check Test Cases
         |abcdefg        |empty      |
         |empty          |123456     |
 
-      @FalseLogin
-      Scenario Outline: Correct Username & False Password
+      @UnsuccessfulLogin
+      Scenario Outline: Check Correct "<username>" username & False "<password>" Password for login
         And write "<username>" for username field
-        When write "<password>" for password field
-        When Click login button
-        Then Check "<error>" message about don't match
+        And write "<password>" for password field
+        And Click login button
+        Then Check "<error>" message about credentials not valid
         Examples:
           |username              |error                             |password  |
           |correctTcID           |Kimlik bilgileri geçerli değil    |abc1234   |
-          |asdfg                 |Kimlik bilgileri geçerli değil    | correctPassword |
+          |asdfg                 |Kimlik bilgileri geçerli değil    |correctPassword |
 
 
-       @CorrectLogin
-       Scenario Outline: Correct Username & Correct Password
-         When write "<username>" for username field
-         When write "<password>" for password field
-         When Click login button
+       @SuccessfulLogin
+       Scenario Outline: Correct "<username>" Username &  Correct "<password>" Password for login
+         And write "<username>" for username field
+         And write "<password>" for password field
+         And Click login button
          Then Check Successful login
          Examples:
            |username               |password         |
