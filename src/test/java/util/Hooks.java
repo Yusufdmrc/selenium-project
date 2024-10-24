@@ -10,35 +10,35 @@ public class Hooks {
 
     WebDriver driver;
     Properties properties;
-    @Before
-    public void before() {
-        String browser=System.getProperty("browser");
-        String testEnv=System.getProperty("testEnv");
 
-        driver = DriverFactory.initialize_Driver(browser,testEnv);
+    private void initializeDriverAndHandleCookies() {
+        String browser = System.getProperty("browser");
+        String testEnv = System.getProperty("testEnv");
 
-        CookiePage cookiePage=new CookiePage(driver);
+        driver = DriverFactory.initialize_Driver(browser, testEnv);
+
+        CookiePage cookiePage = new CookiePage(driver);
         cookiePage.closeCookiePopup();
     }
+    @Before
+    public void before() {
+        initializeDriverAndHandleCookies();
+    }
     @Before("@SkipLogin")
-    public void beforeSkipLogin(Scenario scenario){
-        String browser=System.getProperty("browser");
-        String testEnv=System.getProperty("testEnv");
-        driver = DriverFactory.initialize_Driver(browser,testEnv);
-        CookiePage cookiePage=new CookiePage(driver);
-        cookiePage.closeCookiePopup();
+    public void beforeSkipLogin(){
+        initializeDriverAndHandleCookies();
 
-        WebDriver driver = DriverFactory.getDriver();
         LoginPage loginPage = new LoginPage(driver);
         String username = System.getProperty("username");
         String password = System.getProperty("password");
+
+
         loginPage.clickMemberLoginButton();
         loginPage.writeUsernameForUsernameField(username);
         loginPage.writePasswordForPasswordField(password);
         loginPage.clickLogin();
         loginPage.checkUnsuccessful();
     }
-
     @AfterStep
     public void takeScreenshotOnFailure(Scenario scenario) {
         if (scenario.isFailed()) {

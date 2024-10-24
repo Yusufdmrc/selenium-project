@@ -4,7 +4,6 @@ Feature: Milli Piyango Login Check Test Cases
     Background:
       Given User at home page
       When  Click member login button
-
     @AllEmpty
     Scenario Outline: Check  "<username>" username "<password>" password for login
       And write "<username>" for username field
