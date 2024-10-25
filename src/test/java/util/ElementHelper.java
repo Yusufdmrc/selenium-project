@@ -25,9 +25,13 @@
         public void checkVisible(WebElement element){
             wait.until(ExpectedConditions.visibilityOf(findElement(element)));
         }
+
+          public void checkClickable(WebElement element){
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+        }
         public void click(WebElement element) {
-            WebElement clickableElement = wait.until(ExpectedConditions.elementToBeClickable(element));
-            clickableElement.click();
+           checkClickable(element);
+           element.click();
         }
         public void checkNotVisible(WebElement element) {
             try {
