@@ -20,7 +20,7 @@ public class Hooks {
         CookiePage cookiePage = new CookiePage(driver);
         cookiePage.closeCookiePopup();
     }
-    @Before
+    @Before("(not @SkipLogin)")
     public void before() {
         initializeDriverAndHandleCookies();
     }
@@ -29,15 +29,8 @@ public class Hooks {
         initializeDriverAndHandleCookies();
 
         LoginPage loginPage = new LoginPage(driver);
-        String username = System.getProperty("username");
-        String password = System.getProperty("password");
-
-
-        loginPage.clickMemberLoginButton();
-        loginPage.writeUsernameForUsernameField(username);
-        loginPage.writePasswordForPasswordField(password);
-        loginPage.clickLogin();
-        loginPage.checkUnsuccessful();
+        
+        loginPage.login(username,password);
     }
     @AfterStep
     public void takeScreenshotOnFailure(Scenario scenario) {
