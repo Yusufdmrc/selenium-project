@@ -82,4 +82,14 @@ public class LoginPage {
     public void checkUnsuccessful() {
         elementHelper.checkNotVisible(balance);
     }
+
+    public void login(String username,String password){
+        clickMemberLoginButton();
+        writeUsernameForUsernameField(username);
+        writePasswordForPasswordField(password);
+        clickLogin();
+        checkSuccessfull();
+        
+        
+    }
 }
