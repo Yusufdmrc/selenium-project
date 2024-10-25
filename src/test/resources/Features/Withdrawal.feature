@@ -5,7 +5,7 @@ Feature: Milli Piyango Withdrawal Check Test Cases
   Scenario Outline: Correct Username & Password for login and Successful Withdrawal
     #Given User is logged in with "<username>" and "<password>"
     Given User navigates to the 'Para Çekme' page
-    And User adds a new IBAN with "<ibanNo>" and "<shortName>"
+    When User adds a new IBAN with "<ibanNo>" and "<shortName>"
     And User withdraws "<price>"
     Then Check Successful withdrawal
 
