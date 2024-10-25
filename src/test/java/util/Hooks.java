@@ -30,7 +30,7 @@ public class Hooks {
 
         LoginPage loginPage = new LoginPage(driver);
         
-        loginPage.login(username,password);
+        loginPage.login(Constants.CORRECT_TC_ID,Constants.CORRECT_PASSWORD;);
     }
     @AfterStep
     public void takeScreenshotOnFailure(Scenario scenario) {
