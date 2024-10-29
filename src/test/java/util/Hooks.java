@@ -28,6 +28,9 @@ public class Hooks {
         initializeDriverAndHandleCookies();
 
         LoginPage loginPage = new LoginPage(driver);
+//      String username = System.getProperty("username");
+//      String password = System.getProperty("password");
+//      loginPage.login(username,password);
         loginPage.login(Constants.CORRECT_TC_ID,Constants.CORRECT_PASSWORD);
     }
     @AfterStep

@@ -82,6 +82,10 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <systemPropertyVariables>
+                        <username>username</username>
+                        <password>password</password>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
         </plugins>
