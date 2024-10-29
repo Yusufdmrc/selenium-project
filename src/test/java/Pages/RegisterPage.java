@@ -90,7 +90,6 @@ public class RegisterPage {
            throw new IllegalArgumentException(otpNumber);
         }
     }
-
     public void enterOtpNumber(String otpNumber) {
         otpNumberField.sendKeys(getOtpNumber(otpNumber));
     }

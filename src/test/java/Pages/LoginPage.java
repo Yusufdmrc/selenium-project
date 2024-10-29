@@ -88,8 +88,6 @@ public class LoginPage {
         writeUsernameForUsernameField(username);
         writePasswordForPasswordField(password);
         clickLogin();
-        checkSuccessfull();
-        
-        
+        checkSuccessful();
     }
 }

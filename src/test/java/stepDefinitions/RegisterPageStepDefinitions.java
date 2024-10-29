@@ -23,7 +23,6 @@ public class RegisterPageStepDefinitions {
         registerPage.fillRegistrationForm();
         registerPage.clickSubmitButton();
     }
-
     @And("User completes the OTP form with {string}")
     public void userCompletesTheOTPFormWith(String otpNumber) {
         registerPage.enterOtpNumber(otpNumber);

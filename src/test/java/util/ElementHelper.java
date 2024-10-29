@@ -15,7 +15,7 @@
 
         public ElementHelper(WebDriver driver){
             this.driver = driver;
-            this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            this.wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.PAGE_LOAD_TIMEOUT));
             this.action = new Actions(driver);
         }
         public WebElement findElement(WebElement element){
@@ -26,7 +26,7 @@
             wait.until(ExpectedConditions.visibilityOf(findElement(element)));
         }
 
-          public void checkClickable(WebElement element){
+        public void checkClickable(WebElement element){
             wait.until(ExpectedConditions.elementToBeClickable(element));
         }
         public void click(WebElement element) {

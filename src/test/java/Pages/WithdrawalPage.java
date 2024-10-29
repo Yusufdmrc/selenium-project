@@ -12,9 +12,8 @@ import util.LoginHelper;
 
 import java.time.Duration;
 import static util.Constants.EXPLICIT_WAIT;
-import static util.Constants.PRICE1;
 
-public class WithdrawalPage extends LoginPage{
+public class WithdrawalPage{
     WebDriver driver;
     util.ElementHelper elementHelper;
     WebDriverWait wait;
@@ -27,12 +26,12 @@ public class WithdrawalPage extends LoginPage{
     WebElement usernameBox;
     @FindBy(id = "password")
     WebElement passwordBox;
-    @FindBy(xpath = "//a[@class=\"privateAreaButtons\"]")
+    @FindBy(xpath = "//a[contains(text(),'Hesabım')]")
     WebElement accountButton;
     @FindBy(xpath = "//span[normalize-space()='Para Çekme']")
     WebElement withdrawalButton;
     @FindBy(xpath = "//button[contains(text(),'+ Yeni̇ Ekle')]")
-    WebElement newAddButton;
+    WebElement  newAddButton;
     @FindBy(id = "iban")
     WebElement ibanField;
     @FindBy(id = "alias")
@@ -51,18 +50,10 @@ public class WithdrawalPage extends LoginPage{
     WebElement verifyText;
 
     public WithdrawalPage(WebDriver driver) {
-        super(driver);
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
         this.elementHelper = new ElementHelper(driver);
         PageFactory.initElements(driver, this);
-    }
-
-    public void login(String username, String password) {
-        elementHelper.click(memberLoginButton);
-        usernameBox.sendKeys(LoginHelper.getUserName(username));
-        passwordBox.sendKeys(LoginHelper.getPassword(password));
-        elementHelper.click(loginButton);
     }
 
     public void navigateToWithDrawalPage() {

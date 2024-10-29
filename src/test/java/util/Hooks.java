@@ -10,7 +10,6 @@ public class Hooks {
 
     WebDriver driver;
     Properties properties;
-
     private void initializeDriverAndHandleCookies() {
         String browser = System.getProperty("browser");
         String testEnv = System.getProperty("testEnv");
@@ -29,8 +28,7 @@ public class Hooks {
         initializeDriverAndHandleCookies();
 
         LoginPage loginPage = new LoginPage(driver);
-        
-        loginPage.login(Constants.CORRECT_TC_ID,Constants.CORRECT_PASSWORD;);
+        loginPage.login(Constants.CORRECT_TC_ID,Constants.CORRECT_PASSWORD);
     }
     @AfterStep
     public void takeScreenshotOnFailure(Scenario scenario) {

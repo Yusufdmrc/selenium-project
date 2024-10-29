@@ -65,7 +65,6 @@
             <artifactId>javafaker</artifactId>
             <version>1.0.2</version>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -78,6 +77,8 @@
 <!--                    <includes>-->
 <!--                        <include>testRunners.runner.java</include>-->
 <!--                    </includes>-->
+                    <parallel>classes</parallel>
+                    <threadCount>2</threadCount>
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
