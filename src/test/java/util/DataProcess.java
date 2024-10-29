@@ -15,13 +15,27 @@ public class DataProcess {
     private static final String[] FIRST_NAMES = {"Test","Ahmet", "Mehmet", "Ömer", "Ayşe", "Fatma", "Zeynep", "Hüseyin", "Ali", "Hakan", "Buse", "Emine", "Merve", "Kerem", "Yusuf", "Bahar", "Çağlar", "İrem", "Deniz", "Kadir"};
     private static final String[] LAST_NAMES = {"Test","Yılmaz", "Demir", "Kaya", "Çelik", "Şahin", "Arslan", "Yıldırım", "Kılıç", "Aydın", "Polat", "Doğan", "Koç", "Erdoğan", "Bulut", "Aksoy", "Aslan"};
     private static final Random random = new Random();
-    public static String generateFirstName() {
-        int index = random.nextInt(FIRST_NAMES.length);
-        return FIRST_NAMES[index];
+    private static final String TURKISH_ALPHABET = "ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ";
+    public static String generateFirstName(int length) {
+        StringBuilder name = new StringBuilder();
+        for (int i = 0; i < length; i++) {
+            int index = random.nextInt(TURKISH_ALPHABET.length());
+            name.append(TURKISH_ALPHABET.charAt(index));
+        }
+        return capitalize(name.toString());
     }
-    public static String generateLastName() {
-        int index = random.nextInt(LAST_NAMES.length);
-        return LAST_NAMES[index];
+    public static String generateLastName(int length) {
+        StringBuilder soyisim = new StringBuilder();
+        for (int i = 0; i < length; i++) {
+            int index = random.nextInt(TURKISH_ALPHABET.length());
+            soyisim.append(TURKISH_ALPHABET.charAt(index));
+        }
+        return capitalize(soyisim.toString());
+    }
+
+    private static String capitalize(String str) {
+        if (str == null || str.isEmpty()) return str;
+        return str.substring(0, 1).toUpperCase() + str.substring(1).toLowerCase();
     }
 
     public static String generateRandomBirthDate(int minAge,int maxAge) {

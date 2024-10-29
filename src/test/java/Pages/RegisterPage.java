@@ -62,8 +62,8 @@ public class RegisterPage {
         elementHelper.click(signUpButton);
     }
     public void fillRegistrationForm() {
-        String firstName = DataProcess.generateFirstName();
-        String lastName = DataProcess.generateLastName();
+        String firstName = DataProcess.generateFirstName(5);
+        String lastName = DataProcess.generateLastName(7);
         String birthDate = DataProcess.generateRandomBirthDate(18,100);
         String email = DataProcess.generateEmail(firstName, lastName);
         String phone = DataProcess.generatePhoneNumber();
