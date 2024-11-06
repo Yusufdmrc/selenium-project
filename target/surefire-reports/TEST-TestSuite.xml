@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="26.352" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="29.718" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
-    <property name="webdriver.chrome.driver" value="/Users/yusuf/.cache/selenium/chromedriver/mac-arm64/130.0.6723.69/chromedriver"/>
+    <property name="webdriver.chrome.driver" value="/Users/yusuf/.cache/selenium/chromedriver/mac-arm64/130.0.6723.93/chromedriver"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.class.path" value="/Users/yusuf/software/test/CucumberProjects/Cucumber-Milli-Piyango/target/test-classes:/Users/yusuf/software/test/CucumberProjects/Cucumber-Milli-Piyango/target/classes:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-java/4.14.0/selenium-java-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-api/4.14.0/selenium-api-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.14.0/selenium-chrome-driver-4.14.0.jar:/Users/yusuf/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/yusuf/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/yusuf/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/yusuf/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/yusuf/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/yusuf/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/yusuf/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.14.0/selenium-chromium-driver-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-json/4.14.0/selenium-json-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.14.0/selenium-manager-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v116/4.14.0/selenium-devtools-v116-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v117/4.14.0/selenium-devtools-v117-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v118/4.14.0/selenium-devtools-v118-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.14.0/selenium-devtools-v85-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.14.0/selenium-edge-driver-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.14.0/selenium-firefox-driver-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-http/4.14.0/selenium-http-4.14.0.jar:/Users/yusuf/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.14.0/selenium-ie-driver-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.14.0/selenium-remote-driver-4.14.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/yusuf/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-os/4.14.0/selenium-os-4.14.0.jar:/Users/yusuf/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.14.0/selenium-safari-driver-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-support/4.14.0/selenium-support-4.14.0.jar:/Users/yusuf/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar:/Users/yusuf/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/yusuf/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/Users/yusuf/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/Users/yusuf/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/Users/yusuf/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/yusuf/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/yusuf/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/yusuf/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/yusuf/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/yusuf/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/Users/yusuf/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/Users/yusuf/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/Users/yusuf/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/yusuf/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/Users/yusuf/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/Users/yusuf/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/yusuf/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/yusuf/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/yusuf/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/yusuf/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/yusuf/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/yusuf/.m2/repository/org/testng/testng/7.5/testng-7.5.jar:/Users/yusuf/.m2/repository/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar:/Users/yusuf/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/yusuf/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/yusuf/.m2/repository/io/cucumber/cucumber-java/7.8.0/cucumber-java-7.8.0.jar:/Users/yusuf/.m2/repository/io/cucumber/cucumber-core/7.8.0/cucumber-core-7.8.0.jar:/Users/yusuf/.m2/repository/io/cucumber/cucumber-gherkin/7.8.0/cucumber-gherkin-7.8.0.jar:/Users/yusuf/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.8.0/cucumber-gherkin-messages-7.8.0.jar:/Users/yusuf/.m2/repository/io/cucumber/gherkin/24.0.0/gherkin-24.0.0.jar:/Users/yusuf/.m2/repository/io/cucumber/messages/19.1.2/messages-19.1.2.jar:/Users/yusuf/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/Users/yusuf/.m2/repository/io/cucumber/cucumber-expressions/16.0.0/cucumber-expressions-16.0.0.jar:/Users/yusuf/.m2/repository/io/cucumber/datatable/7.8.0/datatable-7.8.0.jar:/Users/yusuf/.m2/repository/io/cucumber/cucumber-plugin/7.8.0/cucumber-plugin-7.8.0.jar:/Users/yusuf/.m2/repository/io/cucumber/docstring/7.8.0/docstring-7.8.0.jar:/Users/yusuf/.m2/repository/io/cucumber/html-formatter/20.1.0/html-formatter-20.1.0.jar:/Users/yusuf/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/Users/yusuf/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/yusuf/.m2/repository/io/cucumber/cucumber-testng/7.8.0/cucumber-testng-7.8.0.jar:/Users/yusuf/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/yusuf/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/Users/yusuf/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/yusuf/.m2/repository/tech/grasshopper/extentreports-cucumber7-adapter/1.5.1/extentreports-cucumber7-adapter-1.5.1.jar:/Users/yusuf/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/yusuf/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/yusuf/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/yusuf/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/yusuf/.m2/repository/tech/grasshopper/extent-pdf-report/2.5.1/extent-pdf-report-2.5.1.jar:/Users/yusuf/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.8.1/cucumber-pdf-report-2.8.1.jar:/Users/yusuf/.m2/repository/org/apache/pdfbox/pdfbox/2.0.26/pdfbox-2.0.26.jar:/Users/yusuf/.m2/repository/org/apache/pdfbox/fontbox/2.0.26/fontbox-2.0.26.jar:/Users/yusuf/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/Users/yusuf/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/yusuf/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/Users/yusuf/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/yusuf/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/Users/yusuf/.m2/repository/tech/grasshopper/table-layout/1.5.1/table-layout-1.5.1.jar:/Users/yusuf/.m2/repository/tech/grasshopper/rest-assured-cucumber-pdf-report/1.4.1/rest-assured-cucumber-pdf-report-1.4.1.jar:/Users/yusuf/.m2/repository/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar:/Users/yusuf/.m2/repository/com/aventstack/klov-reporter/5.0.9/klov-reporter-5.0.9.jar:/Users/yusuf/.m2/repository/org/mongodb/mongodb-driver/3.6.4/mongodb-driver-3.6.4.jar:/Users/yusuf/.m2/repository/org/mongodb/mongodb-driver-core/3.6.4/mongodb-driver-core-3.6.4.jar:/Users/yusuf/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/yusuf/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/yusuf/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/yusuf/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/yusuf/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/yusuf/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/yusuf/.m2/repository/tech/grasshopper/htmlextentreporter/1.0.1/htmlextentreporter-1.0.1.jar:/Users/yusuf/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/Users/yusuf/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/yusuf/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/yusuf/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/yusuf/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
     <property name="java.vm.vendor" value="Homebrew"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="TR"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/22.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/yusuf/software/test/CucumberProjects/Cucumber-Milli-Piyango/target/surefire/surefirebooter-20241029164205322_3.jar /Users/yusuf/software/test/CucumberProjects/Cucumber-Milli-Piyango/target/surefire 2024-10-29T16-42-05_273-jvmRun1 surefire-20241029164205322_1tmp surefire_0-20241029164205322_2tmp"/>
+    <property name="sun.java.command" value="/Users/yusuf/software/test/CucumberProjects/Cucumber-Milli-Piyango/target/surefire/surefirebooter-20241106204334839_3.jar /Users/yusuf/software/test/CucumberProjects/Cucumber-Milli-Piyango/target/surefire 2024-11-06T20-43-34_789-jvmRun1 surefire-20241106204334839_1tmp surefire_0-20241106204334839_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/yusuf/software/test/CucumberProjects/Cucumber-Milli-Piyango/target/test-classes:/Users/yusuf/software/test/CucumberProjects/Cucumber-Milli-Piyango/target/classes:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-java/4.14.0/selenium-java-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-api/4.14.0/selenium-api-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.14.0/selenium-chrome-driver-4.14.0.jar:/Users/yusuf/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/yusuf/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/yusuf/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/yusuf/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/yusuf/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/yusuf/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/yusuf/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.14.0/selenium-chromium-driver-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-json/4.14.0/selenium-json-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.14.0/selenium-manager-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v116/4.14.0/selenium-devtools-v116-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v117/4.14.0/selenium-devtools-v117-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v118/4.14.0/selenium-devtools-v118-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.14.0/selenium-devtools-v85-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.14.0/selenium-edge-driver-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.14.0/selenium-firefox-driver-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-http/4.14.0/selenium-http-4.14.0.jar:/Users/yusuf/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.14.0/selenium-ie-driver-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.14.0/selenium-remote-driver-4.14.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/yusuf/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/yusuf/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-os/4.14.0/selenium-os-4.14.0.jar:/Users/yusuf/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.14.0/selenium-safari-driver-4.14.0.jar:/Users/yusuf/.m2/repository/org/seleniumhq/selenium/selenium-support/4.14.0/selenium-support-4.14.0.jar:/Users/yusuf/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar:/Users/yusuf/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/yusuf/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/Users/yusuf/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/Users/yusuf/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/Users/yusuf/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/yusuf/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/yusuf/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/yusuf/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/yusuf/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/yusuf/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/Users/yusuf/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/Users/yusuf/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/Users/yusuf/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/yusuf/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/Users/yusuf/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/Users/yusuf/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/yusuf/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/yusuf/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/yusuf/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/yusuf/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/yusuf/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/yusuf/.m2/repository/org/testng/testng/7.5/testng-7.5.jar:/Users/yusuf/.m2/repository/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar:/Users/yusuf/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/yusuf/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/yusuf/.m2/repository/io/cucumber/cucumber-java/7.8.0/cucumber-java-7.8.0.jar:/Users/yusuf/.m2/repository/io/cucumber/cucumber-core/7.8.0/cucumber-core-7.8.0.jar:/Users/yusuf/.m2/repository/io/cucumber/cucumber-gherkin/7.8.0/cucumber-gherkin-7.8.0.jar:/Users/yusuf/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.8.0/cucumber-gherkin-messages-7.8.0.jar:/Users/yusuf/.m2/repository/io/cucumber/gherkin/24.0.0/gherkin-24.0.0.jar:/Users/yusuf/.m2/repository/io/cucumber/messages/19.1.2/messages-19.1.2.jar:/Users/yusuf/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/Users/yusuf/.m2/repository/io/cucumber/cucumber-expressions/16.0.0/cucumber-expressions-16.0.0.jar:/Users/yusuf/.m2/repository/io/cucumber/datatable/7.8.0/datatable-7.8.0.jar:/Users/yusuf/.m2/repository/io/cucumber/cucumber-plugin/7.8.0/cucumber-plugin-7.8.0.jar:/Users/yusuf/.m2/repository/io/cucumber/docstring/7.8.0/docstring-7.8.0.jar:/Users/yusuf/.m2/repository/io/cucumber/html-formatter/20.1.0/html-formatter-20.1.0.jar:/Users/yusuf/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/Users/yusuf/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/yusuf/.m2/repository/io/cucumber/cucumber-testng/7.8.0/cucumber-testng-7.8.0.jar:/Users/yusuf/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/yusuf/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/Users/yusuf/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/yusuf/.m2/repository/tech/grasshopper/extentreports-cucumber7-adapter/1.5.1/extentreports-cucumber7-adapter-1.5.1.jar:/Users/yusuf/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/yusuf/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/yusuf/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/yusuf/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/yusuf/.m2/repository/tech/grasshopper/extent-pdf-report/2.5.1/extent-pdf-report-2.5.1.jar:/Users/yusuf/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.8.1/cucumber-pdf-report-2.8.1.jar:/Users/yusuf/.m2/repository/org/apache/pdfbox/pdfbox/2.0.26/pdfbox-2.0.26.jar:/Users/yusuf/.m2/repository/org/apache/pdfbox/fontbox/2.0.26/fontbox-2.0.26.jar:/Users/yusuf/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/Users/yusuf/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/yusuf/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/Users/yusuf/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/yusuf/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/Users/yusuf/.m2/repository/tech/grasshopper/table-layout/1.5.1/table-layout-1.5.1.jar:/Users/yusuf/.m2/repository/tech/grasshopper/rest-assured-cucumber-pdf-report/1.4.1/rest-assured-cucumber-pdf-report-1.4.1.jar:/Users/yusuf/.m2/repository/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar:/Users/yusuf/.m2/repository/com/aventstack/klov-reporter/5.0.9/klov-reporter-5.0.9.jar:/Users/yusuf/.m2/repository/org/mongodb/mongodb-driver/3.6.4/mongodb-driver-3.6.4.jar:/Users/yusuf/.m2/repository/org/mongodb/mongodb-driver-core/3.6.4/mongodb-driver-core-3.6.4.jar:/Users/yusuf/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/yusuf/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/yusuf/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/yusuf/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/yusuf/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/yusuf/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/yusuf/.m2/repository/tech/grasshopper/htmlextentreporter/1.0.1/htmlextentreporter-1.0.1.jar:/Users/yusuf/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/Users/yusuf/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/yusuf/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/yusuf/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/yusuf/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/yusuf/software/test/CucumberProjects/Cucumber-Milli-Piyango/target/surefire/surefirebooter-20241029164205322_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/yusuf/software/test/CucumberProjects/Cucumber-Milli-Piyango/target/surefire/surefirebooter-20241106204334839_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="22.0.2"/>
@@ -50,7 +50,7 @@
     <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="java.io.tmpdir" value="/var/folders/t1/rl_v5fcd6bgdkbjfqs_1n4b40000gn/T/"/>
     <property name="java.version" value="22.0.2"/>
-    <property name="cucumber.filter.tags" value="@SuccessfulWithdrawals"/>
+    <property name="cucumber.filter.tags" value="@AllEmpty"/>
     <property name="user.dir" value="/Users/yusuf/software/test/CucumberProjects/Cucumber-Milli-Piyango"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
@@ -65,405 +65,61 @@
     <property name="java.class.version" value="66.0"/>
     <property name="username" value="username"/>
   </properties>
-  <testcase name="runScenario[&quot;Correct Username &amp; Password for login and Successful Withdrawal&quot;, &quot;Milli Piyango Withdrawal Check Test Cases&quot;](1)" classname="testRunners.runner" time="23.621">
-    <failure message="Error communicating with the remote browser. It may have died.&#10;Build info: version: &apos;4.14.0&apos;, revision: &apos;e5a96349ce&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.6.1&apos;, java.version: &apos;22.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8378a37ff7f630cc8186fea97cb5be48, findElement [using, value]]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52338}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52338/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8378a37ff7f630cc8186fea97cb5be48" type="org.openqa.selenium.remote.UnreachableBrowserException"><![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: 
-Error communicating with the remote browser. It may have died.
-Build info: version: '4.14.0', revision: 'e5a96349ce'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8378a37ff7f630cc8186fea97cb5be48, findElement [using, value]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52338}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52338/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8378a37ff7f630cc8186fea97cb5be48
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:629)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-	at util.ElementHelper.checkClickable(ElementHelper.java:30)
-	at util.ElementHelper.click(ElementHelper.java:33)
-	at Pages.WithdrawalPage.navigateToWithDrawalPage(WithdrawalPage.java:61)
-	at stepDefinitions.WithdrawalStepDefinitions.userNavigatesToParaCekmePage(WithdrawalStepDefinitions.java:22)
-	at ✽.User navigates to the 'Para Çekme' page(file:///Users/yusuf/software/test/CucumberProjects/Cucumber-Milli-Piyango/src/test/resources/Features/Withdrawal.feature:6)
-Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:437)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:353)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-	at util.ElementHelper.checkClickable(ElementHelper.java:30)
-	at util.ElementHelper.click(ElementHelper.java:33)
-	at Pages.WithdrawalPage.navigateToWithDrawalPage(WithdrawalPage.java:61)
-	at stepDefinitions.WithdrawalStepDefinitions.userNavigatesToParaCekmePage(WithdrawalStepDefinitions.java:22)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:440)
-	at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:590)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-	... 3 more
-Caused by: java.io.EOFException: EOF reached while reading
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onComplete(Http1AsyncReceiver.java:601)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadSubscription.signalCompletion(SocketTube.java:648)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:853)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1476)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1421)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1421)
-]]></failure>
+  <testcase name="runScenario[&quot;Check  &quot;empty&quot; username &quot;empty&quot; password for login&quot;, &quot;Milli Piyango Login Check Test Cases&quot;](1)" classname="testRunners.runner" time="6.691">
     <system-out><![CDATA[
-@MilliPiyangoWithdrawal @SuccessfulWithdrawals @SkipLogin
-Scenario Outline: Correct Username & Password for login and Successful Withdrawal &amp#27;[90m# src/test/resources/Features/Withdrawal.feature:13&amp#27;[0m
-  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mUser navigates to the 'Para Çekme' page&amp#27;[0m                                   &amp#27;[90m# stepDefinitions.WithdrawalStepDefinitions.userNavigatesToParaCekmePage()&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '4.14.0', revision: 'e5a96349ce'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8378a37ff7f630cc8186fea97cb5be48, findElement [using, value]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52338}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52338/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8378a37ff7f630cc8186fea97cb5be48
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:629)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-	at util.ElementHelper.checkClickable(ElementHelper.java:30)
-	at util.ElementHelper.click(ElementHelper.java:33)
-	at Pages.WithdrawalPage.navigateToWithDrawalPage(WithdrawalPage.java:61)
-	at stepDefinitions.WithdrawalStepDefinitions.userNavigatesToParaCekmePage(WithdrawalStepDefinitions.java:22)
-	at ✽.User navigates to the 'Para Çekme' page(file:///Users/yusuf/software/test/CucumberProjects/Cucumber-Milli-Piyango/src/test/resources/Features/Withdrawal.feature:6)
-Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:437)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:353)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-	at util.ElementHelper.checkClickable(ElementHelper.java:30)
-	at util.ElementHelper.click(ElementHelper.java:33)
-	at Pages.WithdrawalPage.navigateToWithDrawalPage(WithdrawalPage.java:61)
-	at stepDefinitions.WithdrawalStepDefinitions.userNavigatesToParaCekmePage(WithdrawalStepDefinitions.java:22)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:440)
-	at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:590)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-	... 3 more
-Caused by: java.io.EOFException: EOF reached while reading
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onComplete(Http1AsyncReceiver.java:601)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadSubscription.signalCompletion(SocketTube.java:648)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:853)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1476)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1421)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1421)
-&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '4.14.0', revision: 'e5a96349ce'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8378a37ff7f630cc8186fea97cb5be48, screenshot []]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52338}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52338/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8378a37ff7f630cc8186fea97cb5be48
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:629)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
-	at util.Hooks.takeScreenshotOnFailure(Hooks.java:41)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:437)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:353)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
-	at util.Hooks.takeScreenshotOnFailure(Hooks.java:41)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
-	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:56)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-Caused by: java.net.ConnectException
-	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1065)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238)
-	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
-	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
-	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
-	... 3 more
-Caused by: java.nio.channels.ClosedChannelException
-	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:204)
-	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:873)
-	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:961)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
-	... 9 more
-&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser adds a new IBAN with &amp#27;[0m&amp#27;[36m&amp#27;[1m"ibanNo"&amp#27;[0m&amp#27;[36m and &amp#27;[0m&amp#27;[36m&amp#27;[1m"shortName1"&amp#27;[0m                        &amp#27;[90m# stepDefinitions.WithdrawalStepDefinitions.userAddsNewIban(java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser withdraws &amp#27;[0m&amp#27;[36m&amp#27;[1m"price"&amp#27;[0m                                                      &amp#27;[90m# stepDefinitions.WithdrawalStepDefinitions.userWithdraws(java.lang.String)&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mCheck Successful withdrawal&amp#27;[0m                                                &amp#27;[90m# stepDefinitions.WithdrawalStepDefinitions.checkSuccessfulWithdrawal()&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: '4.14.0', revision: 'e5a96349ce'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8378a37ff7f630cc8186fea97cb5be48, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52338}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52338/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8378a37ff7f630cc8186fea97cb5be48
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:161)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:437)
-	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:351)
-	at util.Hooks.after(Hooks.java:47)
-Caused by: java.util.concurrent.ExecutionException: java.io.UncheckedIOException: java.net.ConnectException
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:157)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:437)
-	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:351)
-	at util.Hooks.after(Hooks.java:47)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
-	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:90)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:437)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:353)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:128)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	... 3 more
-Caused by: java.net.ConnectException
-	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1065)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238)
-	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
-	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
-	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
-	... 3 more
-Caused by: java.nio.channels.ClosedChannelException
-	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:204)
-	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:873)
-	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:961)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
-	... 9 more
-&amp#27;[0m
+@MilliPiyangoLogin @AllEmpty
+Scenario Outline: Check  "empty" username "empty" password for login &amp#27;[90m# src/test/resources/Features/Login.feature:15&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser at home page&amp#27;[0m                                            &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.userAtHomePage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mClick member login button&amp#27;[0m                                     &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.clickMemberLoginButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mwrite &amp#27;[0m&amp#27;[32m&amp#27;[1m"empty"&amp#27;[0m&amp#27;[32m for username field&amp#27;[0m                               &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.writeForUsernameField(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mwrite &amp#27;[0m&amp#27;[32m&amp#27;[1m"empty"&amp#27;[0m&amp#27;[32m for password field&amp#27;[0m                               &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.writeForPasswordField(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mClick login button&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.clickLoginButton()&amp#27;[0m
+Element [[ChromeDriver: chrome on mac (a09701a8e7c32550478636d76ee0d7cb)] -> css selector: span[class='userDetailsBalance']] is not visible as expected.
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mCheck unsuccessful login&amp#27;[0m                                      &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.checkUnsuccessfulLogin()&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[log4j:WARN No appenders could be found for logger (org.testng.TestNG).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-Oct 29, 2024 4:42:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Nov 06, 2024 8:43:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 130
-Oct 29, 2024 4:42:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 130.0.6723.70. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Nov 06, 2024 8:43:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 130.0.6723.92. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Check  &quot;abcdefg&quot; username &quot;empty&quot; password for login&quot;, &quot;Milli Piyango Login Check Test Cases&quot;](2)" classname="testRunners.runner" time="10.788">
+    <system-out><![CDATA[
+@MilliPiyangoLogin @AllEmpty
+Scenario Outline: Check  "abcdefg" username "empty" password for login &amp#27;[90m# src/test/resources/Features/Login.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser at home page&amp#27;[0m                                              &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.userAtHomePage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mClick member login button&amp#27;[0m                                       &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.clickMemberLoginButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mwrite &amp#27;[0m&amp#27;[32m&amp#27;[1m"abcdefg"&amp#27;[0m&amp#27;[32m for username field&amp#27;[0m                               &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.writeForUsernameField(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mwrite &amp#27;[0m&amp#27;[32m&amp#27;[1m"empty"&amp#27;[0m&amp#27;[32m for password field&amp#27;[0m                                 &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.writeForPasswordField(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mClick login button&amp#27;[0m                                               &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.clickLoginButton()&amp#27;[0m
+Element [[ChromeDriver: chrome on mac (0d8474f564c64d813378097ae9937231)] -> css selector: span[class='userDetailsBalance']] is not visible as expected.
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mCheck unsuccessful login&amp#27;[0m                                        &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.checkUnsuccessfulLogin()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Nov 06, 2024 8:43:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 130
+Nov 06, 2024 8:43:42 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 130.0.6723.92. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Check  &quot;empty&quot; username &quot;123456&quot; password for login&quot;, &quot;Milli Piyango Login Check Test Cases&quot;](3)" classname="testRunners.runner" time="10.402">
+    <system-out><![CDATA[
+@MilliPiyangoLogin @AllEmpty
+Scenario Outline: Check  "empty" username "123456" password for login &amp#27;[90m# src/test/resources/Features/Login.feature:17&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser at home page&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.userAtHomePage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mClick member login button&amp#27;[0m                                      &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.clickMemberLoginButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mwrite &amp#27;[0m&amp#27;[32m&amp#27;[1m"empty"&amp#27;[0m&amp#27;[32m for username field&amp#27;[0m                                &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.writeForUsernameField(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mwrite &amp#27;[0m&amp#27;[32m&amp#27;[1m"123456"&amp#27;[0m&amp#27;[32m for password field&amp#27;[0m                               &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.writeForPasswordField(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mClick login button&amp#27;[0m                                              &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.clickLoginButton()&amp#27;[0m
+Element [[ChromeDriver: chrome on mac (4c3276c20d923304b42609d9129b3e79)] -> css selector: span[class='userDetailsBalance']] is not visible as expected.
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mCheck unsuccessful login&amp#27;[0m                                       &amp#27;[90m# stepDefinitions.LoginPageStepDefinitions.checkUnsuccessfulLogin()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Nov 06, 2024 8:43:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 130
+Nov 06, 2024 8:43:53 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 130.0.6723.92. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
 </testsuite>

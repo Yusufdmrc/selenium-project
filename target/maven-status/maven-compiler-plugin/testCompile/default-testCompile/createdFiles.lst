@@ -1,5 +1,10 @@
 stepDefinitions/RegisterPageStepDefinitions.class
 util/LoginHelper.class
+stepDefinitions/VirtualGameStepDefinitions.class
+Pages/VirtualGame.class
+util/ElementHelper.class
+util/DriverFactory.class
+Pages/CookiePage.class
 util/DataProcess.class
 stepDefinitions/WithdrawalStepDefinitions.class
 Pages/WithdrawalPage.class
@@ -8,7 +13,4 @@ util/Constants.class
 stepDefinitions/LoginPageStepDefinitions.class
 util/Hooks.class
 Pages/LoginPage.class
-util/ElementHelper.class
 Pages/RegisterPage.class
-util/DriverFactory.class
-Pages/CookiePage.class

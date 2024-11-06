@@ -30,7 +30,7 @@ public class WithdrawalPage{
     WebElement accountButton;
     @FindBy(xpath = "//span[normalize-space()='Para Çekme']")
     WebElement withdrawalButton;
-    @FindBy(xpath = "//button[contains(text(),'+ Yeni̇ Ekle')]")
+    @FindBy(xpath = "//button[@data-testid=drawMoney.main.addNewBank.button")
     WebElement  newAddButton;
     @FindBy(id = "iban")
     WebElement ibanField;
