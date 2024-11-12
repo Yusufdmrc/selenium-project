@@ -17,13 +17,15 @@ public class VirtualGame {
     WebDriver driver;
     util.ElementHelper elementHelper;
     WebDriverWait wait;
-    String originalWindow;
+    String originalWindow = driver.getWindowHandle();
+
 
     @FindBy(xpath = "//span[normalize-space()='Sanal Oyunlar']")
     WebElement virtualGameButton;
 
     @FindBy(xpath = "//a[@data-disciplineid='41']")
     WebElement playButton;
+
 
 //    @FindBy(css = ".vr-card .vr-card-link.vr-small.btn-play-vr-real")
 //    List<WebElement> playButtons;
@@ -39,7 +41,6 @@ public class VirtualGame {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
         this.elementHelper = new ElementHelper(driver);
         PageFactory.initElements(driver, this);
-        originalWindow = driver.getWindowHandle();
     }
 
     public void navigateToVirtualGamePage() {
@@ -60,7 +61,5 @@ public class VirtualGame {
     public void checkUnsuccessfulPlay(String message) {
         elementHelper.checkVisible(errorMessage);
         Assert.assertEquals(errorMessage.getText(),message,"Expected to see" + message + "we see" + errorMessage.getText());
-        driver.close();
-        driver.switchTo().window(originalWindow);
     }
 }
