@@ -7,5 +7,5 @@ Feature: Milli Piyango Virtual Game Test Cases
     When  User clicks on the Inspired 3 game button
     Then  The user receives an "<error>" message in a new window
     Examples:
-    |error                                                                          |
-    |Oyun kısa bir süreliğine bakımdadır. Diğer oyunlarımızı oynamayı deneyebilirsin|
+    |error                      |
+    |Oops! A problem has occured|
