@@ -13,9 +13,9 @@ public class Hooks {
     private void initializeDriverAndHandleCookies() {
         String browser = System.getProperty("browser");
         String testEnv = System.getProperty("testEnv");
+        
 
         driver = DriverFactory.initialize_Driver(browser, testEnv);
-
         CookiePage cookiePage = new CookiePage(driver);
         cookiePage.closeCookiePopup();
     }

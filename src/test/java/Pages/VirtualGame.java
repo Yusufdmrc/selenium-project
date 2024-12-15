@@ -17,7 +17,7 @@ public class VirtualGame {
     WebDriver driver;
     util.ElementHelper elementHelper;
     WebDriverWait wait;
-    String originalWindow = driver.getWindowHandle();
+    String originalWindow;
 
 
     @FindBy(xpath = "//span[normalize-space()='Sanal Oyunlar']")
@@ -27,12 +27,6 @@ public class VirtualGame {
     WebElement playButton;
 
 
-//    @FindBy(css = ".vr-card .vr-card-link.vr-small.btn-play-vr-real")
-//    List<WebElement> playButtons;
-//    public WebElement getFirstPlayButton(){
-//        return playButtons.get(0);
-//    }
-
     @FindBy(xpath = "//span[@class='h-content-text']")
     WebElement errorMessage;
 
@@ -41,6 +35,7 @@ public class VirtualGame {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
         this.elementHelper = new ElementHelper(driver);
         PageFactory.initElements(driver, this);
+        this.originalWindow=driver.getWindowHandle();
     }
 
     public void navigateToVirtualGamePage() {

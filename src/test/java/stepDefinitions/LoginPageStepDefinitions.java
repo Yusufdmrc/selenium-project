@@ -13,8 +13,7 @@ public class LoginPageStepDefinitions {
 
     @Given("User at home page")
     public void userAtHomePage() {
-        loginPage.userAtHomePage();
-    }
+     }
 
     @When("Click member login button")
     public void clickMemberLoginButton() {
