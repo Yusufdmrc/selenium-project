@@ -23,6 +23,7 @@ public class Hooks {
     public void before() {
         initializeDriverAndHandleCookies();
     }
+
     @Before("@SkipLogin")
     public void beforeSkipLogin(){
         initializeDriverAndHandleCookies();

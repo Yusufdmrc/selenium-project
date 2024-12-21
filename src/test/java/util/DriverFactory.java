@@ -27,10 +27,11 @@ public class DriverFactory {
     public static WebDriver initialize_Driver(String browser,String environment){
 
         // properties = ConfigReader.getProperties();
-        if (browser.equals("Chrome")) {
+
+        if (browser.equals("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
-        } else if (browser.equals("Firefox")) {
+        } else if (browser.equals("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
         } else {
