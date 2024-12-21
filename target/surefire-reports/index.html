@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Cucumber_Project" class="navigator-link">
-              <span class="suite-name border-failed">Cucumber Project</span>
+              <span class="suite-name border-passed">Cucumber Project</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Cucumber_Project" class="hide-methods failed suite-Cucumber_Project"> (hide)</a> <!-- hide-methods failed suite-Cucumber_Project -->
-                      <a href="#" panel-name="suite-Cucumber_Project" class="show-methods failed suite-Cucumber_Project"> (show)</a> <!-- show-methods failed suite-Cucumber_Project -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Cucumber_Project" class="hide-methods passed suite-Cucumber_Project"> (hide)</a> <!-- hide-methods passed suite-Cucumber_Project -->
+                      <a href="#" panel-name="suite-Cucumber_Project" class="show-methods passed suite-Cucumber_Project"> (show)</a> <!-- show-methods passed suite-Cucumber_Project -->
                     </span>
-                    <div class="method-list-content failed suite-Cucumber_Project">
+                    <div class="method-list-content passed suite-Cucumber_Project">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Cucumber_Project" title="testRunners.runner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify ticket time&quot;, &quot;Milli Piyango Ticket Detail Test Cases&quot;)">runScenario("Verify ticket time", "Milli Piyango Ticket Detail Test Cases")</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cucumber_Project" title="testRunners.runner" class="method navigator-link" hash-for-method="runScenario(&quot;Ticket inquiry by serial number&quot;, &quot;Milli Piyango Ticket Detail Test Cases&quot;)">runScenario("Ticket inquiry by serial number", "Milli Piyango Ticket Detail Test Cases")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Cucumber_Project -->
+                    </div> <!-- method-list-content passed suite-Cucumber_Project -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,88 +119,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Cucumber_Project" class="panel Cucumber_Project">
-          <div class="suite-Cucumber_Project-class-failed">
+          <div class="suite-Cucumber_Project-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testRunners.runner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verify ticket time&quot;, &quot;Milli Piyango Ticket Detail Test Cases&quot;)">
-                  </a> <!-- runScenario("Verify ticket time", "Milli Piyango Ticket Detail Test Cases") -->
+                  <a name="runScenario(&quot;Ticket inquiry by serial number&quot;, &quot;Milli Piyango Ticket Detail Test Cases&quot;)">
+                  </a> <!-- runScenario("Ticket inquiry by serial number", "Milli Piyango Ticket Detail Test Cases") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify ticket time", "Milli Piyango Ticket Detail Test Cases")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //span[normalize-space()=&apos;Rastgele&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at util.ElementHelper.checkClickable(ElementHelper.java:30)
-	at util.ElementHelper.click(ElementHelper.java:33)
-	at Pages.TicketCheckPage.buyTicket(TicketCheckPage.java:49)
-	at stepDefinitions.TicketCheckStepDefinitions.userBuysOnNumaraTicketsWithTheRandomButton(TicketCheckStepDefinitions.java:23)
-	at ✽.User buys On Numara tickets with the random button(file:///C:/Users/demirci/OneDrive%20-%20SISAL%20SPA/Desktop/selenium-project/src/test/resources/Features/TicketCheck.feature:7)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[normalize-space()=&apos;Rastgele&apos;]&quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.14.0&apos;, revision: &apos;e5a96349ce&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0957b74093e30b09b54c22a77f52140c, findElement {using=xpath, value=//span[normalize-space()=&apos;Rastgele&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\demirci\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50782}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50782/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0957b74093e30b09b54c22a77f52140c
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-	at util.ElementHelper.checkClickable(ElementHelper.java:30)
-	at util.ElementHelper.click(ElementHelper.java:33)
-	at Pages.TicketCheckPage.buyTicket(TicketCheckPage.java:49)
-	at stepDefinitions.TicketCheckStepDefinitions.userBuysOnNumaraTicketsWithTheRandomButton(TicketCheckStepDefinitions.java:23)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 15 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">("Ticket inquiry by serial number", "Milli Piyango Ticket Detail Test Cases")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Cucumber_Project-class-failed -->
+          </div> <!-- suite-Cucumber_Project-class-passed -->
         </div> <!-- panel Cucumber_Project -->
         <div panel-name="test-xml-Cucumber_Project" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -266,12 +202,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'testRunners.runner')
-data.setCell(0, 3, 59280);
+data.setCell(0, 3, 27958);
 window.suiteTableData['Cucumber_Project']= { tableData: data, tableDiv: 'times-div-Cucumber_Project'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 59 seconds</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-Cucumber_Project">
               </div> <!-- times-div-Cucumber_Project -->
             </div> <!-- times-div -->
@@ -299,18 +235,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testRunners.runner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@5552768b)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@87a85e1)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("Verify ticket time", "Milli Piyango Ticket Detail Test Cases")</span>
-                <span class="method-start">327 ms</span>
+                <span class="method-name">runScenario("Ticket inquiry by serial number", "Milli Piyango Ticket Detail Test Cases")</span>
+                <span class="method-start">341 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">59611 ms</span>
+                <span class="method-start">28301 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -6,6 +6,7 @@ Pages\RegisterPage.class
 Pages\LoginPage.class
 stepDefinitions\RegisterPageStepDefinitions.class
 util\Constants.class
+stepDefinitions\TicketInquiryStepDefinitions.class
 stepDefinitions\WithdrawalStepDefinitions.class
 util\DriverFactory.class
 Pages\TicketCheckPage.class
@@ -16,3 +17,4 @@ testRunners\runner.class
 util\DataProcess.class
 stepDefinitions\TicketCheckStepDefinitions.class
 Pages\VirtualGame.class
+Pages\TicketInquiryPage.class
