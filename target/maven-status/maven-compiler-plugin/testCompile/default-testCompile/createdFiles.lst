@@ -1,7 +1,10 @@
+stepDefinitions\VerifyTicketPlayedStepDefinitions.class
 Pages\CookiePage.class
+Pages\TicketFilteringPage.class
 stepDefinitions\VirtualGameStepDefinitions.class
 stepDefinitions\LoginPageStepDefinitions.class
 Pages\WithdrawalPage.class
+Pages\VerifyTicketPlayedPage.class
 Pages\RegisterPage.class
 Pages\LoginPage.class
 stepDefinitions\RegisterPageStepDefinitions.class
@@ -9,12 +12,11 @@ util\Constants.class
 stepDefinitions\TicketInquiryStepDefinitions.class
 stepDefinitions\WithdrawalStepDefinitions.class
 util\DriverFactory.class
-Pages\TicketCheckPage.class
 util\Hooks.class
 util\LoginHelper.class
 util\ElementHelper.class
+stepDefinitions\TicketFilteringStepDefinitions.class
 testRunners\runner.class
 util\DataProcess.class
-stepDefinitions\TicketCheckStepDefinitions.class
 Pages\VirtualGame.class
 Pages\TicketInquiryPage.class

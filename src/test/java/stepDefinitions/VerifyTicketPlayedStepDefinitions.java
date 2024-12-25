@@ -1,30 +1,29 @@
 package stepDefinitions;
 
-import Pages.TicketCheckPage;
-import Pages.VirtualGame;
+import Pages.VerifyTicketPlayedPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import util.DriverFactory;
 
-public class TicketCheckStepDefinitions {
+public class VerifyTicketPlayedStepDefinitions {
 
     WebDriver driver = DriverFactory.getDriver();
-    TicketCheckPage ticketCheckPage = new TicketCheckPage(driver);
+    VerifyTicketPlayedPage verifyTicketPlayedPage = new VerifyTicketPlayedPage(driver);
 
     @Given("User navigates to the On Numara page")
     public void userNavigatesToTheOnNumaraPage() {
-        ticketCheckPage.navigateToOnNumaraPage();
+        verifyTicketPlayedPage.navigateToOnNumaraPage();
     }
 
     @When("User buys On Numara tickets with the random button")
     public void userBuysOnNumaraTicketsWithTheRandomButton() {
-        ticketCheckPage.buyTicket();
+        verifyTicketPlayedPage.buyTicket();
     }
 
     @Then("User checks whether the ticket has been purchased")
     public void userChecksWhetherTheTicketHasBeenPurchased() {
-        ticketCheckPage.checkTicket();
+        verifyTicketPlayedPage.checkTicket();
     }
 }

@@ -18,17 +18,15 @@
             this.wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.PAGE_LOAD_TIMEOUT));
             this.action = new Actions(driver);
         }
-        public WebElement findElement(WebElement element){
-            return wait.until(ExpectedConditions.visibilityOf(element));
-        }
 
         public void checkVisible(WebElement element){
-            wait.until(ExpectedConditions.visibilityOf(findElement(element)));
+            wait.until(ExpectedConditions.visibilityOf(element));
         }
 
         public void checkClickable(WebElement element){
             wait.until(ExpectedConditions.elementToBeClickable(element));
         }
+
         public void click(WebElement element) {
            checkClickable(element);
            element.click();

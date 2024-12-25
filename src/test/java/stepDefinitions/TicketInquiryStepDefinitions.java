@@ -1,6 +1,5 @@
 package stepDefinitions;
 
-import Pages.TicketCheckPage;
 import Pages.TicketInquiryPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

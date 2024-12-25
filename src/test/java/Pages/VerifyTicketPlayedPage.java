@@ -1,11 +1,9 @@
 package Pages;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import util.ElementHelper;
@@ -14,7 +12,7 @@ import java.time.Duration;
 
 import static util.Constants.EXPLICIT_WAIT;
 
-public class TicketCheckPage {
+public class VerifyTicketPlayedPage {
     WebDriver driver;
     util.ElementHelper elementHelper;
     WebDriverWait wait;
@@ -25,7 +23,7 @@ public class TicketCheckPage {
     @FindBy(xpath = "//a[normalize-space()='On Numara']")
     WebElement onNumaraButton;
 
-    @FindBy(xpath = "//button[@class='flashNumberBtn LT-show-desktop']")
+    @FindBy(xpath = "//span[normalize-space()='Rastgele']")
     WebElement randomButton;
 
     @FindBy(xpath = "//button[normalize-space()='SATIN AL']")
@@ -34,7 +32,7 @@ public class TicketCheckPage {
     @FindBy(xpath = "//div[@class='stato-label']")
     WebElement ticketText;
 
-    public TicketCheckPage(WebDriver driver) {
+    public VerifyTicketPlayedPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
         this.elementHelper = new ElementHelper(driver);
