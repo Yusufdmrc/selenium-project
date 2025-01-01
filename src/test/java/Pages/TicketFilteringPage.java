@@ -43,6 +43,7 @@ public class TicketFilteringPage {
     public void navigateToBiletlerimPage() {
         elementHelper.click(accountButton);
         elementHelper.click(biletlerimButton);
+
     }
 
     public void selectOnNumaraGameFilter() {
