@@ -27,27 +27,35 @@
             wait.until(ExpectedConditions.elementToBeClickable(element));
         }
 
-        public void click(WebElement element) {
-           checkClickable(element);
-           element.click();
+        public void checkClickable(By element){
+            wait.until(ExpectedConditions.elementToBeClickable(element));
         }
-        public void checkNotVisible(WebElement element) {
-            try {
-                wait.until(ExpectedConditions.invisibilityOf(element));
-                System.out.println("Element " + element.toString() + " is not visible as expected.");
-            } catch (Exception e) {
-                throw new AssertionError("Element " + element.toString() + " is visible");
+
+        public void click(Object elementLocator){
+            WebElement element=null;
+            if(elementLocator instanceof WebElement){
+                checkClickable((WebElement) elementLocator);
+                element=(WebElement) elementLocator;
+            } else if (elementLocator instanceof  By) {
+                checkClickable((By) elementLocator);
+                element=driver.findElement((By)elementLocator);
             }
+            assert element != null;
+            element.click();
+        }
+
+
+        public void checkNotVisible(WebElement element) {
+                wait.until(ExpectedConditions.invisibilityOf(element));
         }
 
         public void pause(int seconds) {
             try {
-                Thread.sleep(seconds * 1000);
+                Thread.sleep(seconds * 1000L);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-
     }
 
 

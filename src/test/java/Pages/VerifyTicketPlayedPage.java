@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import util.ElementHelper;
@@ -17,16 +18,19 @@ public class VerifyTicketPlayedPage {
     util.ElementHelper elementHelper;
     WebDriverWait wait;
 
+    @FindBy(id="onnumaraCardFrame")
+    WebElement onNumaraIFrameId;
+
     @FindBy(xpath = "//span[contains(text(),'Sayısal Oyunlar')]")
     WebElement numericalGamesButton;
 
     @FindBy(xpath = "//a[normalize-space()='On Numara']")
     WebElement onNumaraButton;
 
-    @FindBy(xpath = "//span[normalize-space()='Rastgele']")
+    @FindBy(css = "div.flashIcon")
     WebElement randomButton;
 
-    @FindBy(xpath = "//button[normalize-space()='SATIN AL']")
+    @FindBy(css = "button.betBtn.validBtn]")
     WebElement buyButton;
 
     @FindBy(xpath = "//div[@class='stato-label']")
@@ -42,13 +46,10 @@ public class VerifyTicketPlayedPage {
     public void navigateToOnNumaraPage() {
         elementHelper.click(numericalGamesButton);
         elementHelper.click(onNumaraButton);
+        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(onNumaraIFrameId));
     }
 
     public void buyTicket() {
-//        wait.until(driver -> {
-//            ((JavascriptExecutor) driver).executeScript("window.scrollBy(0,250)");
-//            return randomButton.isDisplayed();
-//        });
         elementHelper.click(randomButton);
         elementHelper.click(buyButton);
     }

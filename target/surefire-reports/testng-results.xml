@@ -2,87 +2,97 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-01T19:33:42 GMT+03:00" name="Cucumber Project" finished-at="2025-01-01T19:34:07 GMT+03:00" duration-ms="24548">
+  <suite started-at="2025-01-03T14:23:56 GMT+03:00" name="Cucumber Project" finished-at="2025-01-03T14:24:20 GMT+03:00" duration-ms="24062">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@5542c4ed]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-01-01T19:33:42 GMT+03:00" name="Cucumber" finished-at="2025-01-01T19:34:07 GMT+03:00" duration-ms="24548">
+    <test started-at="2025-01-03T14:23:56 GMT+03:00" name="Cucumber" finished-at="2025-01-03T14:24:20 GMT+03:00" duration-ms="24062">
       <class name="testRunners.runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.runner@5542c4ed]" started-at="2025-01-01T19:33:42 GMT+03:00" name="setUpClass" finished-at="2025-01-01T19:33:42 GMT+03:00" duration-ms="368" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.runner@5542c4ed]" started-at="2025-01-03T14:23:56 GMT+03:00" name="setUpClass" finished-at="2025-01-03T14:23:57 GMT+03:00" duration-ms="409" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5552768b]]>
+                <![CDATA[org.testng.TestRunner@3c947bc5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@5542c4ed]" started-at="2025-01-01T19:33:42 GMT+03:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-01T19:34:05 GMT+03:00" duration-ms="22234" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@5542c4ed]" started-at="2025-01-03T14:23:57 GMT+03:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-03T14:24:19 GMT+03:00" duration-ms="22534" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["OnNumara ticket detail check on Biletlerim page"]]>
+                <![CDATA["Verify that the ticket has been played"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Milli Piyango Ticket Detail Test Cases"]]>
+                <![CDATA["Milli Piyango Ticket Test Cases"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[element click intercepted: Element <img src="/area-riservata/assets/Arrow-Small-Right-Blue-B3s2ZO0S.svg" alt="Next arrow icon"> is not clickable at point (1420, 327). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root css-2n0bt3-backdrop" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);">...</div>
+              <![CDATA[invalid selector
+from javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
   (Session info: chrome=131.0.6778.205)
-Build info: version: '4.14.0', revision: 'e5a96349ce'
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [be7735fc03c4717f7535499f52cc622b, clickElement {id=f.2CB4CFDDC0B43060FF75006166FCDB97.d.F539A984CAAE154B10C753AA60AB191E.e.299}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\demirci\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60635}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60635/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (be7735fc03c4717f7535499f52cc622b)] -> css selector: img[alt='Next arrow icon']]
-Session ID: be7735fc03c4717f7535499f52cc622b]]>
+Command: [e2be63d28d6a07815a7d000ef5af053c, findElement {value=button.betBtn.validBtn], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\demirci\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61548}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61548/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e2be63d28d6a07815a7d000ef5af053c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <img src="/area-riservata/assets/Arrow-Small-Right-Blue-B3s2ZO0S.svg" alt="Next arrow icon"> is not clickable at point (1420, 327). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root css-2n0bt3-backdrop" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);">...</div>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
   (Session info: chrome=131.0.6778.205)
-Build info: version: '4.14.0', revision: 'e5a96349ce'
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [be7735fc03c4717f7535499f52cc622b, clickElement {id=f.2CB4CFDDC0B43060FF75006166FCDB97.d.F539A984CAAE154B10C753AA60AB191E.e.299}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\demirci\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60635}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60635/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (be7735fc03c4717f7535499f52cc622b)] -> css selector: img[alt='Next arrow icon']]
-Session ID: be7735fc03c4717f7535499f52cc622b
+Command: [e2be63d28d6a07815a7d000ef5af053c, findElement {value=button.betBtn.validBtn], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\demirci\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61548}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61548/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e2be63d28d6a07815a7d000ef5af053c
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-at util.ElementHelper.click(ElementHelper.java:32)
-at Pages.TicketFilteringPage.selectOnNumaraGameFilter(TicketFilteringPage.java:50)
-at stepDefinitions.TicketFilteringStepDefinitions.theUserFiltersBySelectingTheOnNumaraGame(TicketFilteringStepDefinitions.java:23)
-at ✽.The user filters by selecting the On Numara game(file:///C:/Users/demirci/OneDrive%20-%20SISAL%20SPA/Desktop/selenium-project/src/test/resources/Features/CheckTicketDetail.feature:7)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at util.ElementHelper.checkClickable(ElementHelper.java:27)
+at util.ElementHelper.click(ElementHelper.java:37)
+at Pages.VerifyTicketPlayedPage.buyTicket(VerifyTicketPlayedPage.java:54)
+at stepDefinitions.VerifyTicketPlayedStepDefinitions.userBuysOnNumaraTicketsWithTheRandomButton(VerifyTicketPlayedStepDefinitions.java:22)
+at ✽.User buys On Numara tickets with the random button(file:///C:/Users/demirci/OneDrive%20-%20SISAL%20SPA/Desktop/selenium-project/src/test/resources/Features/VerifyTicketPlayed.feature:7)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.runner@5542c4ed]" started-at="2025-01-01T19:34:05 GMT+03:00" name="tearDownClass" finished-at="2025-01-01T19:34:07 GMT+03:00" duration-ms="1923" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.runner@5542c4ed]" started-at="2025-01-03T14:24:19 GMT+03:00" name="tearDownClass" finished-at="2025-01-03T14:24:20 GMT+03:00" duration-ms="1093" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

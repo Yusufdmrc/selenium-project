@@ -11,9 +11,9 @@ public class CheckTicketDetailStepDefinitions {
     WebDriver driver = DriverFactory.getDriver();
     CheckTicketDetailPage checkTicketDetailPage=new CheckTicketDetailPage(driver);
 
-    @When("The user filters by selecting the Çekiliş Bekleyen status")
-    public void theUserFiltersBySelectingTheÇekilişBekleyenStatus() {
-        checkTicketDetailPage.selectDrawPendingFilter();
+    @When("The user filters by selecting the {string} status")
+    public void theUserFiltersBySelectingTheStatus(String status) {
+        checkTicketDetailPage.selectStatusFilter(status);
     }
 
     @When("User clicks to the detail button")
@@ -21,11 +21,8 @@ public class CheckTicketDetailStepDefinitions {
         checkTicketDetailPage.clickDetailButton();
     }
 
-    @Then("The user confirms that the ticket detail has been successfully viewed")
-    public void theUserConfirmsThatTheTicketDetailHasBeenSuccessfullyViewed() {
-        checkTicketDetailPage.validateTicketDetail();
+    @Then("The user verifies the ticket detail {string} according to the selected status")
+    public void theUserConfirmsThatTheTicketDetailHasBeenSuccessfullyDisplayed(String message) {
+        checkTicketDetailPage.validateTicketDetail(message);
     }
-
-
-
 }

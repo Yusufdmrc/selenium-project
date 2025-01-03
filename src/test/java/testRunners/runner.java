@@ -10,7 +10,8 @@ import util.DriverFactory;
         features = {"src/test/resources/Features"},
         glue = {"stepDefinitions", "util"},
         plugin = {
-                "summary", "pretty", "html:Reports/CucumberReport/Reports.html"
+                "summary", "pretty", "html:Reports/CucumberReport/Reports.html",
+                "json:Reports/CucumberReport/Reports.json"
         }
 )
 public class runner extends AbstractTestNGCucumberTests {

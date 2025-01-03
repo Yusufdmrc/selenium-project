@@ -1,7 +1,7 @@
 @MilliPiyangoTicketCheck
 Feature: Milli Piyango Ticket Test Cases
 
-  @OnNumaraVerifyTicketPlayed @SkipLogin
+  @OnNumaraVerifyTicketPlayed @SkipLogin @Test
   Scenario: Verify that the ticket has been played
     Given User navigates to the On Numara page
     When  User buys On Numara tickets with the random button

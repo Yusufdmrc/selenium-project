@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -29,6 +30,7 @@ public class TicketInquiryPage {
     @FindBy(css = ".wins-submit.gtm-checkwinresult")
     WebElement queryButton;
 
+
     @FindBy(xpath = "//div[@class='slick-slide slick-current slick-active']//p[contains(text(),'Kazandın!')]")
     WebElement ticketStatusText;
 
@@ -48,8 +50,6 @@ public class TicketInquiryPage {
         elementHelper.checkClickable(ticketInput);
         ticketInput.sendKeys(serialNumber);
         elementHelper.click(queryButton);
-        elementHelper.pause(5);
-
     }
 
     public void checkTicketDetail(String statusText) {
