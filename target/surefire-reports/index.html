@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,17 @@
                     <div class="method-list-content failed suite-Cucumber_Project">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Cucumber_Project" title="testRunners.runner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that the ticket has been played&quot;, &quot;Milli Piyango Ticket Test Cases&quot;)">runScenario("Verify that the ticket has been played", "Milli Piyango Ticket Test Cases")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Cucumber_Project" title="testRunners.runner" class="method navigator-link" hash-for-method="runScenario(&quot;OnNumara ticket detail check on Biletlerim page&quot;, &quot;Milli Piyango Ticket Detail Test Cases&quot;)">runScenario("OnNumara ticket detail check on Biletlerim page", "Milli Piyango Ticket Detail Test Cases")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cucumber_Project" title="testRunners.runner" class="method navigator-link" hash-for-method="runScenario(&quot;OnNumara ticket detail check on Biletlerim page&quot;, &quot;Milli Piyango Ticket Detail Test Cases&quot;)">runScenario("OnNumara ticket detail check on Biletlerim page", "Milli Piyango Ticket Detail Test Cases")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cucumber_Project" title="testRunners.runner" class="method navigator-link" hash-for-method="runScenario(&quot;OnNumara ticket detail check on Biletlerim page&quot;, &quot;Milli Piyango Ticket Detail Test Cases&quot;)">runScenario("OnNumara ticket detail check on Biletlerim page", "Milli Piyango Ticket Detail Test Cases")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Cucumber_Project -->
@@ -127,20 +137,89 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verify that the ticket has been played&quot;, &quot;Milli Piyango Ticket Test Cases&quot;)">
-                  </a> <!-- runScenario("Verify that the ticket has been played", "Milli Piyango Ticket Test Cases") -->
+                  <a name="runScenario(&quot;OnNumara ticket detail check on Biletlerim page&quot;, &quot;Milli Piyango Ticket Detail Test Cases&quot;)">
+                  </a> <!-- runScenario("OnNumara ticket detail check on Biletlerim page", "Milli Piyango Ticket Detail Test Cases") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify that the ticket has been played", "Milli Piyango Ticket Test Cases")</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector
-from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;An invalid or illegal selector was specified&quot;}
+                  <span class="parameters">("OnNumara ticket detail check on Biletlerim page", "Milli Piyango Ticket Detail Test Cases")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
   (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e2be63d28d6a07815a7d000ef5af053c, findElement {value=button.betBtn.validBtn], using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\demirci\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61548}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61548/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e2be63d28d6a07815a7d000ef5af053c
+Command: [f0b7b6bd0aab01bda1b12c77d14fa954, clickElement {id=f.A73CFAE2F163CD1CD3EED6A3CAA425BE.d.A8C18C63299CD7BB904E3A78F1A56172.e.202}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\demirci\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53669}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53669/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f0b7b6bd0aab01bda1b12c77d14fa954)] -&gt; xpath: //a[contains(text(),&apos;Hesabım&apos;)]]
+Session ID: f0b7b6bd0aab01bda1b12c77d14fa954
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at util.ElementHelper.click(ElementHelper.java:44)
+	at Pages.MyTicketsPage.navigateToBiletlerimPage(MyTicketsPage.java:41)
+	at stepDefinitions.MyTicketsStepDefinitions.userNavigatesToTheBiletlerimPage(MyTicketsStepDefinitions.java:16)
+	at ✽.User navigates to the Biletlerim page(file:///C:/Users/demirci/OneDrive%20-%20SISAL%20SPA/Desktop/selenium-project/src/test/resources/Features/MyTickets.feature:6)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;OnNumara ticket detail check on Biletlerim page&quot;, &quot;Milli Piyango Ticket Detail Test Cases&quot;)">
+                  </a> <!-- runScenario("OnNumara ticket detail check on Biletlerim page", "Milli Piyango Ticket Detail Test Cases") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("OnNumara ticket detail check on Biletlerim page", "Milli Piyango Ticket Detail Test Cases")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6273ac87ba906fbb2f638f599218f555, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\demirci\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54536}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54536/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6273ac87ba906fbb2f638f599218f555
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+	at util.DriverFactory.initialize_Driver(DriverFactory.java:44)
+	at util.Hooks.initializeDriverAndHandleCookies(Hooks.java:17)
+	at util.Hooks.beforeSkipLogin(Hooks.java:28)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;OnNumara ticket detail check on Biletlerim page&quot;, &quot;Milli Piyango Ticket Detail Test Cases&quot;)">
+                  </a> <!-- runScenario("OnNumara ticket detail check on Biletlerim page", "Milli Piyango Ticket Detail Test Cases") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("OnNumara ticket detail check on Biletlerim page", "Milli Piyango Ticket Detail Test Cases")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f264ffdc2dff098d882d6513d51c5ec, findElement {value=//*[@id=&quot;statusFilter&quot;]/option[5], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\demirci\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54051}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54051/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f264ffdc2dff098d882d6513d51c5ec
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -154,18 +233,16 @@ Session ID: e2be63d28d6a07815a7d000ef5af053c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4556)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:669)
+	at java.base/java.lang.String.valueOf(String.java:4556)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
 	at util.ElementHelper.checkClickable(ElementHelper.java:27)
 	at util.ElementHelper.click(ElementHelper.java:37)
-	at Pages.VerifyTicketPlayedPage.buyTicket(VerifyTicketPlayedPage.java:54)
-	at stepDefinitions.VerifyTicketPlayedStepDefinitions.userBuysOnNumaraTicketsWithTheRandomButton(VerifyTicketPlayedStepDefinitions.java:22)
-	at ✽.User buys On Numara tickets with the random button(file:///C:/Users/demirci/OneDrive%20-%20SISAL%20SPA/Desktop/selenium-project/src/test/resources/Features/VerifyTicketPlayed.feature:7)
+	at Pages.MyTicketsPage.filterBySelecting(MyTicketsPage.java:51)
+	at stepDefinitions.MyTicketsStepDefinitions.theUserFiltersBySelectingTheAnd(MyTicketsStepDefinitions.java:21)
+	at ✽.The user filters by selecting the &quot;Sayısal Loto&quot; &quot;Kazanan&quot; and &quot;2 ay&quot;(file:///C:/Users/demirci/OneDrive%20-%20SISAL%20SPA/Desktop/selenium-project/src/test/resources/Features/MyTickets.feature:7)
 ... Removed 3 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -235,16 +312,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'testRunners.runner')
-data.setCell(0, 3, 22534);
+data.setCell(0, 3, 40407);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'testRunners.runner')
+data.setCell(1, 3, 34829);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'testRunners.runner')
+data.setCell(2, 3, 2287);
 window.suiteTableData['Cucumber_Project']= { tableData: data, tableDiv: 'times-div-Cucumber_Project'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Cucumber_Project">
               </div> <!-- times-div-Cucumber_Project -->
             </div> <!-- times-div -->
@@ -278,12 +363,24 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("Verify that the ticket has been played", "Milli Piyango Ticket Test Cases")</span>
-                <span class="method-start">417 ms</span>
+                <span class="method-name">runScenario("OnNumara ticket detail check on Biletlerim page", "Milli Piyango Ticket Detail Test Cases")</span>
+                <span class="method-start">500 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("OnNumara ticket detail check on Biletlerim page", "Milli Piyango Ticket Detail Test Cases")</span>
+                <span class="method-start">35329 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("OnNumara ticket detail check on Biletlerim page", "Milli Piyango Ticket Detail Test Cases")</span>
+                <span class="method-start">75736 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">22955 ms</span>
+                <span class="method-start">78023 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

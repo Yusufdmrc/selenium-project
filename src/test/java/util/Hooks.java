@@ -13,7 +13,6 @@ public class Hooks {
     private void initializeDriverAndHandleCookies() {
         String browser = System.getProperty("browser");
         String testEnv = System.getProperty("testEnv");
-        
 
         driver = DriverFactory.initialize_Driver(browser, testEnv);
         CookiePage cookiePage = new CookiePage(driver);
@@ -29,9 +28,6 @@ public class Hooks {
         initializeDriverAndHandleCookies();
 
         LoginPage loginPage = new LoginPage(driver);
-//      String username = System.getProperty("username");
-//      String password = System.getProperty("password");
-//      loginPage.login(username,password);
         loginPage.login(Constants.CORRECT_TC_ID,Constants.CORRECT_PASSWORD);
     }
     @AfterStep

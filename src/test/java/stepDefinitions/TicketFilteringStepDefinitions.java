@@ -13,10 +13,6 @@ public class TicketFilteringStepDefinitions {
     WebDriver driver = DriverFactory.getDriver();
     TicketFilteringPage ticketFilteringPage = new TicketFilteringPage(driver);
 
-    @Given("User navigates to the Biletlerim page")
-    public void userNavigatesToTheBiletlerimPage() {
-        ticketFilteringPage.navigateToBiletlerimPage();
-    }
 
     @When("The user filters by selecting the On Numara game")
     public void theUserFiltersBySelectingTheOnNumaraGame() {
