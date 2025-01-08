@@ -43,7 +43,7 @@ public class VerifyTicketPlayedPage {
         PageFactory.initElements(driver, this);
     }
 
-    public void navigateToOnNumaraPage() {
+    public void navigateToOnNumaraPage(String game) {
         elementHelper.click(numericalGamesButton);
         elementHelper.click(onNumaraButton);
         wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(onNumaraIFrameId));

@@ -31,5 +31,13 @@ public class MyTicketsStepDefinitions {
         myTicketsPage.validateTicketDetail(message,status);
     }
 
+    @When("The user filters by selecting the {string}")
+    public void theUserFiltersBySelectingThe(String game) {
+        myTicketsPage.selectGameFilter(game);
+    }
 
+    @Then("User confirms successful filtering of game {string}")
+    public void userConfirmsSuccessfulFilteringOfGame(String drawName) {
+        myTicketsPage.confirmFilter(drawName);
+    }
 }

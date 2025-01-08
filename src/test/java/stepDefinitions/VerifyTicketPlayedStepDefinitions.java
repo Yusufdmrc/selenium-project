@@ -12,13 +12,13 @@ public class VerifyTicketPlayedStepDefinitions {
     WebDriver driver = DriverFactory.getDriver();
     VerifyTicketPlayedPage verifyTicketPlayedPage = new VerifyTicketPlayedPage(driver);
 
-    @Given("User navigates to the On Numara page")
-    public void userNavigatesToTheOnNumaraPage() {
-        verifyTicketPlayedPage.navigateToOnNumaraPage();
+    @Given("User navigates to the {string} page")
+    public void userNavigatesToTheOnNumaraPage(String game) {
+        verifyTicketPlayedPage.navigateToOnNumaraPage(game);
     }
 
-    @When("User buys On Numara tickets with the random button")
-    public void userBuysOnNumaraTicketsWithTheRandomButton() {
+    @When("User buys game tickets with the random button")
+    public void userBuysGameTicketsWithTheRandomButton() {
         verifyTicketPlayedPage.buyTicket();
     }
 

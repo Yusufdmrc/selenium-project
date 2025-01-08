@@ -55,15 +55,30 @@ public class FilterHelper {
     @FindBy(xpath = "//div[@class='stato-label show']")
     private WebElement ticketText;
 
+    @FindBy(xpath = "(//img[contains(@src, 'sayisal-loto')])[2]")
+    private WebElement sayisalLotoLogo;
+
+    @FindBy(xpath = "(//img[contains(@src, 'super-loto')])[2]")
+    private WebElement superLotoLogo;
+
+    @FindBy(xpath = "(//img[contains(@src, 'on-numara')])[1]")
+    private WebElement onNumaraLogo;
+
+    @FindBy(xpath = "(//img[contains(@src, '-millipiyango')])[1]")
+    private WebElement milliPiyangoLogo;
+
+    @FindBy(xpath = "(//img[contains(@src, 'sans-topu')])[2]")
+    private WebElement sansTopuLogo;
+
     public FilterHelper(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
     public WebElement getGameOption(WebDriver driver, String game) {
         switch (game) {
-            case "OnNumara": return onNumaraButton;
+            case "On Numara": return onNumaraButton;
             case "Şans Topu": return sansTopuButton;
-            case "Sayısal Loto": return sayisalLotoButton;
+            case "Sayisal Loto": return sayisalLotoButton;
             case "Milli Piyango": return milliPiyangoButton;
             case "Süper Loto": return superLotoButton;
             default: throw new IllegalArgumentException("Invalid game: " + game);
@@ -99,6 +114,23 @@ public class FilterHelper {
                 return ticketText;
             default:
                 throw new IllegalArgumentException("Invalid status: " + status);
+        }
+    }
+
+    public WebElement getLogoElement(WebDriver driver, String drawName) {
+        switch (drawName) {
+            case "sayisal-loto":
+                return sayisalLotoLogo;
+            case "super-loto":
+                return superLotoLogo;
+            case "on-numara":
+                return onNumaraLogo;
+            case "millipiyango":
+                return milliPiyangoLogo;
+            case "sans-topu":
+                return sansTopuLogo;
+            default:
+                throw new IllegalArgumentException("Invalid draw name: " + drawName);
         }
     }
 }

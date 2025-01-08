@@ -61,4 +61,15 @@ public class MyTicketsPage {
         elementHelper.checkVisible(validationElement);
         Assert.assertEquals(validationElement.getText(), expectedMessage);
     }
+
+    public void selectGameFilter(String game) {
+        WebElement gameOption = filterHelper.getGameOption(driver, game);
+        elementHelper.click(gameOption);
+    }
+
+    public void confirmFilter(String drawName) {
+        WebElement logoElement = filterHelper.getLogoElement(driver,drawName);
+        String actualSrc = logoElement.getAttribute("src");
+        Assert.assertTrue(actualSrc.contains(drawName));
+    }
 }
