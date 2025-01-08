@@ -17,9 +17,9 @@ public class VerifyTicketPlayedStepDefinitions {
         verifyTicketPlayedPage.navigateToOnNumaraPage(game);
     }
 
-    @When("User buys game tickets with the random button")
-    public void userBuysGameTicketsWithTheRandomButton() {
-        verifyTicketPlayedPage.buyTicket();
+    @When("User buys {string} tickets with the random button")
+    public void userBuysGameTicketsWithTheRandomButton(String game) {
+        verifyTicketPlayedPage.buyTicket(game);
     }
 
     @Then("User checks whether the ticket has been purchased")

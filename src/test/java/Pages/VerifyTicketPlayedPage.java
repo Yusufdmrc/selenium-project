@@ -20,7 +20,6 @@ public class VerifyTicketPlayedPage {
     WebDriverWait wait;
 
 
-
     @FindBy(css = "button.betBtn.validBtn")
     WebElement buyButton;
 
@@ -34,7 +33,7 @@ public class VerifyTicketPlayedPage {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
         this.elementHelper = new ElementHelper(driver);
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(driver,this);
     }
 
     public void navigateToOnNumaraPage(String game) {
@@ -46,7 +45,9 @@ public class VerifyTicketPlayedPage {
         wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(gameFrameOption));
     }
 
-    public void buyTicket() {
+    public void buyTicket(String game) {
+        GamePageHelper gamePageHelper = new GamePageHelper(driver);
+        WebElement randomButton=gamePageHelper.getGameRandomButton(driver,game);
         elementHelper.click(randomButton);
         elementHelper.click(buyButton);
         elementHelper.pause(5);

@@ -32,6 +32,18 @@ public class GamePageHelper {
     @FindBy(id="sansTopuCardFrame")
     private WebElement sansTopuIFrameId;
 
+    @FindBy(css = "div.flashIcon")
+    WebElement onNumaraRandomButton;
+
+    @FindBy(css = "div.flash span.textIconBtn")
+    WebElement sansTopuRandomButton;
+
+    @FindBy(xpath = "//div[@class='flash']")
+    WebElement superLotoRandomButton;
+
+    @FindBy(css = "div[class='flash'] span[class='textIconBtn']")
+    WebElement sayisalLotoRandomButton;
+
 
     public GamePageHelper(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -56,4 +68,13 @@ public class GamePageHelper {
         }
     }
 
+    public WebElement getGameRandomButton(WebDriver driver,String game){
+        switch (game){
+            case "Sayisal Loto" : return sayisalLotoRandomButton;
+            case "Super Loto"   : return superLotoRandomButton;
+            case "On Numara"    : return onNumaraRandomButton;
+            case "Sans Topu"    : return sansTopuRandomButton;
+            default:throw new IllegalArgumentException("Invalid random button:" +game);
+        }
+    }
 }
