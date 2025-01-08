@@ -1,7 +1,7 @@
 @MilliPiyangoTicketInquiry
 Feature: Milli Piyango Ticket Detail Test Cases
 
-  @SansTopuTicketInquiry @SkipLogin
+  @TicketInquiry @SkipLogin
   Scenario Outline: Ticket inquiry by serial number
     Given User goes to the Lotteries page
     When  User queries ticket by "<serialNumber>"

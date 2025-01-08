@@ -8,9 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class GamePageHelper {
 
-    @FindBy(xpath = "//span[normalize-space()='Milli Piyango']")
-    private WebElement milliPiyangoPage;
-
     @FindBy(xpath = "//a[normalize-space()='Sayisal Loto']")
     private WebElement sayisalLotoPage;
 
@@ -23,13 +20,24 @@ public class GamePageHelper {
     @FindBy(xpath = "//a[normalize-space()='Sans Topu']")
     private WebElement sansTopuPage;
 
+    @FindBy(id="sayisalLotoCardFrame")
+    private WebElement sayisalLotoIFrameId;
+
+    @FindBy(id="superLotoCardFrame")
+    private WebElement superLotoIFrameId;
+
+    @FindBy(id="onnumaraCardFrame")
+    private WebElement onNumaraIFrameId;
+
+    @FindBy(id="sansTopuCardFrame")
+    private WebElement sansTopuIFrameId;
+
 
     public GamePageHelper(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
     public WebElement getGamePage(WebDriver driver, String game){
         switch (game){
-            case "Milli Piyango": return milliPiyangoPage;
             case "Sayisal Loto" : return sayisalLotoPage;
             case "Super Loto"   : return superLotoPage;
             case "On Numara"    : return onNumaraPage;
@@ -37,4 +45,15 @@ public class GamePageHelper {
             default: throw new IllegalArgumentException("Invalid game page: " + game);
         }
     }
+
+    public WebElement getGameFrame(WebDriver driver,String game){
+        switch (game){
+            case "Sayisal Loto"  : return sayisalLotoIFrameId;
+            case "Super Loto"    : return superLotoIFrameId;
+            case "On Numara"     : return onNumaraIFrameId;
+            case "Sans Topu"     : return sansTopuIFrameId;
+            default:throw new IllegalArgumentException("Invalid frame:" + game);
+        }
+    }
+
 }

@@ -2,7 +2,6 @@ C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\Pag
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\Pages\LoginPage.java
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\Pages\MyTicketsPage.java
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\Pages\RegisterPage.java
-C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\Pages\TicketFilteringPage.java
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\Pages\TicketInquiryPage.java
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\Pages\VerifyTicketPlayedPage.java
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\Pages\VirtualGame.java
@@ -10,7 +9,6 @@ C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\Pag
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\stepDefinitions\LoginPageStepDefinitions.java
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\stepDefinitions\MyTicketsStepDefinitions.java
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\stepDefinitions\RegisterPageStepDefinitions.java
-C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\stepDefinitions\TicketFilteringStepDefinitions.java
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\stepDefinitions\TicketInquiryStepDefinitions.java
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\stepDefinitions\VerifyTicketPlayedStepDefinitions.java
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\stepDefinitions\VirtualGameStepDefinitions.java
@@ -21,5 +19,6 @@ C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\uti
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\util\DriverFactory.java
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\util\ElementHelper.java
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\util\FilterHelper.java
+C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\util\GamePageHelper.java
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\util\Hooks.java
 C:\Users\demirci\OneDrive - SISAL SPA\Desktop\selenium-project\src\test\java\util\LoginHelper.java

@@ -8,6 +8,6 @@ Feature: Milli Piyango Ticket Test Cases
     Then  User checks whether the ticket has been purchased
     Examples:
     |game        |
-    |On Numara   |
+    |Super Loto   |
 
 
