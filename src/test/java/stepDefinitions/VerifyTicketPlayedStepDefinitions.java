@@ -26,4 +26,9 @@ public class VerifyTicketPlayedStepDefinitions {
     public void userChecksWhetherTheTicketHasBeenPurchased() {
         verifyTicketPlayedPage.checkTicket();
     }
+
+    @Then("The user checks the accuracy of the numbers played")
+    public void theUserChecksTheValidityOfTheNumbersPlayed() {
+        verifyTicketPlayedPage.checkNumbersPlayed();
+    }
 }

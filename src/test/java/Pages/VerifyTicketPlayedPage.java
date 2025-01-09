@@ -57,4 +57,8 @@ public class VerifyTicketPlayedPage {
         elementHelper.checkVisible(ticketText);
         Assert.assertEquals(ticketText.getText(),"Çekiliş için bekleniyor");
     }
+
+    public void checkNumbersPlayed() {
+
+    }
 }
