@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Cucumber Project]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="Chrome"/>
+  <test thread-count="2" parallel="classes" name="Cucumber(failed)" verbose="0">
+    <classes>
+      <class name="testRunners.runner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testRunners.runner -->
+    </classes>
+  </test> <!-- Cucumber(failed) -->
+  <test thread-count="2" parallel="classes" name="Failed Scenarios Tests(failed)" verbose="0">
+    <classes>
+      <class name="testRunners.FailedScenariosRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- testRunners.FailedScenariosRunner -->
+    </classes>
+  </test> <!-- Failed Scenarios Tests(failed) -->
+</suite> <!-- Failed suite [Cucumber Project] -->
