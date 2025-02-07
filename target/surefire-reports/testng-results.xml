@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-05T21:56:43 TRT" name="Cucumber Project" finished-at="2025-02-05T21:57:26 TRT" duration-ms="42710">
+  <suite started-at="2025-02-05T22:37:41 TRT" name="Cucumber Project" finished-at="2025-02-05T22:39:10 TRT" duration-ms="88627">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@2a3b5b47]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FailedScenariosRunner@28701274]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-02-05T21:56:43 TRT" name="Cucumber" finished-at="2025-02-05T21:57:06 TRT" duration-ms="23009">
+    <test started-at="2025-02-05T22:37:41 TRT" name="Cucumber" finished-at="2025-02-05T22:38:11 TRT" duration-ms="29889">
       <class name="testRunners.runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.runner@2a3b5b47]" started-at="2025-02-05T21:56:43 TRT" name="setUpClass" finished-at="2025-02-05T21:56:44 TRT" duration-ms="515" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.runner@2a3b5b47]" started-at="2025-02-05T22:37:41 TRT" name="setUpClass" finished-at="2025-02-05T22:37:42 TRT" duration-ms="473" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@2a3b5b47]" started-at="2025-02-05T21:56:44 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-05T21:57:05 TRT" duration-ms="21312" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@2a3b5b47]" started-at="2025-02-05T22:37:42 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-05T22:38:09 TRT" duration-ms="27524" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -37,41 +37,65 @@
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (21af0e8ae9446137ca5131936aaa9a63)] -> css selector: span[class='userDetailsBalance']] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=132.0.6834.160)
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\demirci\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51546}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51546/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 21af0e8ae9446137ca5131936aaa9a63]]>
+Command: [0b132c1a857b211501039a2c011b5306, clickElement {id=f.3C5F69ACDA88BF94F95CEBF1591223E2.d.DBE111903F6111F667D6F438908EBE72.e.220}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\demirci\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54652}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54652/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0b132c1a857b211501039a2c011b5306)] -> xpath: //a[normalize-space()='Sans Topu']]
+Session ID: 0b132c1a857b211501039a2c011b5306]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (21af0e8ae9446137ca5131936aaa9a63)] -> css selector: span[class='userDetailsBalance']] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=132.0.6834.160)
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\demirci\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51546}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51546/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 21af0e8ae9446137ca5131936aaa9a63
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at util.ElementHelper.checkVisible(ElementHelper.java:23)
-at Pages.LoginPage.checkSuccessful(LoginPage.java:79)
-at Pages.LoginPage.login(LoginPage.java:91)
-at util.Hooks.beforeSkipLogin(Hooks.java:31)
+Command: [0b132c1a857b211501039a2c011b5306, clickElement {id=f.3C5F69ACDA88BF94F95CEBF1591223E2.d.DBE111903F6111F667D6F438908EBE72.e.220}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\demirci\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54652}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54652/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0b132c1a857b211501039a2c011b5306)] -> xpath: //a[normalize-space()='Sans Topu']]
+Session ID: 0b132c1a857b211501039a2c011b5306
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+at util.ElementHelper.click(ElementHelper.java:44)
+at Pages.VerifyTicketPlayedPage.navigateToOnNumaraPage(VerifyTicketPlayedPage.java:142)
+at stepDefinitions.VerifyTicketPlayedStepDefinitions.userNavigatesToTheOnNumaraPage(VerifyTicketPlayedStepDefinitions.java:17)
+at ✽.User navigates to the "Sans Topu" page(file:///C:/Users/demirci/OneDrive%20-%20SISAL%20SPA/Desktop/Selenium-projects/selenium-project-main/src/test/resources/Features/VerifyTicketPlayed.feature:6)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.runner@2a3b5b47]" started-at="2025-02-05T21:57:05 TRT" name="tearDownClass" finished-at="2025-02-05T21:57:06 TRT" duration-ms="1143" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.runner@2a3b5b47]" started-at="2025-02-05T22:38:09 TRT" name="tearDownClass" finished-at="2025-02-05T22:38:11 TRT" duration-ms="1851" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- testRunners.runner -->
     </test> <!-- Cucumber -->
-    <test started-at="2025-02-05T21:57:07 TRT" name="Failed Scenarios Tests" finished-at="2025-02-05T21:57:26 TRT" duration-ms="19654">
+    <test started-at="2025-02-05T22:38:11 TRT" name="Failed Scenarios Tests" finished-at="2025-02-05T22:39:10 TRT" duration-ms="58673">
       <class name="testRunners.FailedScenariosRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.FailedScenariosRunner@28701274]" started-at="2025-02-05T21:57:07 TRT" name="setUpClass" finished-at="2025-02-05T21:57:07 TRT" duration-ms="63" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.FailedScenariosRunner@28701274]" started-at="2025-02-05T22:38:11 TRT" name="setUpClass" finished-at="2025-02-05T22:38:11 TRT" duration-ms="61" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -82,7 +106,7 @@ at util.Hooks.beforeSkipLogin(Hooks.java:31)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FailedScenariosRunner@28701274]" started-at="2025-02-05T21:57:07 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-05T21:57:25 TRT" duration-ms="18527" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FailedScenariosRunner@28701274]" started-at="2025-02-05T22:38:11 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-05T22:39:09 TRT" duration-ms="57582" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -97,33 +121,94 @@ at util.Hooks.beforeSkipLogin(Hooks.java:31)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (36fac7d9705269584fdf58dd38d904df)] -> css selector: span[class='userDetailsBalance']] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\demirci\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51641}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51641/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 36fac7d9705269584fdf58dd38d904df]]>
+              <![CDATA[Expected condition failed: waiting for frame to be available: Proxy element for: DefaultElementLocator 'By.id: sansTopuCardFrame' (tried for 15 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (36fac7d9705269584fdf58dd38d904df)] -> css selector: span[class='userDetailsBalance']] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for frame to be available: Proxy element for: DefaultElementLocator 'By.id: sansTopuCardFrame' (tried for 15 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at Pages.VerifyTicketPlayedPage.navigateToOnNumaraPage(VerifyTicketPlayedPage.java:144)
+at stepDefinitions.VerifyTicketPlayedStepDefinitions.userNavigatesToTheOnNumaraPage(VerifyTicketPlayedStepDefinitions.java:17)
+at ✽.User navigates to the "Sans Topu" page(file:///C:/Users/demirci/OneDrive%20-%20SISAL%20SPA/Desktop/Selenium-projects/selenium-project-main/src/test/resources/Features/VerifyTicketPlayed.feature:6)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#sansTopuCardFrame"}
+  (Session info: chrome=132.0.6834.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\demirci\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51641}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51641/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 36fac7d9705269584fdf58dd38d904df
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at util.ElementHelper.checkVisible(ElementHelper.java:23)
-at Pages.LoginPage.checkSuccessful(LoginPage.java:79)
-at Pages.LoginPage.login(LoginPage.java:91)
-at util.Hooks.beforeSkipLogin(Hooks.java:31)
+Command: [4b08a71dce885fbbb7b53f3a03f6913c, findElement {using=id, value=sansTopuCardFrame}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\demirci\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54766}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54766/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b08a71dce885fbbb7b53f3a03f6913c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy25.getWrappedElement(Unknown Source)
+at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1131)
+at org.openqa.selenium.support.ui.ExpectedConditions$19.apply(ExpectedConditions.java:545)
+at org.openqa.selenium.support.ui.ExpectedConditions$19.apply(ExpectedConditions.java:541)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at Pages.VerifyTicketPlayedPage.navigateToOnNumaraPage(VerifyTicketPlayedPage.java:144)
+at stepDefinitions.VerifyTicketPlayedStepDefinitions.userNavigatesToTheOnNumaraPage(VerifyTicketPlayedStepDefinitions.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.FailedScenariosRunner@28701274]" started-at="2025-02-05T21:57:25 TRT" name="tearDownClass" finished-at="2025-02-05T21:57:26 TRT" duration-ms="1064" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.FailedScenariosRunner@28701274]" started-at="2025-02-05T22:39:09 TRT" name="tearDownClass" finished-at="2025-02-05T22:39:10 TRT" duration-ms="1030" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

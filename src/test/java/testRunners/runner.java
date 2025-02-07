@@ -13,11 +13,7 @@ import util.DriverFactory;
                 "summary", "pretty", "html:Reports/CucumberReport/Reports.html",
                 "json:Reports/CucumberReport/Reports.json",
                 "rerun:target/rerun.txt"
-        },
-        tags = "@VerifyNumbersPlayed"
+        }
 )
 public class runner extends AbstractTestNGCucumberTests {
-    static WebDriver driver = DriverFactory.getDriver();
-
-
 }
