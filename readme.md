@@ -20,7 +20,7 @@ This repository contains a test automation framework designed using **Selenium**
 - **Comprehensive Login Handling**: Validates various login scenarios, including successful, unsuccessful, and empty credentials.
 - **@FindBy Annotation**: Utilizes the `@FindBy` annotation for efficient element location and cleaner code structure.
 - **DevTools Network Monitoring**: Uses Chrome DevTools Protocol (CDP) to capture network requests and analyze API calls during test execution.
-
+- **Rerun Capability**: Supports rerunning failed test scenarios automatically.
 ---
 
 ## Project Structure
@@ -125,7 +125,7 @@ public void click(Object elementLocator) {
 - **Login Scenarios**: Covers comprehensive test cases for login functionality, including various credential combinations.
 - **@FindBy Annotation**: Simplifies element location using declarative annotations to improve readability and maintainability.
 - **DevTools Network Monitoring**: Captures API requests and detects changes in backend communication.
-
+- **Rerun Capability**: Automatically re-executes failed test scenarios using TestNG and Cucumber rerun functionality.
 ---
 
 
