@@ -10,6 +10,7 @@ util/ElementHelper.class
 util/DriverFactory.class
 Pages/CookiePage.class
 util/ConfigReader.class
+Pages/PasswordRetrievalPage.class
 util/DataProcess.class
 stepDefinitions/WithdrawalStepDefinitions.class
 testRunners/FailedScenariosRunner.class

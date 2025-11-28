@@ -1,5 +1,6 @@
 package stepDefinitions;
 import Pages.LoginPage;
+import Pages.PasswordRetrievalPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -10,6 +11,7 @@ import util.DriverFactory;
 public class LoginPageStepDefinitions {
     WebDriver driver = DriverFactory.getDriver();
     LoginPage loginPage = new LoginPage(driver);
+    PasswordRetrievalPage passwordRetrievalPage = new PasswordRetrievalPage(driver);
 
     @Given("User at home page")
     public void userAtHomePage() {
@@ -49,5 +51,15 @@ public class LoginPageStepDefinitions {
     public void checkUnsuccessfulLogin() {
      loginPage.checkUnsuccessful();
     }
+
+    @And("User navigates to the Pasword Retrieval Page")
+    public void userNavigatesToThePaswordRetrievalPage() {
+        loginPage.navigateToPasswordRetrievalPage();
+    }
+    @Then("User verifies Password Retrieval form is not submittable when with {string} TC ID, {string} Birth Date, {string} email missing data")
+    public void userVerifiesPasswordRetrievalFormIsNotSubmittableWhenWithTCIDBirthDateEmailMissingData(String tcID, String birthdate, String email) {
+        passwordRetrievalPage.verifyPasswordRetrievalFormNotSubmittable(tcID, birthdate, email);
+    }
+
 
 }

@@ -14,7 +14,7 @@ import util.DriverFactory;
                 "json:Reports/CucumberReport/Reports.json",
                 "rerun:target/rerun.txt"
         },
-        tags = "@SuccessfulLogin"
+        tags = "@RetrievalWebFormMissingData"
 )
 public class runner extends AbstractTestNGCucumberTests {
 }

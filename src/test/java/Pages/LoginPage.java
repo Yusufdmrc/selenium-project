@@ -36,6 +36,9 @@ public class LoginPage {
     @FindBy(css = "span[class='userDetailsBalance']")
     WebElement balance;
 
+    @FindBy(css ="a.loginbox-forgetpsw")
+    WebElement forgotPasswordButton;
+
     //@FindBy(xpath ="//span[@class='value d-lg-none']/span[@class='userDetailsBalance']");
 
     public LoginPage(WebDriver driver) {
@@ -86,5 +89,9 @@ public class LoginPage {
         writePasswordForPasswordField(password);
         clickLogin();
         checkSuccessful();
+    }
+
+    public void navigateToPasswordRetrievalPage() {
+        elementHelper.click(forgotPasswordButton);
     }
 }

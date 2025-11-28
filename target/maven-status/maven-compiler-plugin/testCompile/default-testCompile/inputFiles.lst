@@ -1,6 +1,7 @@
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/Pages/CookiePage.java
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/Pages/LoginPage.java
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/Pages/MyTicketsPage.java
+/Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/Pages/PasswordRetrievalPage.java
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/Pages/RegisterPage.java
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/Pages/TicketInquiryPage.java
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/Pages/VerifyTicketPlayedPage.java
@@ -16,7 +17,6 @@
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/testRunners/FailedScenariosRunner.java
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/testRunners/runner.java
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/util/ConfigReader.java
-/Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/util/Constants.java
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/util/DataProcess.java
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/util/DriverFactory.java
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/util/ElementHelper.java
