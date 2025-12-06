@@ -1,6 +1,7 @@
 package stepDefinitions;
 import Pages.LoginPage;
 import Pages.PasswordRetrievalPage;
+import Pages.PasswordUpdatePage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,6 +13,7 @@ public class LoginPageStepDefinitions {
     WebDriver driver = DriverFactory.getDriver();
     LoginPage loginPage = new LoginPage(driver);
     PasswordRetrievalPage passwordRetrievalPage = new PasswordRetrievalPage(driver);
+    PasswordUpdatePage passwordUpdatePage=new PasswordUpdatePage(driver);
 
     @Given("User at home page")
     public void userAtHomePage() {
@@ -62,4 +64,33 @@ public class LoginPageStepDefinitions {
     }
 
 
+    @And("User fills the Password Retrieval form with {string} {string} {string}")
+    public void userFillsThePasswordRetrievalFormWith(String tcId, String birthDate, String phoneNumber) {
+        passwordRetrievalPage.fillPasswordRetrievalForm(tcId, birthDate, phoneNumber);
+    }
+
+    @And("User enters and submit OTP for password update")
+    public void userEntersAndSubmitOTPForPasswordUpdate() {
+        passwordRetrievalPage.enterAndSubmitOtp();
+    }
+
+    @And("User changes the password with credentials {string} on Password Retrieval Screen and submit")
+    public void userChangesThePasswordWithCredentialsOnPasswordRetrievalScreenAndSubmit(String password) {
+        passwordUpdatePage.changeThePasswordAndSubmit(password);
+    }
+
+    @And("User navigates to the Login Page from Password Update Screen")
+    public void userNavigatesToTheLoginPageFromPasswordUpdateScreen() {
+        passwordUpdatePage.navigateToLoginPage();
+    }
+
+    @And("User logs into the app with \"{}")
+    public void userLogsIntoTheAppWith(String tcId,String password) {
+        passwordUpdatePage.loginToApp(tcId,password);
+    }
+
+    @Then("User verifies the login with {string} is successful")
+    public void userVerifiesTheLoginWithIsSuccessful(String arg0, String arg1) {
+        loginPage.checkSuccessful();
+    }
 }

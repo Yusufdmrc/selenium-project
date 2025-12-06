@@ -2,6 +2,7 @@ stepDefinitions/RegisterPageStepDefinitions.class
 util/LoginHelper.class
 stepDefinitions/MyTicketsStepDefinitions.class
 stepDefinitions/VirtualGameStepDefinitions.class
+Pages/PasswordUpdatePage.class
 Pages/MyTicketsPage.class
 Pages/VerifyTicketPlayedPage.class
 stepDefinitions/TicketInquiryStepDefinitions.class

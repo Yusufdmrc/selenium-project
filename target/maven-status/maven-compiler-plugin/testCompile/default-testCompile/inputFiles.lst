@@ -2,6 +2,7 @@
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/Pages/LoginPage.java
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/Pages/MyTicketsPage.java
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/Pages/PasswordRetrievalPage.java
+/Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/Pages/PasswordUpdatePage.java
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/Pages/RegisterPage.java
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/Pages/TicketInquiryPage.java
 /Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/java/Pages/VerifyTicketPlayedPage.java

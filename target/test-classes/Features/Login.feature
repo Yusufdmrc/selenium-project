@@ -57,6 +57,22 @@ Feature: Milli Piyango Login Check Test Cases
            | tcId        | birthDate | email     |
            | correctTcID | 01122001  | empty     |
 
-
+    @PasswordUpdateSuccess
+      Scenario Outline: User verifies that can update the password to the "<password>" on Password Retrieval Screen
+       And User navigates to the Pasword Retrieval Page
+       And User fills the Password Retrieval form with "<tcId>" "<birthDate>" "<email>"
+       And User enters and submit OTP for password update
+       And User changes the password with credentials "<password>" on Password Retrieval Screen and submit
+       And User navigates to the Login Page from Password Update Screen
+       And User logs into the app with "<password> "tcID"
+       Then User verifies the login with "<password>" is successful
+       @password1
+       Examples:
+         | password   |  | tcId        | birthDate | email        |
+         | Piyango.59 |  | correcttcid | 10122001  | correctEmail |
+      @password2
+       Examples:
+         | password  |  | tcId        | birthDate | email        |
+         | Piyango1. |  | correctTcID | 10122001  | correctEmail |
 
 
