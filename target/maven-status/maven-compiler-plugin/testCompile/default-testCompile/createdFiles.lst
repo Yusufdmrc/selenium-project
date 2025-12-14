@@ -3,7 +3,6 @@ util/LoginHelper.class
 stepDefinitions/MyTicketsStepDefinitions.class
 stepDefinitions/VirtualGameStepDefinitions.class
 Pages/PasswordUpdatePage.class
-Pages/MyTicketsPage.class
 Pages/VerifyTicketPlayedPage.class
 stepDefinitions/TicketInquiryStepDefinitions.class
 Pages/VirtualGame.class
@@ -16,7 +15,10 @@ util/DataProcess.class
 stepDefinitions/WithdrawalStepDefinitions.class
 testRunners/FailedScenariosRunner.class
 Pages/WithdrawalPage.class
+Pages/HomePage.class
+Pages/AreaPrivatePage.class
 testRunners/runner.class
+Pages/GamingHistoryPage.class
 Pages/TicketInquiryPage.class
 stepDefinitions/VerifyTicketPlayedStepDefinitions.class
 stepDefinitions/LoginPageStepDefinitions.class

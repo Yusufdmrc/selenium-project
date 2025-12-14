@@ -32,4 +32,6 @@ public class VerifyTicketPlayedStepDefinitions {
     public void theUserChecksTheValidityOfTheNumbersPlayed() {
         verifyTicketPlayedPage.checkNumbersPlayed();
     }
+
+
 }

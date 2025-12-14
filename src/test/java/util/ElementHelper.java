@@ -45,8 +45,9 @@
         }
 
 
-        public void checkNotVisible(WebElement element) {
+        public boolean checkNotVisible(WebElement element) {
                 wait.until(ExpectedConditions.invisibilityOf(element));
+            return false;
         }
 
         public void pause(int seconds) {

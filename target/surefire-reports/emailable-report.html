@@ -9,101 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Cucumber Project</th></tr>
-<tr><td><a href="#t0">Cucumber</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">36,510</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Failed Scenarios Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">19,309</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num attn">4</th><th class="num">55,819</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Cucumber</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">24,985</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Failed Scenarios Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">411</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">25,396</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Cucumber Project</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Cucumber &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testRunners.runner</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1765034398937</td><td rowspan="2">24005</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Failed Scenarios Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testRunners.FailedScenariosRunner</td><td><a href="#m2">runScenario</a></td><td rowspan="2">1765034435161</td><td rowspan="2">8237</td></tr><tr class="failedeven"><td><a href="#m3">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Cucumber Project</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Cucumber &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testRunners.runner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1765619389350</td><td rowspan="1">22797</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4" class="invisible"/></tr></tbody>
 </table>
-<h2>Cucumber</h2><h3 id="m0">testRunners.runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User verifies that can update the password to the &quot;Piyango1.&quot; on Password Retrieval Screen&quot;</td><td>&quot;Milli Piyango Login Check Test Cases&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (b967ea924ff61dbd4a3f70d89d913f8b)] -&gt; id: opt] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;17.0.15&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49389}, goog:processID: 5577, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49389/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b967ea924ff61dbd4a3f70d89d913f8b
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at util.ElementHelper.checkVisible(ElementHelper.java:23)
-	at Pages.PasswordRetrievalPage.enterOtp(PasswordRetrievalPage.java:54)
-	at Pages.PasswordRetrievalPage.enterAndSubmitOtp(PasswordRetrievalPage.java:77)
-	at stepDefinitions.LoginPageStepDefinitions.userEntersAndSubmitOTPForPasswordUpdate(LoginPageStepDefinitions.java:74)
-	at ✽.User enters and submit OTP for password update(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/Login.feature:64)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testRunners.runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User verifies that can update the password to the &quot;Piyango.59&quot; on Password Retrieval Screen&quot;</td><td>&quot;Milli Piyango Login Check Test Cases&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; id=&quot;frg-button&quot; class=&quot;btn-login&quot; data-sitekey=&quot;6LdVl7MaAAAAAB99j0O1rzBTVEviZW5WdSBYylWn&quot;&gt;...&lt;/button&gt; is not clickable at point (680, 458). Other element would receive the click: &lt;td class=&quot;day&quot;&gt;...&lt;/td&gt;
-  (Session info: chrome=142.0.7444.176)
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;17.0.15&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3cb1c89be11358d3f3fcc7d7d118a996, clickElement {id=f.BDAE43CF1AABEB3CBF0CE8C24FC5B482.d.DF067B719CA73E83DADF91D19CDF81A1.e.41}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49339}, goog:processID: 5443, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49339/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (3cb1c89be11358d3f3fcc7d7d118a996)] -&gt; id: frg-button]
-Session ID: 3cb1c89be11358d3f3fcc7d7d118a996
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at util.ElementHelper.click(ElementHelper.java:44)
-	at Pages.PasswordRetrievalPage.fillPasswordRetrievalForm(PasswordRetrievalPage.java:73)
-	at stepDefinitions.LoginPageStepDefinitions.userFillsThePasswordRetrievalFormWith(LoginPageStepDefinitions.java:69)
-	at ✽.User fills the Password Retrieval form with &quot;correcttcid&quot; &quot;10122001&quot; &quot;correctEmail&quot;(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/Login.feature:63)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Failed Scenarios Tests</h2><h3 id="m2">testRunners.FailedScenariosRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User verifies that can update the password to the &quot;Piyango1.&quot; on Password Retrieval Screen&quot;</td><td>&quot;Milli Piyango Login Check Test Cases&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; id=&quot;frg-button&quot; class=&quot;btn-login&quot; data-sitekey=&quot;6LdVl7MaAAAAAB99j0O1rzBTVEviZW5WdSBYylWn&quot;&gt;...&lt;/button&gt; is not clickable at point (680, 458). Other element would receive the click: &lt;td class=&quot;day&quot;&gt;...&lt;/td&gt;
-  (Session info: chrome=142.0.7444.176)
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;17.0.15&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [949f49c9387d2743effedf60502e5e70, clickElement {id=f.C90A57F33CCB439BE31F5B3E9CC0709D.d.62FF7802E6A86B3CBDA3C0B856D38F58.e.39}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49510}, goog:processID: 5967, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49510/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (949f49c9387d2743effedf60502e5e70)] -&gt; id: frg-button]
-Session ID: 949f49c9387d2743effedf60502e5e70
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at util.ElementHelper.click(ElementHelper.java:44)
-	at Pages.PasswordRetrievalPage.fillPasswordRetrievalForm(PasswordRetrievalPage.java:73)
-	at stepDefinitions.LoginPageStepDefinitions.userFillsThePasswordRetrievalFormWith(LoginPageStepDefinitions.java:69)
-	at ✽.User fills the Password Retrieval form with &quot;correctTcID&quot; &quot;10122001&quot; &quot;correctEmail&quot;(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/Login.feature:63)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testRunners.FailedScenariosRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User verifies that can update the password to the &quot;Piyango.59&quot; on Password Retrieval Screen&quot;</td><td>&quot;Milli Piyango Login Check Test Cases&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; id=&quot;frg-button&quot; class=&quot;btn-login&quot; data-sitekey=&quot;6LdVl7MaAAAAAB99j0O1rzBTVEviZW5WdSBYylWn&quot;&gt;...&lt;/button&gt; is not clickable at point (680, 458). Other element would receive the click: &lt;td class=&quot;day&quot;&gt;...&lt;/td&gt;
-  (Session info: chrome=142.0.7444.176)
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;17.0.15&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d38509a7d75bd9fa9304d7d0a2e34616, clickElement {id=f.2D7B48F292851F2F00F1CF7F7BB5E900.d.84E06EC4865A72FF2C102611A3CB88B1.e.41}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49455}, goog:processID: 5836, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49455/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (d38509a7d75bd9fa9304d7d0a2e34616)] -&gt; id: frg-button]
-Session ID: d38509a7d75bd9fa9304d7d0a2e34616
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at util.ElementHelper.click(ElementHelper.java:44)
-	at Pages.PasswordRetrievalPage.fillPasswordRetrievalForm(PasswordRetrievalPage.java:73)
-	at stepDefinitions.LoginPageStepDefinitions.userFillsThePasswordRetrievalFormWith(LoginPageStepDefinitions.java:69)
-	at ✽.User fills the Password Retrieval form with &quot;correcttcid&quot; &quot;10122001&quot; &quot;correctEmail&quot;(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/Login.feature:63)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-</body>
+<h2>Cucumber</h2><h3 id="m0">testRunners.runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Game filtering on Biletlerim page&quot;</td><td>&quot;Gaming History Feature&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Failed Scenarios Tests</h2></body>
 </html>

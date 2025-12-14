@@ -1,8 +1,9 @@
-@MilliPiyangoCheckTicketDetail
-Feature: Milli Piyango Ticket Detail Test Cases
+@GamingHistory
+Feature: Gaming History Feature
 
   Background:
-    Given User navigates to the Biletlerim page
+    Given User navigates to the Gaming History page
+
   @TicketDetail @LoginRequired
   Scenario Outline:Ticket detail check on Biletlerim page
     When  The user filters by selecting the "<game>" "<status>" and "<dateRange>"

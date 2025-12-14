@@ -14,7 +14,7 @@ import util.DriverFactory;
                 "json:Reports/CucumberReport/Reports.json",
                 "rerun:target/rerun.txt"
         },
-        tags = "@PasswordUpdateSuccess"
+        tags = "@GameFiltering"
 )
 public class runner extends AbstractTestNGCucumberTests {
 }

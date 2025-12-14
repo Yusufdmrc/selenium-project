@@ -12,16 +12,10 @@ import util.ElementHelper;
 import java.time.Duration;
 import java.util.List;
 
-public class MyTicketsPage {
+public class GamingHistoryPage {
     WebDriver driver;
     ElementHelper elementHelper;
     WebDriverWait wait;
-
-    @FindBy(xpath = "//a[contains(text(),'Hesabım')]")
-    WebElement accountButton;
-
-    @FindBy(xpath = "(//span[contains(text(),'Biletlerim')])[1]")
-    WebElement biletlerimButton;
 
     @FindBy(css = "div.css-1h9fo2t-footer_details span.css-4qwqxz-footer_details_content")
     List<WebElement> detailButtons;
@@ -89,18 +83,12 @@ public class MyTicketsPage {
     @FindBy(xpath = "(//img[contains(@src, 'sans-topu')])[2]")
     private WebElement sansTopuLogo;
 
-    public MyTicketsPage(WebDriver driver) {
+    public GamingHistoryPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(ConfigReader.getInt("explicit.wait")));
         this.elementHelper = new ElementHelper(driver);
         PageFactory.initElements(driver, this);
     }
-
-    public void navigateToBiletlerimPage() {
-        elementHelper.click(accountButton);
-        elementHelper.click(biletlerimButton);
-    }
-
     public void filterBySelecting(String game, String status, String dateRange) {
         WebElement gameOption = getGameOption(game);
         WebElement statusOption = getStatusOption(status);
