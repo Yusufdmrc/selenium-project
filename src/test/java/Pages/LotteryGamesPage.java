@@ -12,6 +12,9 @@ import util.ConfigReader;
 import util.ElementHelper;
 
 import java.time.Duration;
+import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.concurrent.ConcurrentMap;
 
@@ -124,6 +127,36 @@ public class LotteryGamesPage {
     private void verifyReceiptTitleBox(int drawNumber, int columnNumber, Scenario scenario) {
         elementHelper.checkVisible(receiptDateText);
         Assert.assertTrue(receiptDateText.getText().contains(getDate()));
+        verifyTimePart(receiptDateText.getText());
+        Assert.assertTrue(receiptPriceText.getText(),getTicketPrice(drawNumber,columnNumber,scenario) + " TL"," receipt price text displays correct");
+        elementHelper.checkVisible(receiptTicketDetailTitle);
+    }
+
+    private void verifyTimePart(String elementText) {
+        // Extract the time part (e.g., "12:04") from the element text
+        String timePart = elementText.split("-")[1].trim();
+
+        // Parse the extracted time
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm");
+        LocalTime extractedTime = LocalTime.parse(timePart, timeFormatter);
+
+        // Get the current time in the system's default time zone
+        ZoneId userTimeZone = ZoneId.systemDefault();
+        LocalTime currentTime = LocalTime.now(userTimeZone);
+
+        // Calculate the acceptable range (±1 minute)
+        LocalTime lowerBound = currentTime.minusMinutes(1).withSecond(0).withNano(0);
+        LocalTime upperBound = currentTime.plusMinutes(1).withSecond(59).withNano(999_999_999);
+
+        // Adjust extracted time to include the full range of seconds and nanoseconds
+        LocalTime extractedLowerBound = extractedTime.withSecond(0).withNano(0);
+        LocalTime extractedUpperBound = extractedTime.withSecond(59).withNano(999_999_999);
+
+        // Verify that the extracted time range overlaps with the acceptable range
+        if (extractedUpperBound.isBefore(lowerBound) || extractedLowerBound.isAfter(upperBound)) {
+            throw new AssertionError("Time verification failed. Extracted time: " + extractedTime +
+                    " is not within the acceptable range: " + lowerBound + " - " + upperBound);
+        }
     }
 
     public String getDate() {
