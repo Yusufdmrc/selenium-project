@@ -1,5 +1,6 @@
     package util;
     import org.openqa.selenium.By;
+    import org.openqa.selenium.TimeoutException;
     import org.openqa.selenium.WebDriver;
     import org.openqa.selenium.WebElement;
     import org.openqa.selenium.interactions.Actions;
@@ -23,6 +24,28 @@
             wait.until(ExpectedConditions.visibilityOf(element));
         }
 
+        public void checkNotVisible(WebElement element) {
+             wait.until(ExpectedConditions.invisibilityOf(element));
+        }
+
+        public boolean isVisible(WebElement element) {
+            try {
+                wait.until(ExpectedConditions.visibilityOf(element));
+                return true;
+            } catch (TimeoutException e) {
+                return false;
+            }
+        }
+
+        public boolean isNotVisible(WebElement element) {
+            try {
+                wait.until(ExpectedConditions.invisibilityOf(element));
+                return true;
+            } catch (TimeoutException e) {
+                return false;
+            }
+        }
+
         public void checkClickable(WebElement element){
             wait.until(ExpectedConditions.elementToBeClickable(element));
         }
@@ -42,12 +65,6 @@
             }
             assert element != null;
             element.click();
-        }
-
-
-        public boolean checkNotVisible(WebElement element) {
-                wait.until(ExpectedConditions.invisibilityOf(element));
-            return false;
         }
 
         public void pause(int seconds) {

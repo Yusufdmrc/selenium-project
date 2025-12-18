@@ -6,10 +6,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.asserts.Assertion;
 import util.ConfigReader;
 import util.ElementHelper;
 
 import java.time.Duration;
+import java.util.List;
+import java.util.concurrent.ConcurrentMap;
+
+import static reporting.Logging.writeConsoleLog;
 
 public class LotteryGamesPage {
     WebDriver driver;
@@ -22,6 +28,18 @@ public class LotteryGamesPage {
     WebElement SistemOyunu;
     @FindBy(xpath = "//button[contains(@class,'flashNumberBtn']")
     WebElement randomButton;
+    @FindBy(xpath = "//button[contains(@class,'betBtn') and text()='SATIN AL']")
+    WebElement buyTicketButton;
+    @FindBy(xpath = "//p[contains(text(),'5.000 TL ve üzeri bir bilet']")
+    WebElement overFiveThousandPopup;
+    @FindBy(xpath = "//button[.='Yeniden Oyna']")
+    WebElement playAgainButton;
+    @FindBy(xpath = "//button[.='ONAYLA']")
+    WebElement confirmButton;
+    @FindBy(css = "div.date")
+    WebElement receiptDateText;
+    @FindBy(css = "div.price")
+    WebElement receiptPriceText;
 
 
     public LotteryGamesPage(WebDriver driver) {
@@ -55,7 +73,7 @@ public class LotteryGamesPage {
     }
 
     public void enterRowByRandomButton(int clickCount, Scenario scenario) {
-        if(elementHelper.checkNotVisible(randomButton)) {
+        if(elementHelper.isNotVisible(randomButton)) {
             scenario.log("Random button is not visible on the page.");
             throw new IllegalStateException("Random button is not visible on the page.");
         }
@@ -63,5 +81,54 @@ public class LotteryGamesPage {
             elementHelper.pause(1);
             elementHelper.click(randomButton);
         }
+    }
+
+    public void buyTicket() {
+        boolean ticketBoughtWithSuccess = false;
+        int i= 0;
+        while (i<5){
+            writeConsoleLog("the try count is : " + i);
+            if (elementHelper.isVisible(buyTicketButton)){
+                clickBuyButton();
+            }
+            if (elementHelper.isVisible(overFiveThousandPopup)){
+                clickConfirmButton();
+            }
+            if (elementHelper.isVisible(playAgainButton)){
+                ticketBoughtWithSuccess = true;
+                break;
+            }
+            if (elementHelper.isVisible(confirmButton)){
+                clickConfirmButton();
+            }
+            i++;
+        }
+        Assert.assertTrue(ticketBoughtWithSuccess,"TICKET WAS BOUGHT WITH SUCCESS AFTER"+ i + "TRIES");
+    }
+
+    private void clickBuyButton() {
+        elementHelper.click(buyTicketButton);
+    }
+    private void clickConfirmButton() {
+        elementHelper.click(overFiveThousandPopup);
+    }
+
+    public void verifyReceiptElements(int drawNumber, int columnNumber, int standartNumber, int superstarNumber, Scenario scenario) {
+        verifyReceiptTitleBox(drawNumber,columnNumber,scenario);
+        verifyReceiptInfoBox();
+        verifyReceiptBodyBox(drawNumber,standartNumber,superstarNumber,scenario);
+        verifyReceiptDetailBox(columnNumber,scenario);
+    }
+
+    private void verifyReceiptTitleBox(int drawNumber, int columnNumber, Scenario scenario) {
+        elementHelper.checkVisible(receiptDateText);
+        Assert.assertTrue(receiptDateText.getText().contains(getDate()));
+    }
+
+    public String getDate() {
+        String month=getCurr
+    }
+
+    public void verifyDetailsOfTheTicket(List<ConcurrentMap<String, String>> listOfTickets, String gameName) {
     }
 }

@@ -74,7 +74,6 @@ public class HomePage {
                 elementHelper.click(NmrGameMenu);
                 break;
             case "Milli piyango":
-                elementHelper.click(LotteryGamesTitle);
                 elementHelper.click(MlpTitle);
                 wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(MlpIframeId));
                 break;
