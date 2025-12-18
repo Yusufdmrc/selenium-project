@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.concurrent.ConcurrentMap;
 
 import static reporting.Logging.writeConsoleLog;
+import static util.DataProcess.getCurrentTime;
 
 public class LotteryGamesPage {
     WebDriver driver;
@@ -126,7 +127,55 @@ public class LotteryGamesPage {
     }
 
     public String getDate() {
-        String month=getCurr
+        String month=getCurrentTime("MM");
+        String day=Integer.toString(Integer.parseInt(getCurrentTime("dd")));
+        String year=getCurrentTime("yyyy");
+        writeConsoleLog("month is:" + month);
+        writeConsoleLog("day is:" + day);
+        writeConsoleLog("year is:" + year);
+        switch (month){
+            case "01":
+                month="Ocak";
+                break;
+            case "02":
+                month="Şubat";
+                break;
+            case "03":
+                month="Mart";
+                break;
+            case "04":
+                month="Nisan";
+                break;
+            case "05":
+                month="Mayıs";
+                break;
+            case "06":
+                month="Haziran";
+                break;
+            case "07":
+                month="Temmuz";
+                break;
+            case "08":
+                month="Ağustos";
+                break;
+            case "09":
+                month="Eylül";
+                break;
+            case "10":
+                month="Ekim";
+                break;
+            case "11":
+                month="Kasım";
+                break;
+            case "12":
+                month="Aralık";
+                break;
+            default:
+                writeConsoleLog("Please check the month value");
+        }
+        String date= day + " " + month + " " + year;
+        writeConsoleLog("date is :" + date);
+        return date;
     }
 
     public void verifyDetailsOfTheTicket(List<ConcurrentMap<String, String>> listOfTickets, String gameName) {
