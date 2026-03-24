@@ -4,10 +4,14 @@ import Pages.CookiePage;
 import Pages.LoginPage;
 import io.cucumber.java.*;
 import org.openqa.selenium.*;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 
 public class Hooks {
 
     WebDriver driver;
+    protected Scenario scenario;
+
 
     private void initializeDriverAndHandleCookies() {
         String browser = System.getProperty("browser", "chrome");
@@ -19,12 +23,12 @@ public class Hooks {
         cookiePage.closeCookiePopup();
     }
 
-    @Before(order = 1, value = "not @LoginRequired")
+    @Before(order = 1, value = "not @LoginRequired and not @api")
     public void beforeScenario() {
         initializeDriverAndHandleCookies();
     }
 
-    @Before(order = 0, value = "@LoginRequired")
+    @Before(order = 0, value = "@LoginRequired and not @api")
     public void beforeScenarioWithLogin() {
         initializeDriverAndHandleCookies();
 
@@ -37,14 +41,14 @@ public class Hooks {
 
     @AfterStep
     public void takeScreenshotOnFailure(Scenario scenario) {
-        if (scenario.isFailed()) {
+        if (scenario.isFailed() && driver != null) {
             TakesScreenshot ts = (TakesScreenshot) driver;
             byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", "Failure Screenshot");
         }
     }
 
-    @After
+    @After("not @api")
     public void tearDown() {
         if (driver != null) {
             driver.quit();

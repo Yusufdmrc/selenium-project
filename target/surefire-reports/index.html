@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Cucumber_Project" class="navigator-link">
-              <span class="suite-name border-passed">Cucumber Project</span>
+              <span class="suite-name border-failed">Cucumber Project</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Cucumber_Project" class="hide-methods passed suite-Cucumber_Project"> (hide)</a> <!-- hide-methods passed suite-Cucumber_Project -->
-                      <a href="#" panel-name="suite-Cucumber_Project" class="show-methods passed suite-Cucumber_Project"> (show)</a> <!-- show-methods passed suite-Cucumber_Project -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Cucumber_Project" class="hide-methods failed suite-Cucumber_Project"> (hide)</a> <!-- hide-methods failed suite-Cucumber_Project -->
+                      <a href="#" panel-name="suite-Cucumber_Project" class="show-methods failed suite-Cucumber_Project"> (show)</a> <!-- show-methods failed suite-Cucumber_Project -->
                     </span>
-                    <div class="method-list-content passed suite-Cucumber_Project">
+                    <div class="method-list-content failed suite-Cucumber_Project">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Cucumber_Project" title="testRunners.runner" class="method navigator-link" hash-for-method="runScenario(&quot;Game filtering on Biletlerim page&quot;, &quot;Gaming History Feature&quot;)">runScenario("Game filtering on Biletlerim page", "Gaming History Feature")</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cucumber_Project" title="testRunners.runner" class="method navigator-link" hash-for-method="runScenario(&quot;&quot;Sayisal Loto&quot; - User is able to buy ticket &quot;with&quot; SuperStar on tab : &quot;simple&quot;&quot;, &quot;Lottery Games Tes...)">runScenario(""Sayisal Loto" - User is able to buy ticket "with" SuperStar on tab : "simple"", "Lottery Games Tes...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Cucumber_Project -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cucumber_Project" title="testRunners.FailedScenariosRunner" class="method navigator-link" hash-for-method="runScenario(&quot;&quot;Sayisal Loto&quot; - User is able to buy ticket &quot;with&quot; SuperStar on tab : &quot;simple&quot;&quot;, &quot;Lottery Games Tes...)">runScenario(""Sayisal Loto" - User is able to buy ticket "with" SuperStar on tab : "simple"", "Lottery Games Tes...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Cucumber_Project -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,24 +124,78 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Cucumber_Project" class="panel Cucumber_Project">
-          <div class="suite-Cucumber_Project-class-passed">
+          <div class="suite-Cucumber_Project-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testRunners.runner</span>
+              <img src="failed.png"/>
+              <span class="class-name">testRunners.FailedScenariosRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Game filtering on Biletlerim page&quot;, &quot;Gaming History Feature&quot;)">
-                  </a> <!-- runScenario("Game filtering on Biletlerim page", "Gaming History Feature") -->
+                  <a name="runScenario(&quot;&quot;Sayisal Loto&quot; - User is able to buy ticket &quot;with&quot; SuperStar on tab : &quot;simple&quot;&quot;, &quot;Lottery Games Tes...)">
+                  </a> <!-- runScenario(""Sayisal Loto" - User is able to buy ticket "with" SuperStar on tab : "simple"", "Lottery Games Tes...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Game filtering on Biletlerim page", "Gaming History Feature")</span>
+                  <span class="parameters">(""Sayisal Loto" - User is able to buy ticket "with" SuperStar on tab : "simple"", "Lottery Games Test Cases")</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=144.0.7559.133)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;17.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [62b712c50941cb434102ee613c5329ac, get {url=http://test-www.millipiyangoonline.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59823}, goog:processID: 53374, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59823/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 62b712c50941cb434102ee613c5329ac
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at util.DriverFactory.initializeDriver(DriverFactory.java:44)
+	at util.Hooks.initializeDriverAndHandleCookies(Hooks.java:20)
+	at util.Hooks.beforeScenarioWithLogin(Hooks.java:33)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Cucumber_Project-class-passed -->
+          </div> <!-- suite-Cucumber_Project-class-failed -->
+          <div class="suite-Cucumber_Project-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testRunners.runner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;&quot;Sayisal Loto&quot; - User is able to buy ticket &quot;with&quot; SuperStar on tab : &quot;simple&quot;&quot;, &quot;Lottery Games Tes...)">
+                  </a> <!-- runScenario(""Sayisal Loto" - User is able to buy ticket "with" SuperStar on tab : "simple"", "Lottery Games Tes...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">(""Sayisal Loto" - User is able to buy ticket "with" SuperStar on tab : "simple"", "Lottery Games Test Cases")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (81f98c250baf33fe407005a3124e0fd4)] -&gt; css selector: span[class=&apos;userDetailsBalance&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;17.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59681}, goog:processID: 52859, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59681/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81f98c250baf33fe407005a3124e0fd4
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at util.ElementHelper.checkVisible(ElementHelper.java:24)
+	at Pages.LoginPage.checkSuccessful(LoginPage.java:79)
+	at Pages.LoginPage.login(LoginPage.java:91)
+	at util.Hooks.beforeScenarioWithLogin(Hooks.java:36)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Cucumber_Project-class-failed -->
         </div> <!-- panel Cucumber_Project -->
         <div panel-name="test-xml-Cucumber_Project" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -206,16 +265,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'testRunners.runner')
-data.setCell(0, 3, 22797);
+data.setCell(0, 3, 47307);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'testRunners.FailedScenariosRunner')
+data.setCell(1, 3, 4265);
 window.suiteTableData['Cucumber_Project']= { tableData: data, tableDiv: 'times-div-Cucumber_Project'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
               <div id="times-div-Cucumber_Project">
               </div> <!-- times-div-Cucumber_Project -->
             </div> <!-- times-div -->
@@ -243,27 +306,35 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testRunners.runner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@20d525)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@175c2241)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Game filtering on Biletlerim page", "Gaming History Feature")</span>
-                <span class="method-start">253 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario(""Sayisal Loto" - User is able to buy ticket "with" SuperStar on tab : "simple"", "Lottery Games Tes...)</span>
+                <span class="method-start">1303 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">23051 ms</span>
+                <span class="method-start">48627 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testRunners.FailedScenariosRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@6200f9cb)</span>
-                <span class="method-start">25001 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@5bf0d49)</span>
+                <span class="method-start">51877 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario(""Sayisal Loto" - User is able to buy ticket "with" SuperStar on tab : "simple"", "Lottery Games Tes...)</span>
+                <span class="method-start">52119 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">25014 ms</span>
+                <span class="method-start">56386 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

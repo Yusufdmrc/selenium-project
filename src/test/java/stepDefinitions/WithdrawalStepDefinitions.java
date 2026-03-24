@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+import Pages.AreaPrivatePage;
+import Pages.HomePage;
 import Pages.WithdrawalPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,6 +13,8 @@ public class WithdrawalStepDefinitions {
 
     WebDriver driver = DriverFactory.getDriver();
     WithdrawalPage withdrawalPage = new WithdrawalPage(driver);
+    HomePage homePage = new HomePage(driver);
+    AreaPrivatePage areaPrivate = new AreaPrivatePage(driver);
 
 //    @Given("User is logged in with {string} and {string}")
 //    public void userIsLoggedIn(String username, String password) {
@@ -19,7 +23,8 @@ public class WithdrawalStepDefinitions {
 
     @When("User navigates to the Para Çekme page")
     public void userNavigatesToParaCekmePage() {
-        withdrawalPage.navigateToWithDrawalPage();
+        homePage.navigateToAreaPrivatePage();
+        areaPrivate.navigateToWithDrawalPage();
     }
 
     @When("User adds a new IBAN with {string} and {string}")

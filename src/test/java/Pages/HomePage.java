@@ -10,7 +10,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import util.ConfigReader;
 import util.ElementHelper;
 
+import java.text.Normalizer;
 import java.time.Duration;
+import java.util.Locale;
 
 public class HomePage {
     WebDriver driver;
@@ -52,34 +54,64 @@ public class HomePage {
         elementHelper.click(accountButton);
     }
 
-    public void navigateToLotteryGame(String gameName, Scenario scenario) {
-        switch (gameName){
-            case "Sayisal loto":
-                elementHelper.click(LotteryGamesTitle);
-                elementHelper.click(SylGameMenu);
-                wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(SylIframeId));
-                break;
-            case "Super loto":
-                elementHelper.click(LotteryGamesTitle);
-                elementHelper.click(SplGameMenu);
-                wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(SplIframeId));
-                break;
-            case "Sans topu":
-                elementHelper.click(LotteryGamesTitle);
-                elementHelper.click(SnsGameMenu);
-                wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(SnsIframeId));
-                break;
-            case "On numara":
-                elementHelper.click(LotteryGamesTitle);
-                elementHelper.click(NmrGameMenu);
-                break;
-            case "Milli piyango":
-                elementHelper.click(MlpTitle);
-                wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(MlpIframeId));
-                break;
-            default:
-                scenario.log("The game name provided does not match any known lottery games.");
-                break;
+    public void navigateToLotteryGame(String gameNameRaw) {
+        String key = canonical(gameNameRaw);
+
+        // --- Sayısal Loto ---
+        if (matchesAny(key, "sayisalloto", "sayisal", "syl", "cilginsayisalloto", "sayısalloto")) {
+            elementHelper.click(LotteryGamesTitle);
+            elementHelper.click(SylGameMenu);
+            wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(SylIframeId));
+            return;
         }
+
+        // --- Süper Loto ---
+        if (matchesAny(key, "superloto", "super", "spl", "süperloto")) {
+            elementHelper.click(LotteryGamesTitle);
+            elementHelper.click(SplGameMenu);
+            wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(SplIframeId));
+            return;
+        }
+
+        // --- Şans Topu ---
+        if (matchesAny(key, "sanstopu", "sans", "sns", "şanstopu")) {
+            elementHelper.click(LotteryGamesTitle);
+            elementHelper.click(SnsGameMenu);
+            wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(SnsIframeId));
+            return;
+        }
+
+        // --- On Numara ---
+        if (matchesAny(key, "onnumara", "onnum")) {
+            elementHelper.click(LotteryGamesTitle);
+            elementHelper.click(NmrGameMenu);
+            return;
+        }
+
+        // --- Milli Piyango ---
+        if (matchesAny(key, "millipiyango", "mp", "milli")) {
+            elementHelper.click(MlpTitle);
+            wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(MlpIframeId));
+            return;
+        }
+
+        throw new IllegalArgumentException("Invalid game name: " + gameNameRaw + " (canonical: " + key + ")");
+    }
+
+    // "Şans  Topu", "sans-topu", "SANS_TOPU", "ŞANS-TOPU" -> "sanstopu"
+    private String canonical(String s) {
+        if (s == null) return "";
+        String lower = s.toLowerCase(new Locale("tr","TR")).trim();
+        String noAccents = Normalizer.normalize(lower, Normalizer.Form.NFD)
+                .replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
+        String collapsed = noAccents.replaceAll("[^a-z0-9]+", ""); // boşluk, tire, alt çizgi, noktalama hepsi kalkar
+        return collapsed;
+    }
+
+    private boolean matchesAny(String key, String... candidates) {
+        for (String c : candidates) {
+            if (key.equals(c)) return true;
+        }
+        return false;
     }
 }

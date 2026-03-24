@@ -9,3 +9,5 @@ Feature: Milli Piyango Ticket Detail Test Cases
     Examples:
       | serialNumber                   | statusText   |
       | 24008E219001LB4000010008285    | Kazandın!    |
+
+

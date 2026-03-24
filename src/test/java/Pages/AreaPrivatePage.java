@@ -17,7 +17,8 @@ public class AreaPrivatePage {
 
     @FindBy(xpath = "(//span[contains(text(),'Biletlerim')])[1]")
     WebElement biletlerimButton;
-
+    @FindBy(xpath = "//span[normalize-space()='Para Çekme']")
+    WebElement withdrawalButton;
     public AreaPrivatePage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(ConfigReader.getInt("explicit.wait")));
@@ -27,5 +28,9 @@ public class AreaPrivatePage {
 
     public void navigateToTheGamingHistoryPage() {
         elementHelper.click(biletlerimButton);
+    }
+
+    public void navigateToWithDrawalPage() {
+        elementHelper.click(withdrawalButton);
     }
 }

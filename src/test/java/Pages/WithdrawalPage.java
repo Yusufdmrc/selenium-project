@@ -25,8 +25,6 @@ public class WithdrawalPage{
     WebElement passwordBox;
     @FindBy(xpath = "//a[contains(text(),'Hesabım')]")
     WebElement accountButton;
-    @FindBy(xpath = "//span[normalize-space()='Para Çekme']")
-    WebElement withdrawalButton;
     @FindBy(xpath = "//button[@data-testid='drawMoney.main.addNewBank.button']")
     WebElement  newAddButton;
     @FindBy(id = "iban")
@@ -51,11 +49,6 @@ public class WithdrawalPage{
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(ConfigReader.getInt("explicit.wait")));
         this.elementHelper = new ElementHelper(driver);
         PageFactory.initElements(driver, this);
-    }
-
-    public void navigateToWithDrawalPage() {
-        elementHelper.click(accountButton);
-        elementHelper.click(withdrawalButton);
     }
 
     public void addNewIban(String ibanNo, String shortName) {

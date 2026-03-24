@@ -1,7 +1,7 @@
 @LotteryGames
 Feature: Lottery Games Test Cases
 
-  @e2e
+  @e2e @LoginRequired
   Scenario Outline: "<Game>" - User is able to buy ticket "<Type>" SuperStar on tab : "<Tab>"
     When User navigates to the "<Game>" game page from homepage
     And User navigates to "<Tab>" tab on game
@@ -11,5 +11,5 @@ Feature: Lottery Games Test Cases
     Then User verifies the details of the ticket for "<Game>"
     @sansTopuSimple
     Examples:
-      | Game      | Tab    | Type | drawNumber | columnNumber | standartNumber | superstarNumber |
-      | Sans Topu | simple | with | 1          | 1            | 5              | 1               |
+      | Game         | Tab    | Type | drawNumber | columnNumber | standartNumber | superstarNumber |
+      | Sayisal Loto | simple | with | 1          | 1            | 6              | 1               |

@@ -13,4 +13,10 @@
             <class name="testRunners.FailedScenariosRunner"/>
         </classes>
     </test>
+
+    <test name="API Tests">
+        <classes>
+            <class name="testRunners.ApiRunner"/>
+        </classes>
+    </test>
 </suite>

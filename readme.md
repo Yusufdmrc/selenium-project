@@ -1,6 +1,28 @@
 # Selenium Cucumber Test Automation Project
 
-This repository contains a test automation framework designed using **Selenium**, **Cucumber**, **TestNG**, and **Maven**. The framework is capable of running automated tests for web applications in multiple environments and browsers. Below is an overview of the key components and functionality of the project.
+This repository contains a test automation framework designed using **Selenium**, **Cucumber**, **TestNG**, **Rest Assured**, and **Maven**. The framework supports both **UI testing** (Selenium) and **API testing** (Rest Assured) with automatic Akamai cookie management.
+
+---
+
+## 🆕 API Testing with Auto Cookie Management
+
+This project now includes **REST API testing** with **automatic Akamai cookie handling**:
+
+- ✅ **Automatic Cookie Fetching**: Selenium automatically logs in and fetches Akamai cookies
+- ✅ **10-Minute Cache**: Cookies are cached for 10 minutes to speed up tests
+- ✅ **Fallback System**: Falls back to manual cookies if Selenium fails
+- ✅ **No Manual Setup**: Just run `mvn test -Dtest=ApiRunner` and go!
+
+**Quick Start:**
+```bash
+# Run all API tests (cookies fetched automatically)
+mvn test -Dtest=testRunners.ApiRunner
+```
+
+**Documentation:**
+- 📘 **API_TEST_README.md** - Complete API testing guide
+- 📘 **COOKIE_INSTRUCTIONS.md** - Cookie management (auto + manual)
+- 📘 **AUTOMATIC_COOKIE_IMPLEMENTATION.md** - Technical implementation details
 
 ---
 

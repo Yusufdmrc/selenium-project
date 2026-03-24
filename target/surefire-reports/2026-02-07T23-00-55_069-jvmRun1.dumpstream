@@ -1,4 +1,4 @@
-# Created at 2025-05-23T22:11:50.881
+# Created at 2026-02-07T23:02:16.218
 TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: EXIT
 java.io.EOFException
 	at org.apache.maven.surefire.api.stream.AbstractStreamDecoder.read(AbstractStreamDecoder.java:444)
@@ -7,6 +7,6 @@ java.io.EOFException
 	at org.apache.maven.surefire.booter.stream.CommandDecoder.decode(CommandDecoder.java:77)
 	at org.apache.maven.surefire.booter.spi.CommandChannelDecoder.decode(CommandChannelDecoder.java:60)
 	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:290)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
+	at java.base/java.lang.Thread.run(Thread.java:840)
 
 

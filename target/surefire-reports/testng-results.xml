@@ -1,63 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-13T12:49:49 TRT" name="Cucumber Project" finished-at="2025-12-13T12:50:14 TRT" duration-ms="25418">
+  <suite started-at="2026-02-14T21:30:16 TRT" name="Cucumber Project" finished-at="2026-02-14T21:31:14 TRT" duration-ms="58407">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@2d7275fc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FailedScenariosRunner@799f10e1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@3911c2a7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FailedScenariosRunner@441772e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-12-13T12:49:49 TRT" name="Cucumber" finished-at="2025-12-13T12:50:14 TRT" duration-ms="24985">
+    <test started-at="2026-02-14T21:30:16 TRT" name="Cucumber" finished-at="2026-02-14T21:31:08 TRT" duration-ms="51757">
       <class name="testRunners.runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.runner@2d7275fc]" started-at="2025-12-13T12:49:49 TRT" name="setUpClass" finished-at="2025-12-13T12:49:49 TRT" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.runner@3911c2a7]" started-at="2026-02-14T21:30:16 TRT" name="setUpClass" finished-at="2026-02-14T21:30:17 TRT" duration-ms="1293" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@20d525]]>
+                <![CDATA[org.testng.TestRunner@175c2241]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@2d7275fc]" started-at="2025-12-13T12:49:49 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-12-13T12:50:12 TRT" duration-ms="22797" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@3911c2a7]" started-at="2026-02-14T21:30:17 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-14T21:31:04 TRT" duration-ms="47307" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Game filtering on Biletlerim page"]]>
+                <![CDATA[""Sayisal Loto" - User is able to buy ticket "with" SuperStar on tab : "simple""]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Gaming History Feature"]]>
+                <![CDATA["Lottery Games Test Cases"]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (81f98c250baf33fe407005a3124e0fd4)] -> css selector: span[class='userDetailsBalance']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0.1', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59681}, goog:processID: 52859, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59681/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81f98c250baf33fe407005a3124e0fd4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (81f98c250baf33fe407005a3124e0fd4)] -> css selector: span[class='userDetailsBalance']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0.1', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59681}, goog:processID: 52859, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59681/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81f98c250baf33fe407005a3124e0fd4
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at util.ElementHelper.checkVisible(ElementHelper.java:24)
+at Pages.LoginPage.checkSuccessful(LoginPage.java:79)
+at Pages.LoginPage.login(LoginPage.java:91)
+at util.Hooks.beforeScenarioWithLogin(Hooks.java:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.runner@2d7275fc]" started-at="2025-12-13T12:50:12 TRT" name="tearDownClass" finished-at="2025-12-13T12:50:14 TRT" duration-ms="1926" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.runner@3911c2a7]" started-at="2026-02-14T21:31:04 TRT" name="tearDownClass" finished-at="2026-02-14T21:31:08 TRT" duration-ms="3095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- testRunners.runner -->
     </test> <!-- Cucumber -->
-    <test started-at="2025-12-13T12:50:14 TRT" name="Failed Scenarios Tests" finished-at="2025-12-13T12:50:14 TRT" duration-ms="411">
+    <test started-at="2026-02-14T21:31:08 TRT" name="Failed Scenarios Tests" finished-at="2026-02-14T21:31:14 TRT" duration-ms="6497">
       <class name="testRunners.FailedScenariosRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.FailedScenariosRunner@799f10e1]" started-at="2025-12-13T12:50:14 TRT" name="setUpClass" finished-at="2025-12-13T12:50:14 TRT" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.FailedScenariosRunner@441772e]" started-at="2026-02-14T21:31:08 TRT" name="setUpClass" finished-at="2026-02-14T21:31:08 TRT" duration-ms="241" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6200f9cb]]>
+                <![CDATA[org.testng.TestRunner@5bf0d49]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.FailedScenariosRunner@799f10e1]" started-at="2025-12-13T12:50:14 TRT" name="tearDownClass" finished-at="2025-12-13T12:50:14 TRT" duration-ms="397" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FailedScenariosRunner@441772e]" started-at="2026-02-14T21:31:08 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-14T21:31:12 TRT" duration-ms="4265" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""Sayisal Loto" - User is able to buy ticket "with" SuperStar on tab : "simple""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Lottery Games Test Cases"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0.1', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [62b712c50941cb434102ee613c5329ac, get {url=http://test-www.millipiyangoonline.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59823}, goog:processID: 53374, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59823/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 62b712c50941cb434102ee613c5329ac]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0.1', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [62b712c50941cb434102ee613c5329ac, get {url=http://test-www.millipiyangoonline.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59823}, goog:processID: 53374, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59823/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 62b712c50941cb434102ee613c5329ac
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at util.DriverFactory.initializeDriver(DriverFactory.java:44)
+at util.Hooks.initializeDriverAndHandleCookies(Hooks.java:20)
+at util.Hooks.beforeScenarioWithLogin(Hooks.java:33)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.FailedScenariosRunner@441772e]" started-at="2026-02-14T21:31:12 TRT" name="tearDownClass" finished-at="2026-02-14T21:31:14 TRT" duration-ms="1986" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

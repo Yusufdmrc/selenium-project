@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Cucumber</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Dec 13 12:49:49 TRT 2025</td>
+<td>Started on:</td><td>Sat Feb 14 21:30:16 TRT 2026</td>
 </tr>
-<tr><td>Total time:</td><td>24 seconds (24985 ms)</td>
+<tr><td>Total time:</td><td>51 seconds (51757 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,18 +67,43 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunners.runner.runScenario()'><b>runScenario</b><br>Test class: testRunners.runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Game filtering on Biletlerim page", "Gaming History Feature"</td>
-<td></td>
-<td>22</td>
-<td>testRunners.runner@2d7275fc</td></tr>
+<td title='testRunners.runner.runScenario()'><b>runScenario</b><br>Test class: testRunners.runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: ""Sayisal Loto" - User is able to buy ticket "with" SuperStar on tab : "simple"", "Lottery Games Test Cases"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (81f98c250baf33fe407005a3124e0fd4)] -&gt; css selector: span[class=&apos;userDetailsBalance&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;17.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59681}, goog:processID: 52859, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59681/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81f98c250baf33fe407005a3124e0fd4
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at util.ElementHelper.checkVisible(ElementHelper.java:24)
+	at Pages.LoginPage.checkSuccessful(LoginPage.java:79)
+	at Pages.LoginPage.login(LoginPage.java:91)
+	at util.Hooks.beforeScenarioWithLogin(Hooks.java:36)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1125751975", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1125751975'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (81f98c250baf33fe407005a3124e0fd4)] -&gt; css selector: span[class=&apos;userDetailsBalance&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;17.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59681}, goog:processID: 52859, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59681/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81f98c250baf33fe407005a3124e0fd4
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at util.ElementHelper.checkVisible(ElementHelper.java:24)
+	at Pages.LoginPage.checkSuccessful(LoginPage.java:79)
+	at Pages.LoginPage.login(LoginPage.java:91)
+	at util.Hooks.beforeScenarioWithLogin(Hooks.java:36)
+</pre></div></td>
+<td>47</td>
+<td>testRunners.runner@3911c2a7</td></tr>
 </table><p>
 </body>
 </html>

@@ -19,7 +19,7 @@ public class TicketInquiryPage {
     @FindBy(xpath = "//span[normalize-space()='Sonuçlar']")
     WebElement resultsButton;
 
-    @FindBy(css = "//a[@class='gtm-headernavigation'][contains(text(),'Çekilişler')]")
+    @FindBy(xpath= "//a[@class='gtm-headernavigation'][contains(text(),'Çekilişler')]")
     WebElement lotteriesButton;
 
     @FindBy(css = "#txt_checkwinresults")

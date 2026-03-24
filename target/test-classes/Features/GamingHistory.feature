@@ -10,10 +10,12 @@ Feature: Gaming History Feature
     When  User clicks to the detail button
     Then  The user verifies the ticket detail "<message>" according to the selected  "<status>"
     Examples:
-      | game         | status           | dateRange | message                 |
-      | On Numara    | Çekiliş Bekleyen | 3 ay      | Çekiliş için bekleniyor |
-      | Sayısal Loto | Kazanan          | 2 ay      | Kazandın                |
-      | Süper Loto   | Kaybeden         | 3 ay      | Kazanamadın             |
+      | game            | status           | dateRange | message                 |
+      | On Numara       | Çekiliş Bekleyen | 3 ay      | Çekiliş için bekleniyor |
+      | Sayısal Loto    | Kazanan          | 2 ay      | Kazandın                |
+      | Süper Loto      | Kaybeden         | 3 ay      | Kazanamadın             |
+      | Sans Topu       | Kazanan          | 2 ay      | Kazanamadın             |
+      | Hızlı On Numara | Kaybeden         | 3 ay      | Kazanamadın             |
 
 
   @GameFiltering @LoginRequired

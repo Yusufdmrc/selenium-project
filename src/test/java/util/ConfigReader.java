@@ -28,4 +28,8 @@ public class ConfigReader {
     public static int getInt(String key) {
         return Integer.parseInt(properties.getProperty(key));
     }
+
+    public static double getDouble(String key) {
+        return Double.parseDouble(properties.getProperty(key));
+    }
 }
