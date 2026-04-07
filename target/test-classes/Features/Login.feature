@@ -25,7 +25,7 @@ Feature: Milli Piyango Login Check Test Cases
         Examples:
           | username    | error                                        | password        |
           | correctTcID | Girdiğin şifre ve hesap bilgileri uyuşmuyor. | abc1234         |
-#          | asdfg       | Kimlik bilgileri geçerli değil               | correctPassword |
+          | asdfg       | Kimlik bilgileri geçerli değil               | correctPassword |
 
 
       @SuccessfulLogin

@@ -28,9 +28,14 @@ public class TicketInquiryPage {
     @FindBy(css = ".wins-submit.gtm-checkwinresult")
     WebElement queryButton;
 
+    @FindBy(xpath = "//div[@class='slick-slide slick-current slick-active']//p[contains(text(),'KAZANILAN')]")
+    WebElement winningTicketText;
 
-    @FindBy(xpath = "//div[@class='slick-slide slick-current slick-active']//p[contains(text(),'Kazandın!')]")
-    WebElement ticketStatusText;
+    @FindBy(xpath = "//div[@class='slick-slide slick-current slick-active']//p[contains(text(),'Bu bilete ikramiye isabet etmedi')]")
+    WebElement losingTicketText;
+
+    @FindBy(xpath = "//div[@class='modal-body-content']//p[contains(text(),'Bu makbuz kodu için veri bulunmuyor')]")
+    WebElement invalidTicketText;
 
     public TicketInquiryPage(WebDriver driver) {
         this.driver = driver;
@@ -51,7 +56,15 @@ public class TicketInquiryPage {
     }
 
     public void checkTicketDetail(String statusText) {
-        elementHelper.checkVisible(ticketStatusText);
-        Assert.assertEquals(ticketStatusText.getText(),statusText);
+        if (statusText.equals("Kazandın!")) {
+            elementHelper.checkVisible(winningTicketText);
+            Assert.assertTrue(winningTicketText.isDisplayed(), "The details of the winning ticket were not displayed");
+        } else if (statusText.equals("Kazanamadın!")) {
+            elementHelper.checkVisible(losingTicketText);
+            Assert.assertTrue(losingTicketText.isDisplayed(), "Details of the losing ticket were not displayed");
+        } else if (statusText.equals("Geçersiz bilet!")) {
+            elementHelper.checkVisible(invalidTicketText);
+            Assert.assertTrue(invalidTicketText.isDisplayed(), "Details of the invalid ticket were not displayed");
+        }
     }
 }

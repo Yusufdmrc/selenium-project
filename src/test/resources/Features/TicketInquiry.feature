@@ -7,7 +7,9 @@ Feature: Milli Piyango Ticket Detail Test Cases
     When  User queries ticket by "<serialNumber>"
     Then  The user checks if the ticket "<statusText>" has been successfully viewed
     Examples:
-      | serialNumber                   | statusText   |
-      | 24008E219001LB4000010008285    | Kazandın!    |
+      | serialNumber                   | statusText      |
+      | 260041213986PC7000010002652    | Kazandın!       |
+      | 26002F213986BC7000010008650    | Kazanamadın!    |
+      | 26002F2232986BC7000010008650   | Geçersiz bilet! |
 
 
