@@ -25,7 +25,7 @@ Feature: Milli Piyango Login Check Test Cases
         Examples:
           | username    | error                                        | password        |
           | correctTcID | Girdiğin şifre ve hesap bilgileri uyuşmuyor. | abc1234         |
-          | asdfg       | Kimlik bilgileri geçerli değil               | correctPassword |
+#          | asdfg       | Kimlik bilgileri geçerli değil               | correctPassword |
 
 
       @SuccessfulLogin
@@ -37,9 +37,8 @@ Feature: Milli Piyango Login Check Test Cases
          Examples:
            |username               |password         |
            |correctTcID            |correctPassword  |
-
-#           |correctAccountNo       |correctPassword  |
-#           |correctEmail           |correctPassword  |
+           |correctAccountNo       |correctPassword  |
+           |correctEmail           |correctPassword  |
 
       @RetrievalWebFormMissingData
        Scenario Outline: User verifies Password Retrieval form is not submittable when with "<tcId>" TC ID, "<birthDate>" Birth Date, "<email>" email missing data

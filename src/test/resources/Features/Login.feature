@@ -37,9 +37,8 @@ Feature: Milli Piyango Login Check Test Cases
          Examples:
            |username               |password         |
            |correctTcID            |correctPassword  |
-
-#           |correctAccountNo       |correctPassword  |
-#           |correctEmail           |correctPassword  |
+           |correctAccountNo       |correctPassword  |
+           |correctEmail           |correctPassword  |
 
       @RetrievalWebFormMissingData
        Scenario Outline: User verifies Password Retrieval form is not submittable when with "<tcId>" TC ID, "<birthDate>" Birth Date, "<email>" email missing data

@@ -24,8 +24,11 @@ public class LoginPage {
     @FindBy(id = "loginBtna")
     WebElement loginButton;
 
-    @FindBy(xpath = "//span[@id='errorLoginModal']")
-    WebElement errorMessage;
+    @FindBy(id = "errorLoginModal")
+    WebElement errorLoginModal;
+
+    @FindBy(id = "errorModalone")
+    WebElement errorModalone;
 
     @FindBy(id = "username")
     WebElement usernameBox;
@@ -74,9 +77,16 @@ public class LoginPage {
         passwordBox.sendKeys(LoginHelper.getPassword(password));
     }
 
-    public void dontCredentialValidErrorMessage(String message) {
-        elementHelper.checkVisible(errorMessage);
-        Assert.assertEquals(errorMessage.getText(),message,"Expected to see" + message + "but we see" + errorMessage.getText());
+    public void dontCredentialValidErrorMessage(String expectedMessage) {
+        String actualMessage = "";
+
+        if (elementHelper.isVisible(errorLoginModal)) {
+            actualMessage = errorLoginModal.getText();
+        } else if (elementHelper.isVisible(errorModalone)) {
+            actualMessage = errorModalone.getText();
+        }
+
+        Assert.assertEquals(actualMessage, expectedMessage);
     }
 
     public void checkSuccessful() {
