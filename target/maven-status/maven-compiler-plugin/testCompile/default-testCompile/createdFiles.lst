@@ -33,5 +33,6 @@ Pages/GamingHistoryPage.class
 util/ApiHooks.class
 stepDefinitions/LoginPageStepDefinitions.class
 util/Hooks.class
+util/SeleniumCookieHelper.class
 Pages/LoginPage.class
 Pages/RegisterPage.class

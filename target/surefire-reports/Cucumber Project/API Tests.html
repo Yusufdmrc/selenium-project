@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>TestNG:  API Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>API Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 05 22:02:14 TRT 2026</td>
+</tr>
+<tr><td>Total time:</td><td>763 seconds (763429 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunners.ApiRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.ApiRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful login with valid "correctEmail" credentials via API", "Milli Piyango Login API Test Cases"</td>
+<td><div><pre>java.lang.AssertionError: Expected status code 200 but got 422
+Response body: {&quot;status&quot;:&quot;FAILURE&quot;,&quot;requestId&quot;:&quot;8e37b733-f4e3-4ad5-b980-43833c5d67bd&quot;,&quot;datetime&quot;:&quot;05-04-2026 22:14:55&quot;,&quot;error&quot;:{&quot;errorInfo&quot;:&quot;err.empty&quot;}} expected [200] but found [422]
+	at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+	at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace406526555", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace406526555'><pre>java.lang.AssertionError: Expected status code 200 but got 422
+Response body: {&quot;status&quot;:&quot;FAILURE&quot;,&quot;requestId&quot;:&quot;8e37b733-f4e3-4ad5-b980-43833c5d67bd&quot;,&quot;datetime&quot;:&quot;05-04-2026 22:14:55&quot;,&quot;error&quot;:{&quot;errorInfo&quot;:&quot;err.empty&quot;}} expected [200] but found [422]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+	at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+</pre></div></td>
+<td>43</td>
+<td>testRunners.ApiRunner@15ff3e9e</td></tr>
+<tr>
+<td title='testRunners.ApiRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.ApiRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful login with valid "correctTcID" credentials via API", "Milli Piyango Login API Test Cases"</td>
+<td><div><pre>java.lang.AssertionError: Expected status code 200 but got 422
+Response body: {&quot;status&quot;:&quot;FAILURE&quot;,&quot;requestId&quot;:&quot;06478919-f9d2-4f52-870d-b857cf8c3152&quot;,&quot;datetime&quot;:&quot;05-04-2026 22:13:18&quot;,&quot;error&quot;:{&quot;errorInfo&quot;:&quot;err.empty&quot;}} expected [200] but found [422]
+	at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+	at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1417515144", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1417515144'><pre>java.lang.AssertionError: Expected status code 200 but got 422
+Response body: {&quot;status&quot;:&quot;FAILURE&quot;,&quot;requestId&quot;:&quot;06478919-f9d2-4f52-870d-b857cf8c3152&quot;,&quot;datetime&quot;:&quot;05-04-2026 22:13:18&quot;,&quot;error&quot;:{&quot;errorInfo&quot;:&quot;err.empty&quot;}} expected [200] but found [422]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+	at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+</pre></div></td>
+<td>664</td>
+<td>testRunners.ApiRunner@15ff3e9e</td></tr>
+<tr>
+<td title='testRunners.ApiRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.ApiRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful login with valid "correctAccountNo" credentials via API", "Milli Piyango Login API Test Cases"</td>
+<td><div><pre>java.lang.AssertionError: Expected status code 200 but got 422
+Response body: {&quot;status&quot;:&quot;FAILURE&quot;,&quot;requestId&quot;:&quot;3fec6c76-b9c8-4efa-b29a-dd52655475e9&quot;,&quot;datetime&quot;:&quot;05-04-2026 22:14:12&quot;,&quot;error&quot;:{&quot;errorInfo&quot;:&quot;err.empty&quot;}} expected [200] but found [422]
+	at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+	at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1771456800", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1771456800'><pre>java.lang.AssertionError: Expected status code 200 but got 422
+Response body: {&quot;status&quot;:&quot;FAILURE&quot;,&quot;requestId&quot;:&quot;3fec6c76-b9c8-4efa-b29a-dd52655475e9&quot;,&quot;datetime&quot;:&quot;05-04-2026 22:14:12&quot;,&quot;error&quot;:{&quot;errorInfo&quot;:&quot;err.empty&quot;}} expected [200] but found [422]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+	at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+</pre></div></td>
+<td>53</td>
+<td>testRunners.ApiRunner@15ff3e9e</td></tr>
+</table><p>
+</body>
+</html>

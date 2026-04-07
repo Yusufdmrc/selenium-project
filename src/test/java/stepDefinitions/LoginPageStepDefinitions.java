@@ -17,7 +17,8 @@ public class LoginPageStepDefinitions {
 
     @Given("User at home page")
     public void userAtHomePage() {
-     }
+        loginPage.verifyMemberLoginButtonIsVisible();
+    }
 
     @When("Click member login button")
     public void clickMemberLoginButton() {

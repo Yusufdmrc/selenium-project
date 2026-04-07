@@ -1,149 +1,377 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="9" passed="0" failed="9" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-14T21:30:16 TRT" name="Cucumber Project" finished-at="2026-02-14T21:31:14 TRT" duration-ms="58407">
+  <suite started-at="2026-04-05T21:54:29 TRT" name="Cucumber Project" finished-at="2026-04-05T22:14:57 TRT" duration-ms="1228167">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@3911c2a7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FailedScenariosRunner@441772e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@3d74bf60]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FailedScenariosRunner@52e6fdee]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ApiRunner@15ff3e9e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-02-14T21:30:16 TRT" name="Cucumber" finished-at="2026-02-14T21:31:08 TRT" duration-ms="51757">
+    <test started-at="2026-04-05T21:54:29 TRT" name="Cucumber" finished-at="2026-04-05T21:58:49 TRT" duration-ms="259273">
       <class name="testRunners.runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.runner@3911c2a7]" started-at="2026-02-14T21:30:16 TRT" name="setUpClass" finished-at="2026-02-14T21:30:17 TRT" duration-ms="1293" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.runner@3d74bf60]" started-at="2026-04-05T21:54:29 TRT" name="setUpClass" finished-at="2026-04-05T21:54:30 TRT" duration-ms="230" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@175c2241]]>
+                <![CDATA[org.testng.TestRunner@292b08d6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@3911c2a7]" started-at="2026-02-14T21:30:17 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-14T21:31:04 TRT" duration-ms="47307" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@3d74bf60]" started-at="2026-04-05T21:54:30 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T21:55:36 TRT" duration-ms="65962" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[""Sayisal Loto" - User is able to buy ticket "with" SuperStar on tab : "simple""]]>
+                <![CDATA["Successful login with valid "correctTcID" credentials via API"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Lottery Games Test Cases"]]>
+                <![CDATA["Milli Piyango Login API Test Cases"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (81f98c250baf33fe407005a3124e0fd4)] -> css selector: span[class='userDetailsBalance']] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0.1', java.version: '17.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59681}, goog:processID: 52859, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59681/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 81f98c250baf33fe407005a3124e0fd4]]>
+              <![CDATA[Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"7f667ee2-dca9-4d41-9961-1c7a71e4ff53","datetime":"05-04-2026 21:55:36","error":{"errorInfo":"err.empty"}} expected [200] but found [422]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (81f98c250baf33fe407005a3124e0fd4)] -> css selector: span[class='userDetailsBalance']] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0.1', java.version: '17.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59681}, goog:processID: 52859, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59681/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 81f98c250baf33fe407005a3124e0fd4
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at util.ElementHelper.checkVisible(ElementHelper.java:24)
-at Pages.LoginPage.checkSuccessful(LoginPage.java:79)
-at Pages.LoginPage.login(LoginPage.java:91)
-at util.Hooks.beforeScenarioWithLogin(Hooks.java:36)
+              <![CDATA[java.lang.AssertionError: Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"7f667ee2-dca9-4d41-9961-1c7a71e4ff53","datetime":"05-04-2026 21:55:36","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.runner@3911c2a7]" started-at="2026-02-14T21:31:04 TRT" name="tearDownClass" finished-at="2026-02-14T21:31:08 TRT" duration-ms="3095" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@3d74bf60]" started-at="2026-04-05T21:55:36 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T21:57:11 TRT" duration-ms="95229" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login with valid "correctAccountNo" credentials via API"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Milli Piyango Login API Test Cases"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"188ab416-4f6e-4df1-810b-fcb98ec77471","datetime":"05-04-2026 21:57:11","error":{"errorInfo":"err.empty"}} expected [200] but found [422]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"188ab416-4f6e-4df1-810b-fcb98ec77471","datetime":"05-04-2026 21:57:11","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.runner@3d74bf60]" started-at="2026-04-05T21:57:11 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T21:58:45 TRT" duration-ms="94710" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login with valid "correctEmail" credentials via API"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Milli Piyango Login API Test Cases"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"08378a11-d344-409c-b0af-6a02c84c9fbf","datetime":"05-04-2026 21:58:46","error":{"errorInfo":"err.empty"}} expected [200] but found [422]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"08378a11-d344-409c-b0af-6a02c84c9fbf","datetime":"05-04-2026 21:58:46","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.runner@3d74bf60]" started-at="2026-04-05T21:58:45 TRT" name="tearDownClass" finished-at="2026-04-05T21:58:49 TRT" duration-ms="3131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- testRunners.runner -->
     </test> <!-- Cucumber -->
-    <test started-at="2026-02-14T21:31:08 TRT" name="Failed Scenarios Tests" finished-at="2026-02-14T21:31:14 TRT" duration-ms="6497">
+    <test started-at="2026-04-05T21:58:49 TRT" name="Failed Scenarios Tests" finished-at="2026-04-05T22:02:14 TRT" duration-ms="205430">
       <class name="testRunners.FailedScenariosRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.FailedScenariosRunner@441772e]" started-at="2026-02-14T21:31:08 TRT" name="setUpClass" finished-at="2026-02-14T21:31:08 TRT" duration-ms="241" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.FailedScenariosRunner@52e6fdee]" started-at="2026-04-05T21:58:49 TRT" name="setUpClass" finished-at="2026-04-05T21:58:49 TRT" duration-ms="12" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5bf0d49]]>
+                <![CDATA[org.testng.TestRunner@22555ebf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FailedScenariosRunner@441772e]" started-at="2026-02-14T21:31:08 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-14T21:31:12 TRT" duration-ms="4265" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FailedScenariosRunner@52e6fdee]" started-at="2026-04-05T21:58:49 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T21:59:58 TRT" duration-ms="69828" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[""Sayisal Loto" - User is able to buy ticket "with" SuperStar on tab : "simple""]]>
+                <![CDATA["Successful login with valid "correctTcID" credentials via API"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Lottery Games Test Cases"]]>
+                <![CDATA["Milli Piyango Login API Test Cases"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[target frame detached
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=144.0.7559.133)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0.1', java.version: '17.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [62b712c50941cb434102ee613c5329ac, get {url=http://test-www.millipiyangoonline.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59823}, goog:processID: 53374, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59823/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 62b712c50941cb434102ee613c5329ac]]>
+              <![CDATA[Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"094b15a3-e4f5-40fa-9d67-2a0a5385822f","datetime":"05-04-2026 21:59:59","error":{"errorInfo":"err.empty"}} expected [200] but found [422]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: target frame detached
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=144.0.7559.133)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0.1', java.version: '17.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [62b712c50941cb434102ee613c5329ac, get {url=http://test-www.millipiyangoonline.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59823}, goog:processID: 53374, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59823/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 62b712c50941cb434102ee613c5329ac
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
-at util.DriverFactory.initializeDriver(DriverFactory.java:44)
-at util.Hooks.initializeDriverAndHandleCookies(Hooks.java:20)
-at util.Hooks.beforeScenarioWithLogin(Hooks.java:33)
+              <![CDATA[java.lang.AssertionError: Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"094b15a3-e4f5-40fa-9d67-2a0a5385822f","datetime":"05-04-2026 21:59:59","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.FailedScenariosRunner@441772e]" started-at="2026-02-14T21:31:12 TRT" name="tearDownClass" finished-at="2026-02-14T21:31:14 TRT" duration-ms="1986" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FailedScenariosRunner@52e6fdee]" started-at="2026-04-05T21:59:58 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T22:01:02 TRT" duration-ms="63343" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login with valid "correctAccountNo" credentials via API"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Milli Piyango Login API Test Cases"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"944ddb20-dfba-4a2d-b479-267adfe0597e","datetime":"05-04-2026 22:01:02","error":{"errorInfo":"err.empty"}} expected [200] but found [422]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"944ddb20-dfba-4a2d-b479-267adfe0597e","datetime":"05-04-2026 22:01:02","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FailedScenariosRunner@52e6fdee]" started-at="2026-04-05T22:01:02 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T22:02:11 TRT" duration-ms="68899" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login with valid "correctEmail" credentials via API"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Milli Piyango Login API Test Cases"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"2c30b9f0-9c65-4f00-a74f-84f33e512fb3","datetime":"05-04-2026 22:02:11","error":{"errorInfo":"err.empty"}} expected [200] but found [422]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"2c30b9f0-9c65-4f00-a74f-84f33e512fb3","datetime":"05-04-2026 22:02:11","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.FailedScenariosRunner@52e6fdee]" started-at="2026-04-05T22:02:11 TRT" name="tearDownClass" finished-at="2026-04-05T22:02:14 TRT" duration-ms="3347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- testRunners.FailedScenariosRunner -->
     </test> <!-- Failed Scenarios Tests -->
+    <test started-at="2026-04-05T22:02:14 TRT" name="API Tests" finished-at="2026-04-05T22:14:57 TRT" duration-ms="763429">
+      <class name="testRunners.ApiRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.ApiRunner@15ff3e9e]" started-at="2026-04-05T22:02:14 TRT" name="setUpClass" finished-at="2026-04-05T22:02:14 TRT" duration-ms="24" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@36ebc363]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ApiRunner@15ff3e9e]" started-at="2026-04-05T22:02:14 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T22:13:18 TRT" duration-ms="664109" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login with valid "correctTcID" credentials via API"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Milli Piyango Login API Test Cases"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"06478919-f9d2-4f52-870d-b857cf8c3152","datetime":"05-04-2026 22:13:18","error":{"errorInfo":"err.empty"}} expected [200] but found [422]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"06478919-f9d2-4f52-870d-b857cf8c3152","datetime":"05-04-2026 22:13:18","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ApiRunner@15ff3e9e]" started-at="2026-04-05T22:13:18 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T22:14:11 TRT" duration-ms="53101" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login with valid "correctAccountNo" credentials via API"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Milli Piyango Login API Test Cases"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"3fec6c76-b9c8-4efa-b29a-dd52655475e9","datetime":"05-04-2026 22:14:12","error":{"errorInfo":"err.empty"}} expected [200] but found [422]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"3fec6c76-b9c8-4efa-b29a-dd52655475e9","datetime":"05-04-2026 22:14:12","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.ApiRunner@15ff3e9e]" started-at="2026-04-05T22:14:11 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T22:14:55 TRT" duration-ms="43327" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login with valid "correctEmail" credentials via API"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Milli Piyango Login API Test Cases"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"8e37b733-f4e3-4ad5-b980-43833c5d67bd","datetime":"05-04-2026 22:14:55","error":{"errorInfo":"err.empty"}} expected [200] but found [422]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"8e37b733-f4e3-4ad5-b980-43833c5d67bd","datetime":"05-04-2026 22:14:55","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.ApiRunner@15ff3e9e]" started-at="2026-04-05T22:14:55 TRT" name="tearDownClass" finished-at="2026-04-05T22:14:57 TRT" duration-ms="2865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunners.ApiRunner -->
+    </test> <!-- API Tests -->
   </suite> <!-- Cucumber Project -->
 </testng-results>

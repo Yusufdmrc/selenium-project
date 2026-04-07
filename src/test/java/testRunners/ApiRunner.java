@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
                 "html:Reports/CucumberReport/ApiReports.html",
                 "json:Reports/CucumberReport/ApiReports.json"
         },
-        tags = "@api"
+        tags = ""
 )
 public class ApiRunner extends AbstractTestNGCucumberTests {
 }

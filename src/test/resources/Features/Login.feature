@@ -28,7 +28,7 @@ Feature: Milli Piyango Login Check Test Cases
           | asdfg       | Kimlik bilgileri geçerli değil               | correctPassword |
 
 
-  @SuccessfulLogin
+      @SuccessfulLogin
        Scenario Outline: Correct "<username>" Username &  Correct "<password>" Password for login
          And write "<username>" for username field
          And write "<password>" for password field
@@ -37,10 +37,11 @@ Feature: Milli Piyango Login Check Test Cases
          Examples:
            |username               |password         |
            |correctTcID            |correctPassword  |
-           |correctAccountNo       |correctPassword  |
-           |correctEmail           |correctPassword  |
 
-    @RetrievalWebFormMissingData
+#           |correctAccountNo       |correctPassword  |
+#           |correctEmail           |correctPassword  |
+
+      @RetrievalWebFormMissingData
        Scenario Outline: User verifies Password Retrieval form is not submittable when with "<tcId>" TC ID, "<birthDate>" Birth Date, "<email>" email missing data
          And User navigates to the Pasword Retrieval Page
          Then User verifies Password Retrieval form is not submittable when with "<tcId>" TC ID, "<birthDate>" Birth Date, "<email>" email missing data

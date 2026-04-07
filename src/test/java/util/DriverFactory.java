@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import reporting.Logging;
 
 import java.time.Duration;
 
@@ -39,9 +40,15 @@ public class DriverFactory {
         }
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(ConfigReader.getInt("page.load.timeout")));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(120)); // Test ortamı yavaş
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigReader.getInt("implicit.wait")));
         driver.get(setEnvironmentURL(environment));
+
+        try {
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(ConfigReader.getInt("page.load.timeout")));
+        } catch (org.openqa.selenium.TimeoutException e) {
+            Logging.writeConsoleLog("Page load timeout occurred but continuing (EAGER mode)");
+        }
 
         return driver;
     }

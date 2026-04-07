@@ -1,47 +1,112 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 59.86 s <<< FAILURE! -- in TestSuite
-testRunners.runner.runScenario[""Sayisal Loto" - User is able to buy ticket "with" SuperStar on tab : "simple"", "Lottery Games Test Cases"](1) -- Time elapsed: 47.34 s <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (81f98c250baf33fe407005a3124e0fd4)] -> css selector: span[class='userDetailsBalance']] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0.1', java.version: '17.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59681}, goog:processID: 52859, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59681/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 81f98c250baf33fe407005a3124e0fd4
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at util.ElementHelper.checkVisible(ElementHelper.java:24)
-	at Pages.LoginPage.checkSuccessful(LoginPage.java:79)
-	at Pages.LoginPage.login(LoginPage.java:91)
-	at util.Hooks.beforeScenarioWithLogin(Hooks.java:36)
+Tests run: 9, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 1228 s <<< FAILURE! -- in TestSuite
+testRunners.runner.runScenario["Successful login with valid "correctTcID" credentials via API", "Milli Piyango Login API Test Cases"](1) -- Time elapsed: 65.96 s <<< FAILURE!
+java.lang.AssertionError: 
+Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"7f667ee2-dca9-4d41-9961-1c7a71e4ff53","datetime":"05-04-2026 21:55:36","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+	at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
 
-testRunners.FailedScenariosRunner.runScenario[""Sayisal Loto" - User is able to buy ticket "with" SuperStar on tab : "simple"", "Lottery Games Test Cases"](1) -- Time elapsed: 4.287 s <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-target frame detached
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=144.0.7559.133)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0.1', java.version: '17.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [62b712c50941cb434102ee613c5329ac, get {url=http://test-www.millipiyangoonline.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/t1/rl_v5fcd6bg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59823}, goog:processID: 53374, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59823/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 62b712c50941cb434102ee613c5329ac
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
-	at util.DriverFactory.initializeDriver(DriverFactory.java:44)
-	at util.Hooks.initializeDriverAndHandleCookies(Hooks.java:20)
-	at util.Hooks.beforeScenarioWithLogin(Hooks.java:33)
+testRunners.runner.runScenario["Successful login with valid "correctAccountNo" credentials via API", "Milli Piyango Login API Test Cases"](2) -- Time elapsed: 95.23 s <<< FAILURE!
+java.lang.AssertionError: 
+Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"188ab416-4f6e-4df1-810b-fcb98ec77471","datetime":"05-04-2026 21:57:11","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+	at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+
+testRunners.runner.runScenario["Successful login with valid "correctEmail" credentials via API", "Milli Piyango Login API Test Cases"](3) -- Time elapsed: 94.71 s <<< FAILURE!
+java.lang.AssertionError: 
+Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"08378a11-d344-409c-b0af-6a02c84c9fbf","datetime":"05-04-2026 21:58:46","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+	at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+
+testRunners.FailedScenariosRunner.runScenario["Successful login with valid "correctTcID" credentials via API", "Milli Piyango Login API Test Cases"](1) -- Time elapsed: 69.83 s <<< FAILURE!
+java.lang.AssertionError: 
+Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"094b15a3-e4f5-40fa-9d67-2a0a5385822f","datetime":"05-04-2026 21:59:59","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+	at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+
+testRunners.FailedScenariosRunner.runScenario["Successful login with valid "correctAccountNo" credentials via API", "Milli Piyango Login API Test Cases"](2) -- Time elapsed: 63.34 s <<< FAILURE!
+java.lang.AssertionError: 
+Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"944ddb20-dfba-4a2d-b479-267adfe0597e","datetime":"05-04-2026 22:01:02","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+	at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+
+testRunners.FailedScenariosRunner.runScenario["Successful login with valid "correctEmail" credentials via API", "Milli Piyango Login API Test Cases"](3) -- Time elapsed: 68.90 s <<< FAILURE!
+java.lang.AssertionError: 
+Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"2c30b9f0-9c65-4f00-a74f-84f33e512fb3","datetime":"05-04-2026 22:02:11","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+	at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+
+testRunners.ApiRunner.runScenario["Successful login with valid "correctTcID" credentials via API", "Milli Piyango Login API Test Cases"](1) -- Time elapsed: 664.1 s <<< FAILURE!
+java.lang.AssertionError: 
+Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"06478919-f9d2-4f52-870d-b857cf8c3152","datetime":"05-04-2026 22:13:18","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+	at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+
+testRunners.ApiRunner.runScenario["Successful login with valid "correctAccountNo" credentials via API", "Milli Piyango Login API Test Cases"](2) -- Time elapsed: 53.10 s <<< FAILURE!
+java.lang.AssertionError: 
+Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"3fec6c76-b9c8-4efa-b29a-dd52655475e9","datetime":"05-04-2026 22:14:12","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+	at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
+
+testRunners.ApiRunner.runScenario["Successful login with valid "correctEmail" credentials via API", "Milli Piyango Login API Test Cases"](3) -- Time elapsed: 43.33 s <<< FAILURE!
+java.lang.AssertionError: 
+Expected status code 200 but got 422
+Response body: {"status":"FAILURE","requestId":"8e37b733-f4e3-4ad5-b980-43833c5d67bd","datetime":"05-04-2026 22:14:55","error":{"errorInfo":"err.empty"}} expected [200] but found [422]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at stepDefinitions.ApiLoginStepDefinitions.apiResponseStatusCodeShouldBe(ApiLoginStepDefinitions.java:48)
+	at ✽.API response status code should be 200(file:///Users/yusuf/software/test/CucumberProjects/selenium-project-main/src/test/resources/Features/ApiLogin.feature:7)
 

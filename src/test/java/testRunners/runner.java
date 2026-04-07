@@ -14,7 +14,7 @@ import util.DriverFactory;
                 "json:Reports/CucumberReport/Reports.json",
                 "rerun:target/rerun.txt"
         },
-        tags = "@e2e"
+        tags = "@SuccessfulLogin"
 )
 public class runner extends AbstractTestNGCucumberTests {
 }

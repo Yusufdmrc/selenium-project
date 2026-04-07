@@ -54,6 +54,10 @@ public class LoginPage {
         Assert.assertEquals(actualUrl, expectedUrl);
     }
 
+    public void verifyMemberLoginButtonIsVisible() {
+        elementHelper.checkVisible(memberLoginButton);
+    }
+
     public void clickMemberLoginButton() {
         elementHelper.click(memberLoginButton);
     }
