@@ -9,22 +9,13 @@ import util.ConfigReader;
 import util.ElementHelper;
 
 import java.time.Duration;
+import java.util.List;
 
 public class WithdrawalPage{
     WebDriver driver;
     util.ElementHelper elementHelper;
     WebDriverWait wait;
 
-    @FindBy(xpath = "//button[@class='btn-default btn-bg-primary loginboxcta']")
-    WebElement memberLoginButton;
-    @FindBy(id = "loginBtna")
-    WebElement loginButton;
-    @FindBy(id = "username")
-    WebElement usernameBox;
-    @FindBy(id = "password")
-    WebElement passwordBox;
-    @FindBy(xpath = "//a[contains(text(),'Hesabım')]")
-    WebElement accountButton;
     @FindBy(xpath = "//button[@data-testid='drawMoney.main.addNewBank.button']")
     WebElement  newAddButton;
     @FindBy(id = "iban")
@@ -39,10 +30,14 @@ public class WithdrawalPage{
     WebElement drawMoneyButton;
     @FindBy(id = "amount")
     WebElement amountField;
-    @FindBy(xpath = " //button[@data-testid='drawMoney.makeWithdrawal.confirm.button']")
+    @FindBy(xpath = "//button[@data-testid='drawMoney.makeWithdrawal.confirm.button']")
     WebElement confirmButton;
     @FindBy(xpath = "//p[@data-testid='general.modal.desc']")
     WebElement verifyText;
+
+    private final org.openqa.selenium.By deleteIbanIcons = org.openqa.selenium.By.xpath("//img[contains(@src,'BlueTrash')]");
+    private final org.openqa.selenium.By deleteConfirmButton = org.openqa.selenium.By.id("closeButton");
+
 
     public WithdrawalPage(WebDriver driver) {
         this.driver = driver;
@@ -65,6 +60,31 @@ public class WithdrawalPage{
     }
     public void verifySuccessfulWithdrawal() {
         elementHelper.checkVisible(verifyText);
+    }
+
+    public void removeAllIbans() {
+        int safety = 0;
+        List<WebElement> icons = driver.findElements(deleteIbanIcons);
+        while (!icons.isEmpty() && safety < 50) {
+            int beforeCount = icons.size();
+            try {
+                elementHelper.click(icons.get(0));
+            } catch (org.openqa.selenium.StaleElementReferenceException e) {
+                icons = driver.findElements(deleteIbanIcons);
+                continue;
+            }
+            List<WebElement> confirmButtons = driver.findElements(deleteConfirmButton);
+            if (!confirmButtons.isEmpty()) {
+                elementHelper.click(confirmButtons.get(0));
+            }
+            try {
+                wait.until(d -> d.findElements(deleteIbanIcons).size() < beforeCount || d.findElements(deleteIbanIcons).isEmpty());
+            } catch (org.openqa.selenium.TimeoutException e) {
+                break;
+            }
+            icons = driver.findElements(deleteIbanIcons);
+            safety++;
+        }
     }
 
     public static String getShortName(String shortName) {

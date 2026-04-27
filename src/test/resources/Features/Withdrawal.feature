@@ -9,6 +9,6 @@ Feature: Milli Piyango Withdrawal Check Test Cases
     Then Check Successful withdrawal
 
     Examples:
-      | ibanNo   | shortName  | price   |
-      | ibanNo   | shortName1 | price   |
+      | ibanNo | shortName  | price  |
+      | ibanNo | shortName1 | price1 |
 

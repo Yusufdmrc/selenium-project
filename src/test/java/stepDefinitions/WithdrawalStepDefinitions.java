@@ -25,6 +25,7 @@ public class WithdrawalStepDefinitions {
     public void userNavigatesToParaCekmePage() {
         homePage.navigateToAreaPrivatePage();
         areaPrivate.navigateToWithDrawalPage();
+        withdrawalPage.removeAllIbans();
     }
 
     @When("User adds a new IBAN with {string} and {string}")
@@ -35,6 +36,7 @@ public class WithdrawalStepDefinitions {
     @When("User withdraws {string}")
     public void userWithdraws(String price) {
         withdrawalPage.withdrawAmount(price);
+
     }
 
     @Then("Check Successful withdrawal")
