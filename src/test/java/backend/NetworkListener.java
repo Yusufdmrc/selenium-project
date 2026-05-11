@@ -4,9 +4,9 @@ import com.google.gson.Gson;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v131.network.Network;
+import org.openqa.selenium.devtools.v147.network.Network;
 import org.openqa.selenium.devtools.HasDevTools;
-import org.openqa.selenium.devtools.v131.network.model.RequestId;
+import org.openqa.selenium.devtools.v147.network.model.RequestId;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -29,7 +29,7 @@ public class NetworkListener {
         WebDriver driver = new Augmenter().augment(remoteWebDriver);
         DevTools devTools=((HasDevTools) driver).getDevTools();
         devTools.createSession();
-        devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
+        devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty()));
         return devTools;
     }
 

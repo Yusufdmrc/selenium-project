@@ -9,8 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v85.network.Network;
-import org.openqa.selenium.devtools.v85.network.model.Request;
+import org.openqa.selenium.devtools.v147.network.Network;
+import org.openqa.selenium.devtools.v147.network.model.Request;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -89,14 +89,14 @@ public class VerifyTicketPlayedPage {
     public void startNetworkMonitoring() {
         DevTools devTools = ((ChromeDriver) driver).getDevTools();
         devTools.createSession();
-        devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
+        devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty()));
         backendNumbers.clear();
 
         devTools.addListener(Network.requestWillBeSent(), requestSent -> {
             Request request = requestSent.getRequest();
             String url = request.getUrl();
 
-            if (StringUtils.endsWithIgnoreCase(url, "sell")) {
+            if (url.toLowerCase().contains("sell")) {
                 System.out.println("#### SELL REQUEST DETECTED ####");
                 System.out.println("SEND URL: " + url);
                 request.getPostData().ifPresent(postData -> {
@@ -112,7 +112,7 @@ public class VerifyTicketPlayedPage {
     private void extractNumbersFromBackend(String postData) {
         try {
             JsonObject jsonObject = JsonParser.parseString(postData).getAsJsonObject();
-            JsonArray marcatureArray = jsonObject.getAsJsonObject("biglietto")
+            JsonArray marcatureArray = jsonObject.getAsJsonObject("giocata")
                     .getAsJsonArray("pannelli")
                     .get(0)
                     .getAsJsonObject()
