@@ -6,8 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import util.DriverFactory;
-import util.ElementHelper;
+import utils.DriverFactory;
 
 public class RegisterPageStepDefinitions {
 

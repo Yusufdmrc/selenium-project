@@ -7,10 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.yaml.snakeyaml.scanner.Constant;
-import util.ConfigReader;
-import util.ElementHelper;
-import util.LoginHelper;
+import utils.ConfigReader;
+import utils.ElementHelper;
+import utils.LoginHelper;
 
 import java.time.Duration;
 

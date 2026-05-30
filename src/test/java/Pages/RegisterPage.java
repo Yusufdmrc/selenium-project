@@ -6,15 +6,15 @@
     import org.openqa.selenium.support.FindBy;
     import org.openqa.selenium.support.PageFactory;
     import org.openqa.selenium.support.ui.WebDriverWait;
-    import util.ConfigReader;
-    import util.DataProcess;
-    import util.ElementHelper;
+    import utils.ConfigReader;
+    import utils.DataProcess;
+    import utils.ElementHelper;
 
     import java.time.Duration;
 
     public class RegisterPage {
         WebDriver driver;
-        util.ElementHelper elementHelper;
+        utils.ElementHelper elementHelper;
         WebDriverWait wait;
 
         // Locator'lar

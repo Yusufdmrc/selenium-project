@@ -5,7 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import util.DriverFactory;
+import utils.DriverFactory;
 
 public class VerifyTicketPlayedStepDefinitions {
 
@@ -13,8 +13,8 @@ public class VerifyTicketPlayedStepDefinitions {
     VerifyTicketPlayedPage verifyTicketPlayedPage = new VerifyTicketPlayedPage(driver);
 
     @Given("User navigates to the {string} page")
-    public void userNavigatesToTheOnNumaraPage(String game) {
-        verifyTicketPlayedPage.navigateToOnNumaraPage(game);
+    public void userNavigatesToGamePage(String game) {
+        verifyTicketPlayedPage.navigateToGamePage(game);
     }
 
     @When("User buys {string} tickets with the random button")

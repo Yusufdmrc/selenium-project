@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "@target/rerun.txt",
-        glue = {"stepDefinitions", "util"},
+        glue = {"stepDefinitions", "utils"},
         plugin = {
                 "summary", "pretty", "html:Reports/CucumberReport/FailedReports.html",
                 "json:Reports/CucumberReport/FailedReports.json",

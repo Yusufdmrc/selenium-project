@@ -4,7 +4,6 @@ package Pages;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,8 +15,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import util.ConfigReader;
-import util.ElementHelper;
+import utils.ConfigReader;
+import utils.ElementHelper;
 
 
 import java.time.Duration;
@@ -55,6 +54,12 @@ public class VerifyTicketPlayedPage {
     @FindBy(xpath = "//a[normalize-space()='Sans Topu']")
     private WebElement sansTopuPage;
 
+    @FindBy(xpath = "//a[normalize-space()='Hızlı On']")
+    private WebElement hizliOnNumaraPage;
+
+    @FindBy(xpath = "//span[normalize-space()='Milli Piyango']")
+    private WebElement milliPiyangoPage;
+
     @FindBy(id="sayisalLotoCardFrame")
     private WebElement sayisalLotoIFrameId;
 
@@ -67,6 +72,12 @@ public class VerifyTicketPlayedPage {
     @FindBy(id="sansTopuCardFrame")
     private WebElement sansTopuIFrameId;
 
+    @FindBy(id="hizliOnNumaraCardFrame")
+    private WebElement hizliOnNumaraIFrameId;
+
+    @FindBy(id="milliPiyangoCardFrame")
+    private WebElement milliPiyangoIFrameId;
+
     @FindBy(css = "div.flashIcon")
     WebElement onNumaraRandomButton;
 
@@ -78,6 +89,12 @@ public class VerifyTicketPlayedPage {
 
     @FindBy(css = "div[class='flash'] span[class='textIconBtn']")
     WebElement sayisalLotoRandomButton;
+
+    @FindBy(css = "div.flashIcon")
+    WebElement hizliOnNumaraRandomButton;
+
+    @FindBy(css = "div.flashIcon")
+    WebElement milliPiyangoRandomButton;
 
     public VerifyTicketPlayedPage(WebDriver driver) {
         this.driver = driver;
@@ -135,7 +152,7 @@ public class VerifyTicketPlayedPage {
         return numbers;
     }
 
-    public void navigateToOnNumaraPage(String game) {
+    public void navigateToGamePage(String game) {
         WebElement gamePageOption = getGamePage(game);
         elementHelper.click(sayisalOyunlarButton);
         elementHelper.click(gamePageOption);
@@ -168,6 +185,8 @@ public class VerifyTicketPlayedPage {
             case "Super Loto": return superLotoPage;
             case "On Numara": return onNumaraPage;
             case "Sans Topu": return sansTopuPage;
+            case "Hizli On Numara": return hizliOnNumaraPage;
+            case "Milli Piyango": return milliPiyangoPage;
             default: throw new IllegalArgumentException("Invalid game page: " + game);
         }
     }
@@ -178,6 +197,8 @@ public class VerifyTicketPlayedPage {
             case "Super Loto": return superLotoIFrameId;
             case "On Numara": return onNumaraIFrameId;
             case "Sans Topu": return sansTopuIFrameId;
+            case "Hizli On Numara": return hizliOnNumaraIFrameId;
+            case "Milli Piyango": return milliPiyangoIFrameId;
             default: throw new IllegalArgumentException("Invalid frame: " + game);
         }
     }
@@ -188,6 +209,8 @@ public class VerifyTicketPlayedPage {
             case "Super Loto": return superLotoRandomButton;
             case "On Numara": return onNumaraRandomButton;
             case "Sans Topu": return sansTopuRandomButton;
+            case "Hizli On Numara": return hizliOnNumaraRandomButton;
+            case "Milli Piyango": return milliPiyangoRandomButton;
             default: throw new IllegalArgumentException("Invalid random button: " + game);
         }
     }

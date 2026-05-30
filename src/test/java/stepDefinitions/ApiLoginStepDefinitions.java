@@ -5,9 +5,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import util.ApiAuthHelper;
-import util.ConfigReader;
-import util.ScenarioContext;
+import utils.ApiAuthHelper;
+import utils.ConfigReader;
+import utils.ScenarioContext;
 
 public class ApiLoginStepDefinitions {
 

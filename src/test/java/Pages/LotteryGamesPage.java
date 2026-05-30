@@ -1,7 +1,6 @@
 package Pages;
 
 import io.cucumber.java.Scenario;
-import io.cucumber.java.it.Ma;
 import io.restassured.path.json.JsonPath;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
@@ -12,9 +11,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.asserts.Assertion;
-import util.ConfigReader;
-import util.ElementHelper;
+import utils.ConfigReader;
+import utils.ElementHelper;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
@@ -25,7 +23,7 @@ import java.util.*;
 import java.util.concurrent.ConcurrentMap;
 
 import static reporting.Logging.writeConsoleLog;
-import static util.DataProcess.getCurrentTime;
+import static utils.DataProcess.getCurrentTime;
 
 public class LotteryGamesPage {
     WebDriver driver;
